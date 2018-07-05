@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+  <head>
+    <title>Manual de Sobrevivência na Elétrica</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<link rel="stylesheet" type="text/css" href="layout.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.green-orange.min.css">
+	<script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+  </head>
+
+  <body id="corpo" onload="carregaDados()" onunload="salvaDados()" class="roboto">
+	<header>Currículo Interativo da Elétrica</header>
+	<section id="basicas">Disciplinas básicas</section>
+    
+	<section id="Periodo1">1º Período
+		<p><button id="p1" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="complete(event, this.id)">Preencher</button></p>
+		<p><button id="dcc003" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" onclick="clicou(event, this.id)" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">AEDS I</button></p>
+		<p><button id="eee001" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" onclick="clicou(event, this.id)" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Int. Eng.</button><p>
+		<p><button id="eee021" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" onclick="clicou(event, this.id)" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Int. Proj.</button><p>
+		<p><button id="fis054" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" onclick="clicou(event, this.id)" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Física Exp.</button><p>
+		<p><button id="mat001" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" onclick="clicou(event, this.id)" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Cálculo I</button><p>
+		<p><button id="mat038" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" onclick="clicou(event, this.id)" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">GAAL</button></p>
+	</section>
+
+	<section id="Periodo2">2º Período
+		<p><button id="p2" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" disabled onclick="">Preencher</button></p>
+		<p><button id="dcc004" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">AEDS II</button></p>
+		<p><button id="dcc033" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" onclick="clicou(event, this.id)" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Análise</button></p>
+		<p><button id="fch001" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" onclick="clicou(event, this.id)" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Humanas I</button></p>
+		<p><button id="fis060" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Física EO</button></p>
+		<p><button id="fis065" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Mecânica</button></p>
+		<p><button id="fis066" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Termo</button></p>
+		<p><button id="mat039" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Cálculo II</button></p>
+	</section>
+	
+	<section id="Periodo3"> 3º Período
+		<p><button id="p3" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" disabled onclick="">Preencher</button></p>
+		<p><button id="ele064" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" onclick="clicou(event, this.id)" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Circuitos I</button></p>
+		<p><button id="elt083" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" onclick="clicou(event, this.id)" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">SD</button></p>
+		<p><button id="eqm044" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Fenotrans</button></p>
+		<p><button id="fis069" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Maguinho</button></p>
+		<p><button id="mat002" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Cálculo III</button></p>
+		<p><button id="mat015" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">EDA</button></p>
+	</section>
+
+	<section id="Periodo4"> 4º Período
+		<p><button id="p4" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" disabled onclick="">Preencher</button></p>
+		<p><button id="ele028" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Lab. Circ. I</button></p>
+		<p><button id="ele065" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Circuitos II</button></p>
+		<p><button id="elt029" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Lab. SD</button></p>
+		<p><button id="elt088" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">ASDL</button></p>
+		<p><button id="est045" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">PROB</button></p>
+		<p><button id="fis086" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">FOOO</button></p>
+		<p><button id="mat016" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">EDB</button></p>
+	</section>
+
+	<section id="Periodo5"> 5º Período
+		<p><button id="p5" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" disabled onclick="">Preencher</button></p>
+		<p><button id="ele001" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Magão</button></p>
+		<p><button id="ele031" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Lab. Circ. II</button></p>
+		<p><button id="ele066" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Circuitos III</button></p>
+		<p><button id="elt005" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">SPP</button></p>
+		<p><button id="elt035" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Controle</button></p>
+		<p><button id="elt084" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Elt I</button></p>
+		<p><button id="fis088" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Quântica</button></p>
+	</section>
+
+	<section id="Periodo6"> 6º Período
+		<p><button id="p6" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" disabled onclick="">Preencher</button></p>
+		<p><button id="ele029" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Medição</button></p>
+		<p><button id="ele032" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Materiais</button></p>
+		<p><button id="ele033" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Polifásicos</button>
+		<p><button id="ele034" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Conversão</button></p>
+		<p><button id="elt085" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Elt II</button></p>
+		<p><button id="elt086" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Tecom</button></p>
+		<p><button id="elt089" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Lab. Elt. I</button></p>
+	</section>
+
+	<section id="Periodo7"> 7º Período
+		<p><button id="p7" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" disabled onclick="">Preencher</button></p>
+		<p><button id="ele035" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Lab. Conversão</button></p>
+		<p><button id="ele042" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Procsin</button></p>
+		<p><button id="elt087" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Lab. Tecom</button></p>
+		<p><button id="elt090" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Lab. Elt. II</button></p>
+	</section>
+
+	<section id="Periodo8"> 8º Período
+		<p><button id="p8" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" disabled onclick="">Preencher</button></p>
+		<p><button id="fch002" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" onclick="clicou(event, this.id)" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Humanas II</button></p>
+	</section>
+
+	<section id="Periodo9"> 9º Período
+		<p><button id="p9" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" disabled onclick="">Preencher</button></p>
+		<p><button id="eee022" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" onclick="clicou(event, this.id)" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">Pré TCC</button></p>
+	</section>
+
+	<section id="Periodo10"> 10º Período
+		<p><button id="p10" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" disabled onclick="">Preencher</button></p>
+		<p><button id="eee023" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored" style="opacity:0.35" onclick="" onmouseover="passou(event, this.id)" onmousemove="mexeu(event, this.id)" onmouseout="saiu(this.id)">TCC</button></p>
+	</section>
+
+  </body>
+
+</html>
+
+<script type="text/javascript" src="Scripts/dados.js"></script>
+<script type="text/javascript" src="Scripts/paginacarregou.js"></script>
+<script type="text/javascript" src="Scripts/mouseclicou.js"></script>
+<script type="text/javascript" src="Scripts/mousehover.js"></script>
+
+<noscript>Sorry, your browser does not support JavaScript!</noscript>

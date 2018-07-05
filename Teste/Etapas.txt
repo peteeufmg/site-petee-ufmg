@@ -1,0 +1,9 @@
+﻿Site upado para testes em: http://cora.cpdee.ufmg.br/Teste/arvore.htm
+
+1. botão de preencher período (terminar)
+2. cookies (conferir)
+3. layout (terminar)
+4. colocar um delay nos popups
+5. centralizar o "#º Período"
+6. barra de rolagem horizontal não aparece (arrumar)
+7. layout material design (terminar)
