@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html style="margin-left: 22%;">
+<html>
 	<head>
 		<!-- definicoes principais -->
 		<meta charset="UTF-8">
@@ -93,46 +93,47 @@
 			</nav>
 		</header>
         <!-- nav lateral -->
-        <nav id="mySidenav" class="sidenav bg-light navbar-dark" style="width: 15%;" >
+        <nav id="mySidenav" class="sidenav bg-light navbar-dark" style="width: 25vmax;" >
             <div class="nav flex-column nav-pills nav-dark" role="tablist" aria-orientation="vertical">
 				<!-- Manual -->
-				<a class="nav-link-myblue active" id="nav-manual-tab" data-toggle="tab" href="#nav-manual" role="tab" aria-controls="nav-manual" aria-selected="true">Manual da Engenharia Elétrica</a>
+				<a class="nav-link-myblue active" id="nav-manual-tab" data-toggle="tab" href="#nav-manual" role="tab" aria-controls="nav-manual" aria-selected="true" onclick="document.querySelector('#sidenavToggler').click()">Manual da Engenharia Elétrica</a>
                 <!-- Aproveitamento de Estudos  -->
-				<a class="nav-link-myblue" id="nav-aproveitamento-tab" data-toggle="tab" href="#nav-aproveitamento" role="tab" aria-controls="nav-aproveitamento" aria-selected="false">Aproveitamento de Estudos</a>
+				<a class="nav-link-myblue" id="nav-aproveitamento-tab" data-toggle="tab" href="#nav-aproveitamento" role="tab" aria-controls="nav-aproveitamento" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Aproveitamento de Estudos</a>
                 <!-- Atividades Academicas -->
-				<a class="nav-link-myblue" id="nav-academicas-tab" data-toggle="tab" href="#nav-academicas" role="tab" aria-controls="nav-academicas" aria-selected="false">Atividades Acadêmicas</a>
+				<a class="nav-link-myblue" id="nav-academicas-tab" data-toggle="tab" href="#nav-academicas" role="tab" aria-controls="nav-academicas" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Atividades Acadêmicas</a>
                 <!-- controle remoto -->
-				<a class="nav-link-myblue" id="nav-extracurriculares-tab" data-toggle="tab" href="#nav-extracurriculares" role="tab" aria-controls="nav-extracurriculares" aria-selected="false">Atividades Extracurriculares</a>
+				<a class="nav-link-myblue" id="nav-extracurriculares-tab" data-toggle="tab" href="#nav-extracurriculares" role="tab" aria-controls="nav-extracurriculares" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Atividades Extracurriculares</a>
 				<!-- carteira de estudante -->
-                <a class="nav-link-myblue" id="nav-carteira-tab" data-toggle="tab" href="#nav-carteira" role="tab" aria-controls="nav-carteira" aria-selected="false">Carteira de Estudante</a>
+                <a class="nav-link-myblue" id="nav-carteira-tab" data-toggle="tab" href="#nav-carteira" role="tab" aria-controls="nav-carteira" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Carteira de Estudante</a>
                 <!-- certificado -->
-                <a class="nav-link-myblue" id="nav-certificado-tab" data-toggle="tab" href="#nav-certificado" role="tab" aria-controls="nav-certificado" aria-selected="false">Certificados</a>
+                <a class="nav-link-myblue" id="nav-certificado-tab" data-toggle="tab" href="#nav-certificado" role="tab" aria-controls="nav-certificado" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Certificados</a>
                 <!-- comprovação de conhecimento -->
-                <a class="nav-link-myblue" id="nav-comprovacao-tab" data-toggle="tab" href="#nav-comprovacao" role="tab" aria-controls="nav-comprovacao" aria-selected="false">Comprovação de Conhecimento</a>
+                <a class="nav-link-myblue" id="nav-comprovacao-tab" data-toggle="tab" href="#nav-comprovacao" role="tab" aria-controls="nav-comprovacao" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Comprovação de Conhecimento</a>
                 <!-- contato de professores -->
-                <a class="nav-link-myblue" id="nav-contato-tab" data-toggle="tab" href="#nav-contato" role="tab" aria-controls="nav-contato" aria-selected="false">Contato de Professores</a>
+                <a class="nav-link-myblue" id="nav-contato-tab" data-toggle="tab" href="#nav-contato" role="tab" aria-controls="nav-contato" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Contato de Professores</a>
                 <!-- disciplinas -->
-                <a class="nav-link-myblue" id="nav-disciplinas-tab" data-toggle="tab" href="#nav-disciplinas" role="tab" aria-controls="nav-disciplinas" aria-selected="false">Disciplinas</a>
+                <a class="nav-link-myblue" id="nav-disciplinas-tab" data-toggle="tab" href="#nav-disciplinas" role="tab" aria-controls="nav-disciplinas" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Disciplinas</a>
                 <!-- eventos -->
-                <a class="nav-link-myblue" id="nav-eventos-tab" data-toggle="tab" href="#nav-eventos" role="tab" aria-controls="nav-eventos" aria-selected="false">Eventos</a>
+                <a class="nav-link-myblue" id="nav-eventos-tab" data-toggle="tab" href="#nav-eventos" role="tab" aria-controls="nav-eventos" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Eventos</a>
                 <!-- fump/ceu/ru's -->
-                <a class="nav-link-myblue" id="nav-fump-tab" data-toggle="tab" href="#nav-fump" role="tab" aria-controls="nav-fump" aria-selected="false">FUMP/CEU/RU's</a>
+                <a class="nav-link-myblue" id="nav-fump-tab" data-toggle="tab" href="#nav-fump" role="tab" aria-controls="nav-fump" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">FUMP/CEU/RU's</a>
                 <!-- intercambio -->
-                <a class="nav-link-myblue" id="nav-intercambio-tab" data-toggle="tab" href="#nav-intercambio" role="tab" aria-controls="nav-intercambio" aria-selected="false">Intercâmbio</a>
+                <a class="nav-link-myblue" id="nav-intercambio-tab" data-toggle="tab" href="#nav-intercambio" role="tab" aria-controls="nav-intercambio" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Intercâmbio</a>
                 <!-- matricula -->
-                <a class="nav-link-myblue" id="nav-matricula-tab" data-toggle="tab" href="#nav-matricula" role="tab" aria-controls="nav-matricula" aria-selected="false">Matrícula</a>
+                <a class="nav-link-myblue" id="nav-matricula-tab" data-toggle="tab" href="#nav-matricula" role="tab" aria-controls="nav-matricula" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Matrícula</a>
                 <!-- percurso -->
-                <a class="nav-link-myblue" id="nav-percurso-tab" data-toggle="tab" href="#nav-percurso" role="tab" aria-controls="nav-percurso" aria-selected="false">Percurso Curricular Interativo</a>
+                <a class="nav-link-myblue" id="nav-percurso-tab" data-toggle="tab" href="#nav-percurso" role="tab" aria-controls="nav-percurso" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Percurso Curricular Interativo</a>
                 <!-- secao -->
-                <a class="nav-link-myblue" id="nav-secao-tab" data-toggle="tab" href="#nav-secao" role="tab" aria-controls="nav-secao" aria-selected="false">Seção de Ensino</a>
+                <a class="nav-link-myblue" id="nav-secao-tab" data-toggle="tab" href="#nav-secao" role="tab" aria-controls="nav-secao" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Seção de Ensino</a>
                 <!-- trancamento -->
-                <a class="nav-link-myblue" id="nav-trancamento-tab" data-toggle="tab" href="#nav-trancamento" role="tab" aria-controls="nav-trancamento" aria-selected="false">Trancamento</a>
+                <a class="nav-link-myblue" id="nav-trancamento-tab" data-toggle="tab" href="#nav-trancamento" role="tab" aria-controls="nav-trancamento" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Trancamento</a>
                 <!--<a style="height: 150px;"></a>-->
 
             </div>
 		</nav>
 		<!-- Toggler da Nav lateral -->
-		<div id="sidenavToggler" onclick="toggleNav()" class="bg-light border-dark" style="padding: 0.5%;  margin-left: 15%;"><i id="sidenavTogglerIcon"class="fas fa-chevron-left text-dark" style="font-size: 30px;"></i></div>	
+        <div id="sidenavToggler" onclick="toggleNav()" class="bg-light border-dark" style="padding: 0.5%;  margin-left: 25vmax;"><i id="sidenavTogglerIcon"class="fas fa-chevron-left text-dark" style="font-size: 30px;"></i></div>	
+        <div id="blackmask" onclick="document.querySelector('#sidenavToggler').click()"></div>
         <!--Conteudo selecionado pelo nav lateral-->
         <div id="conteudo" class="container-fluid" style="padding-top: 40px;">
             <div class="tab-content" id="nav-tabContent">
@@ -3247,7 +3248,7 @@
 		<!-- rodape -->
 		<footer>
 			<div id="emptySpace" style="margin-top: 150px;"></div>
-            <div id="rodape" class="myfooter container-fluid text-center bg-dark" style="margin-left: -22%;">	
+            <div id="rodape" class="myfooter container-fluid text-center bg-dark">	
 				<div class="row">
 					<div class="col text-center">
 						<p><a class="text-light contato-link" href="mailto:petee.ufmg@gmail.com">petee.ufmg@gmail.com</a></p>

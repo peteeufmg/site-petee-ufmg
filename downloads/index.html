@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html style="margin-left: 22%;">
+<html>
 	<head>
 		<!-- definicoes principais -->
 		<meta charset="UTF-8">
@@ -115,29 +115,30 @@
 			</div>
 		</div>
 		<!-- Nav lateral -->
-		<nav id="mySidenav" class="sidenav bg-light navbar-dark" style="width: 15%;" >
+		<nav id="mySidenav" class="sidenav bg-light navbar-dark" style="width: 25vmax;" >
 			
 			<div class="nav flex-column nav-pills nav-dark" role="tablist" aria-orientation="vertical">
 				<!-- minicursos e oficinas -->
-				<a class="nav-link-myblue active" id="minicursos-oficinas-tab" data-toggle="tab" href="#minicursos-oficinas" role="tab" aria-controls="minicursos-oficinas" aria-selected="true">Minicursos e Oficinas</a>
+				<a class="nav-link-myblue active" id="minicursos-oficinas-tab" data-toggle="tab" href="#minicursos-oficinas" role="tab" aria-controls="minicursos-oficinas" aria-selected="true" onclick="document.querySelector('#sidenavToggler').click()">Minicursos e Oficinas</a>
 				<!-- escolab -->
-				<a class="nav-link-myblue" id="escolab-tab" data-toggle="tab" href="#escolab" role="tab" aria-controls="escolab" aria-selected="false">EsColab</a>
+				<a class="nav-link-myblue" id="escolab-tab" data-toggle="tab" href="#escolab" role="tab" aria-controls="escolab" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">EsColab</a>
 				<!-- percursos curriculares interativos -->
-				<a class="nav-link-myblue" id="percursos-curriculares-tab" data-toggle="tab" href="#percursos-curriculares" role="tab" aria-controls="percursos-curriculares" aria-selected="false">Percursos Curriculares</a>
+				<a class="nav-link-myblue" id="percursos-curriculares-tab" data-toggle="tab" href="#percursos-curriculares" role="tab" aria-controls="percursos-curriculares" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Percursos Curriculares</a>
 				<!-- processo seletivo -->
-				<a class="nav-link-myblue" id="processo-seletivo-tab" data-toggle="tab" href="#processo-seletivo" role="tab" aria-controls="processo-seletivo" aria-selected="false">Processo Seletivo</a>
+				<a class="nav-link-myblue" id="processo-seletivo-tab" data-toggle="tab" href="#processo-seletivo" role="tab" aria-controls="processo-seletivo" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Processo Seletivo</a>
 				<!-- prototipos -->
-				<a class="nav-link-myblue" id="prototipos-tab" data-toggle="tab" href="#prototipos" role="tab" aria-controls="prototipos" aria-selected="false">Protótipos</a>
+				<a class="nav-link-myblue" id="prototipos-tab" data-toggle="tab" href="#prototipos" role="tab" aria-controls="prototipos" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Protótipos</a>
 				<!-- outros relatorios -->
-				<a class="nav-link-myblue" id="outros-relatorios-tab" data-toggle="tab" href="#outros-relatorios" role="tab" aria-controls="outros-relatorios" aria-selected="false">Outros Relatórios</a>
+				<a class="nav-link-myblue" id="outros-relatorios-tab" data-toggle="tab" href="#outros-relatorios" role="tab" aria-controls="outros-relatorios" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Outros Relatórios</a>
 				<!-- templates -->
-				<a class="nav-link-myblue" id="templates-tab" data-toggle="tab" href="#templates" role="tab" aria-controls="templates" aria-selected="false">Templates</a>
+				<a class="nav-link-myblue" id="templates-tab" data-toggle="tab" href="#templates" role="tab" aria-controls="templates" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Templates</a>
 				<!-- chronos -->
-				<a class="nav-link-myblue" id="chronos-tab" data-toggle="tab" href="#chronos" role="tab" aria-controls="chronos" aria-selected="false">Chronos</a>
+				<a class="nav-link-myblue" id="chronos-tab" data-toggle="tab" href="#chronos" role="tab" aria-controls="chronos" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Chronos</a>
 			</div>
 		</nav>
 		<!-- Toggler da Nav lateral -->
-		<div id="sidenavToggler" onclick="toggleNav()" class="bg-light border-dark" style="padding: 0.5%;  margin-left: 15%;"><i id="sidenavTogglerIcon"class="fas fa-chevron-left text-dark" style="font-size: 30px;"></i></div>	
+		<div id="sidenavToggler" onclick="toggleNav()" class="bg-light border-dark" style="padding: 0.5%;  margin-left: 25vmax;"><i id="sidenavTogglerIcon"class="fas fa-chevron-left text-dark" style="font-size: 30px;"></i></div>	
+		<div id="blackmask" onclick="document.querySelector('#sidenavToggler').click()"></div>
 
 		<div id="conteudos" class="tab-content" id="nav-tabContent" style="padding-top: 96px">
 			<!-- minicursos e oficinas -->
@@ -715,7 +716,7 @@
 
 		<!-- rodape -->
 		<footer>
-			<div id="rodape" class="myfooter container-fluid text-center bg-dark" style="margin-left: -22%;">	
+			<div id="rodape" class="myfooter container-fluid text-center bg-dark">	
 				<div class="row">
 					<div class="col text-center">
 						<p><a class="text-light contato-link" href="mailto:petee.ufmg@gmail.com">petee.ufmg@gmail.com</a></p>

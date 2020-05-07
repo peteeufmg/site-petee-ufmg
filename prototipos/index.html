@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html style="margin-left: 22%;">
+<html>
 	<head>
 		<!-- definicoes principais -->
 		<meta charset="UTF-8">
@@ -91,24 +91,25 @@
 			</nav>
 		</header>
         <!-- nav lateral -->
-        <nav id="mySidenav" class="sidenav bg-light navbar-dark" style="width: 15%;" >
+        <nav id="mySidenav" class="sidenav bg-light navbar-dark" style="width: 25vmax;" >
             <div class="nav flex-column nav-pills nav-dark" role="tablist" aria-orientation="vertical">
 				<!-- braco -->
-				<a class="nav-link-myblue active" id="nav-braco-tab" data-toggle="tab" href="#nav-braco" role="tab" aria-controls="nav-braco" aria-selected="true">Braço Robótico</a>
+				<a class="nav-link-myblue active" id="nav-braco-tab" data-toggle="tab" href="#nav-braco" role="tab" aria-controls="nav-braco" aria-selected="true" onclick="document.querySelector('#sidenavToggler').click()">Braço Robótico</a>
 				<!-- desviador -->
-				<a class="nav-link-myblue" id="nav-desviador-tab" data-toggle="tab" href="#nav-desviador" role="tab" aria-controls="nav-desviador" aria-selected="false">Desviador de Obstáculos</a>
+				<a class="nav-link-myblue" id="nav-desviador-tab" data-toggle="tab" href="#nav-desviador" role="tab" aria-controls="nav-desviador" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Desviador de Obstáculos</a>
 				<!-- controle remoto -->
-				<a class="nav-link-myblue" id="nav-controle-tab" data-toggle="tab" href="#nav-controle" role="tab" aria-controls="nav-controle" aria-selected="false">Carrinho de Controle Remoto</a>
+				<a class="nav-link-myblue" id="nav-controle-tab" data-toggle="tab" href="#nav-controle" role="tab" aria-controls="nav-controle" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Carrinho de Controle Remoto</a>
 				<!-- drawdio -->
-				<a class="nav-link-myblue" id="nav-drawdio-tab" data-toggle="tab" href="#nav-drawdio" role="tab" aria-controls="nav-drawdio" aria-selected="false">Drawdio</a>
+				<a class="nav-link-myblue" id="nav-drawdio-tab" data-toggle="tab" href="#nav-drawdio" role="tab" aria-controls="nav-drawdio" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Drawdio</a>
 				<!-- seguidor de luz -->
-				<a class="nav-link-myblue" id="nav-luz-tab" data-toggle="tab" href="#nav-luz" role="tab" aria-controls="nav-luz" aria-selected="false">Seguidor de Luz</a>
+				<a class="nav-link-myblue" id="nav-luz-tab" data-toggle="tab" href="#nav-luz" role="tab" aria-controls="nav-luz" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Seguidor de Luz</a>
 				<!-- sincronizador -->
-                <a class="nav-link-myblue" id="nav-agenda-tab" data-toggle="tab" href="#nav-agenda" role="tab" aria-controls="nav-agenda" aria-selected="false">Sincronizador Google Agendaelatórios</a>
+                <a class="nav-link-myblue" id="nav-agenda-tab" data-toggle="tab" href="#nav-agenda" role="tab" aria-controls="nav-agenda" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Sincronizador Google Agendaelatórios</a>
             </div>
 		</nav>
 		<!-- Toggler da Nav lateral -->
-		<div id="sidenavToggler" onclick="toggleNav()" class="bg-light border-dark" style="padding: 0.5%;  margin-left: 15%;"><i id="sidenavTogglerIcon"class="fas fa-chevron-left text-dark" style="font-size: 30px;"></i></div>	
+		<div id="sidenavToggler" onclick="toggleNav()" class="bg-light border-dark" style="padding: 0.5%;  margin-left: 25vmax;"><i id="sidenavTogglerIcon"class="fas fa-chevron-left text-dark" style="font-size: 30px;"></i></div>
+		<div id="blackmask" onclick="document.querySelector('#sidenavToggler').click()"></div>	
 		<!-- Titulo -->
 		<div id="Titulo" class="container-fluid" style="padding-top: 96px">
 			<!-- titulo -->
@@ -260,7 +261,7 @@
 		<!-- rodape -->
 		<footer>
 			
-            <div id="rodape" class="myfooter container-fluid text-center bg-dark" style="margin-left: -22%;">	
+            <div id="rodape" class="myfooter container-fluid text-center bg-dark">	
 				<div class="row">
 					<div class="col text-center">
 						<p><a class="text-light contato-link" href="mailto:petee.ufmg@gmail.com">petee.ufmg@gmail.com</a></p>

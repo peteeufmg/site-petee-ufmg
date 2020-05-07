@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html style="margin-left: 22%">
+<html>
 	<head>
 		<!-- definicoes principais -->
 		<meta charset="UTF-8">
@@ -92,22 +92,23 @@
 			</nav>
 		</header>
 		<!-- Nav lateral -->
-		<nav id="mySidenav" class="sidenav bg-light navbar-dark" style="width: 15%;" >
+		<nav id="mySidenav" class="sidenav bg-light navbar-dark" style="width: 25vmax" >
 			<div class="nav flex-column nav-pills nav-dark" role="tablist" aria-orientation="vertical">
 				<!-- oficinas -->
-				<a class="nav-link-myblue active" id="oficina" data-toggle="tab" href="#tab-oficina" role="tab" aria-controls="tab-oficina" aria-selected="true" onclick="location.hash = 'oficina'">Oficinas de Seguidor de Linha</a>
+				<a class="nav-link-myblue active" id="oficina" data-toggle="tab" href="#tab-oficina" role="tab" aria-controls="tab-oficina" aria-selected="true" onclick="location.hash = 'oficina'; document.querySelector('#sidenavToggler').click()">Oficinas de Seguidor de Linha</a>
 				<!-- matlab -->
-				<a class="nav-link-myblue" id="matlab" data-toggle="tab" href="#tab-matlab" role="tab" aria-controls="tab-matlab" aria-selected="false" onclick="location.hash = 'matlab'">Minicurso de MATLAB</a>
+				<a class="nav-link-myblue" id="matlab" data-toggle="tab" href="#tab-matlab" role="tab" aria-controls="tab-matlab" aria-selected="false" onclick="location.hash = 'matlab'; document.querySelector('#sidenavToggler').click()">Minicurso de MATLAB</a>
 				<!-- web -->
-				<a class="nav-link-myblue" id="web" data-toggle="tab" href="#tab-web" role="tab" aria-controls="tab-web" aria-selected="false" onclick="location.hash = 'web'">Minicurso de Web Design</a>
+				<a class="nav-link-myblue" id="web" data-toggle="tab" href="#tab-web" role="tab" aria-controls="tab-web" aria-selected="false" onclick="location.hash = 'web'; document.querySelector('#sidenavToggler').click()">Minicurso de Web Design</a>
 				<!-- python -->
-				<a class="nav-link-myblue" id="python" data-toggle="tab" href="#tab-python" role="tab" aria-controls="tab-python" aria-selected="false" onclick="location.hash = 'python'">Minicurso de Python</a>
+				<a class="nav-link-myblue" id="python" data-toggle="tab" href="#tab-python" role="tab" aria-controls="tab-python" aria-selected="false" onclick="location.hash = 'python'; document.querySelector('#sidenavToggler').click()">Minicurso de Python</a>
 				<!-- latex -->
-				<a class="nav-link-myblue" id="latex" data-toggle="tab" href="#tab-latex" role="tab" aria-controls="tab-latex" aria-selected="false" onclick="location.hash = 'latex'">Minicurso de LaTeX</a>
+				<a class="nav-link-myblue" id="latex" data-toggle="tab" href="#tab-latex" role="tab" aria-controls="tab-latex" aria-selected="false" onclick="location.hash = 'latex'; document.querySelector('#sidenavToggler').click()">Minicurso de LaTeX</a>
 			</div>
 		</nav>
 		<!-- Toggler da Nav lateral -->
-		<div id="sidenavToggler" onclick="toggleNav()" class="bg-light border-dark" style="padding: 0.5%;  margin-left: 15%;"><i id="sidenavTogglerIcon"class="fas fa-chevron-left text-dark" style="font-size: 30px;"></i></div>
+		<div id="sidenavToggler" onclick="toggleNav()" class="bg-light border-dark" style="padding: 0.5%;  margin-left: 25vmax;"><i id="sidenavTogglerIcon"class="fas fa-chevron-left text-dark" style="font-size: 30px;"></i></div>
+		<div id="blackmask" onclick="document.querySelector('#sidenavToggler').click()"></div>
 		<!-- minicursos e oficinas -->
 		<div id="conteudos" class="tab-content" id="nav-tabContent" style="padding-top: 96px">
 			<!-- oficina -->
@@ -634,7 +635,7 @@
 		<div id="emptySpace" style="margin-top: 150px;"></div>
 		<!-- rodape -->
 		<footer>
-			<div id="rodape" class="myfooter container-fluid text-center bg-dark" style="margin-left: -22%;">	
+			<div id="rodape" class="myfooter container-fluid text-center bg-dark">	
 				<div class="row">
 					<div class="col text-center">
 						<p><a class="text-light contato-link" href="mailto:petee.ufmg@gmail.com">petee.ufmg@gmail.com</a></p>
