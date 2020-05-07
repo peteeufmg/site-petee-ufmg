@@ -1,796 +1,1039 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
 
-	<!-- define o idioma do documento -->
-	<meta http-equiv="content-language" content="pt-br"/>
-
-	<!-- define que o tipo padrão de linguagem para estilização do documento é css -->
-	<meta http-equiv="content-style-type" content="text/css"/>
-
-	<!-- define que o tipo padrão da linguagem de script do documento é javascript -->
-	<meta http-equiv="content-script-type" content="text/javascript"/>
-
-	<!-- define a compatibilidade entre browsers -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-
-	<!-- define o autor da página -->
-	<meta name="author" content="PETEE UFMG"/>
-
-	<!-- COMPARTILHAMENTO - INÍCIO -->
-	<!-- define o idioma -->
-	<meta property="og:locale" content="pt_BR">
-
-	<!-- define o link do site -->
-	<meta property="og:url" content="http://www.petee.cpdee.ufmg.br/">
-
-	<!-- define o título -->
-	<meta property="og:title" content="Programa de Educação Tutorial - Engenharia Elétrica UFMG">
-	<meta property="og:site_name" content="PETEE UFMG">
-
-	<!-- define uma breve descrição do conteúdo -->
-	<meta property="og:description" content="Trasnformando Conhecimento em Engenharia">
-
-	<!-- define o local, o nome e o formato da imagem -->
-	<meta property="og:image" content="http://www.cpdee.ufmg.br/~petee/imagens/share/sobreopet.png">
-	<meta property="og:image:type" content="image/png"/>
-
-	<!-- define a largura da imagem -->
-	<meta property="og:image:width" content="200"/>
-
-	<!-- define a altura da imagem -->
-	<meta property="og:image:height" content="200"/>
-
-	<!-- COMPARTILHAMENTO - FIM -->
-
-	<!-- FONTE - INÍCIO -->
-		<!-- define o link do google para as fontes que serão utilizadas na página -->
+<html>
+	<head>
+		<!-- definicoes principais -->
+		<meta charset="UTF-8">
+		<title>PETEE UFMG</title>
+		<!-- define o idioma do documento -->
+		<meta http-equiv="content-language" content="pt-br"/>
+		<!-- define que o tipo padrão de linguagem para estilização do documento é css -->
+		<meta http-equiv="content-style-type" content="text/css"/>
+		<!-- define que o tipo padrão da linguagem de script do documento é javascript -->
+		<meta http-equiv="content-script-type" content="text/javascript"/>
+		<!-- define a compatibilidade entre browsers -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<!-- define o autor da página -->
+		<meta name="author" content="PETEE UFMG"/>
+		
+		<!-- link do google para as fontes que serão utilizadas -->
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'/> <!-- 'Roboto Condensed' - Texto -->
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'/> <!-- 'Roboto Slab' - Títulos -->
-
-	<!-- FONT - FIM -->
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <title>PETEE UFMG</title>
-	<!-- core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet">
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.transitions.css" rel="stylesheet">
-    <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
-    <link rel="shortcut icon" href="imagens/share/icone.png">
-</head><!--/head-->
-
-<body id="home" class="homepage">
-
-    <header id="header">
-        <nav id="main-menu" class="navbar navbar-default navbar-fixed-top" role="banner">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"><img src="imagens/share/logo.png" width="160" height="50" alt="logo"></a>
-                </div>
-
-                <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li class="scroll active"><a href="http://www.petee.cpdee.ufmg.br/">Home</a></li>
-                        <li class="scroll active"><a href="https://petee-ufmg.blogspot.com/?m=1"  target="_blank">Blog</a></li>
-                        <li class="scroll"><a href="#sobre">O Que é PET?</a></li>
-			<li class="scroll"><a href="#services">Proposta</a></li>
-			<li class="scroll"><a href="#blog">Atividades</a></li>
-			<li class="scroll active"><a href="manual_eletrica.html">Manual da EE</a></li>
-			<!--<li class="scroll"><a href="#portfolio">Galeria</a></li>-->
-			<li class="scroll"><a href="#about">O Grupo</a></li>
-			<li class="scroll"><a href="atividades/processo_seletivo.html">Processo Seletivo</a></li>
-                        <li class="scroll"><a href="#get-in-touch">Contato</a></li>
-                    </ul>
-                </div>
-            </div><!--/.container-->
-        </nav><!--/nav-->
-    </header><!--/header-->
-
-    <section id="main-slider">
-        <div class="owl-carousel">
-            <!--<div class="item" style="background-image: url(imagens/slider/processos.png);">
-                <div class="slider-inner">
-                    <div class="container">
-                        <a class="btn btn-primary btn-lg btn-block" href="atividades/processo_seletivo.html">Inscreva-se</a>
-                    </div>
-                </div>
-            </div><!--/.item-->
-
-            <div class="item" style="background-image: url(imagens/slider/capa1.png);">
-                <div class="slider-inner">
-                    <div class="container">
-                        <!-- <div class="row">
-                            <div class="col-sm-6">
-                                <div class="carousel-content">
-                                    <h2><span>AAAAA</span> AAAAAAA</h2>
-                                    <p>AAAA. </p>
-                                    <a class="btn btn-primary btn-lg" href="#">Saiba Mais</a>
-                                </div>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-            </div><!--/.item-->
-
-            <div class="item" style="background-image: url(imagens/slider/cora.jpg);">
-                <div class="slider-inner">
-                   <div class="container">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="carousel-content">
-                                    <h2><span>CoRA</span></h2>
-                                     <p>A Competição de Robôs Autônomos <br> é um torneio de robótica anual <br> realizado pelo PETEE.</p>
-                                    <a class="btn btn-primary btn-lg" href="http://cora.cpdee.ufmg.br/" target="_blank">Saiba Mais</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/.item-->
-
-        </div><!--/.owl-carousel-->
-    </section><!--/#main-slider-->
-
-    <!-- <section id="cta" class="wow fadeIn">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-9">
-                    <h2>Premium quality free onepage template</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                    </p>
-                </div>
-                <div class="col-sm-3 text-right">
-                    <a class="btn btn-primary btn-lg" href="#">Download Now!</a>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <section id="sobre">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">O Que é PET?</h2>
-                <p class="text-center wow fadeInDown">
-					O Programa de Educação Tutorial (PET) é desenvolvido por grupos de estudantes, com tutoria de um docente, organizados a partir de formações <br> em nível de graduação
-					nas Instituições de Ensino Superior do país orientados pelo princípio da indissociabilidade entre ensino,  <br> pesquisa e extensão e da educação tutorial.
-					</p>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 wow fadeInLeft">
-                    <img class="img-responsive" src="imagens/share/sobreopet.png" alt="">
-                </div>
-                <div class="col-sm-6">
-                    <div class="media service-box wow fadeInRight">
-                        <div class="pull-left">
-                            <i class="fa fa-book"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Ensino</h4>
-                            <p>As atividades extra-curriculares que compõem o Programa têm como objetivo
-							garantir a formação global do aluno, procurando atender plenamente as necessidades
-							do próprio curso de graduação e/ou ampliar e aprofundar os objetivos e os conteúdos
-							programáticos que integram sua grade curricular. </p>
-                        </div>
-                    </div>
-
-                    <div class="media service-box wow fadeInRight">
-                        <div class="pull-left">
-                            <i class="fa fa-search"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Pesquisa</h4>
-                            <p>As atividades de pesquisa desenvolvidas pelos petianos têm como objetivo garantir a
-							formação não só teórica, mas também prática, do aluno, de modo a oferecer a oportunidade
-							de aprender novos conteúdos e já se familiarizar com o ambiente de pesquisa científica. </p>
-                        </div>
-                    </div>
-
-                    <div class="media service-box wow fadeInRight">
-                        <div class="pull-left">
-                            <i class="fa fa-users"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Extensão</h4>
-                            <p>Vivenciar o processo ensino-aprendizagem além dos limites da sala de aula,
-							com a possibilidade de articular a universidade às diversas organizações da sociedade,
-							numa enriquecedora troca de conhecimentos e experiências. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-	<section id="services" >
-        <div class="container">
-
-            <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Proposta</h2>
-                <p class="text-center wow fadeInDown">O Grupo PET Engenharia Elétrica da Universidade Federal de Minas Gerais (PETEE UFMG)
-				pretende melhorar o ensino de graduação através de várias atividades</p>
-            </div>
-
-            <div class="row">
-                <div class="features">
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-line-chart"></i>
-                            </div>
-                            <div class="media-body">
-                                <p>Realizar seminários e palestras sobre temas atuais e relevantes, o que oferece aos alunos um ambiente para adquirir novos conhecimentos.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-cubes"></i>
-                            </div>
-                            <div class="media-body">
-                                <p>Estruturar o programa em áreas multidisciplinares do conhecimento.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-pie-chart"></i>
-                            </div>
-                            <div class="media-body">
-                                <p>Fazer dos petianos agentes disseminadores de novas idéias e práticas no campo de atuação da engenharia junto à comunidade estudantil.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-graduation-cap"></i>
-                            </div>
-                            <div class="media-body">
-                                <p>Realizar atividades extra-classe que permitam a interação dos alunos PETEE UFMG com o corpo docente e discente da instituição.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <div class="media-body">
-                                <p>O Petiano tem espaço para participação de projetos de pesquisa seja dentro do PETEE UFMG ou externamente, com a ajuda de um professor orientador.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
-                        <div class="media service-box">
-                            <div class="pull-left">
-                                <i class="fa fa-trophy"></i>
-                            </div>
-                            <div class="media-body">
-                                <p>Incentivar a aplicação dos conhecimentos teóricos adquiridos em sala de aula pelos alunos da UFMG, através de atividades como a CoRA e Oficinas.</p>
-                            </div>
-                        </div>
-                    </div><!--/.col-md-4-->
-                </div>
-            </div><!--/.row-->
-        </div><!--/.container-->
-    </section><!--/#services-->
-
-
-
-	<section id="blog">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Atividades</h2>
-                <p class="text-center wow fadeInDown"></p>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
-                        <article>
-                            <header class="entry-header">
-                                <div class="entry-thumbnail">
-                                    <img class="img-responsive" src="imagens/atividades/cora.png" width="555" height="303" alt="">
-                                    <span class="post-format post-format-video"><i class="fa fa-trophy"></i></span>
-                                </div>
-                                <div class="entry-date">29 Agosto 2017</div>
-                                <h2 class="entry-title"><a href="http://cora.cpdee.ufmg.br/" target="_blank">Competição de Robôs Autônomos</a></h2>
-                            </header>
-
-                            <div class="entry-content">
-                                <P>Idealizada pelos integrantes do grupo PET Engenharia Elétrica UFMG em 2013, a competição de robôs autônomos (CoRA) teve sua primeira edição
-								realizada em agosto de 2014. O objetivo da competição é incentivar os alunos de graduação e
-								do ensino médio e técnico a aplicar seus conhecimentos adquiridos em sala de aula na construção de robôs autônomos.</P>
-                                <a class="btn btn-primary" href="http://cora.cpdee.ufmg.br/" target="_blank">Saiba Mais</a>
-                            </div>
-                        </article>
-                    </div>
-					<!-- ATIVIDADE - MANUAL DA EE -->
-					 <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
-                        <article>
-                            <header class="entry-header">
-                                <div class="entry-thumbnail">
-                                    <img class="img-responsive" src="imagens/atividades/logo_manual_oficial.png" width="555" height="303" alt="">
-                                    <span class="post-format post-format-video"><i class="fa fa-graduation-cap"></i></span>
-                                </div>
-                                <div class="entry-date">Julho 2018</div>
-                                <h2 class="entry-title"><a href="manual_eletrica.html" target="_blank">Manual da Engenharia Elétrica</a></h2>
-                            </header>
-                            <div class="entry-content">
-                                <P>Desenvolvida pelo PETEE UFMG, a primeira versão do manual de engenharia elétrica surge em 2017
-								com a proposta ditática de tornar o acesso à informação sobre o curso de engenharia elétrica na UFMG mais acessível.
-								O manual possui uma mapa iterativo onde é possível construir o proópio plano de estudos. </P>
-                                <a class="btn btn-primary" href="manual_eletrica.html" target="_blank">Saiba Mais</a>
-                            </div>
-
-                            </footer>
-                        </article>
-                    </div>
-                </div><!--/.col-sm-6-->
-                <div class="col-sm-6">
-					<!-- OFICINA SEGUIDOR DE LINHA -->
-                    <div class="blog-post blog-media wow fadeInRight" data-wow-duration="200ms" data-wow-delay="100ms">
-                        <article class="media clearfix">
-                            <div class="entry-thumbnail pull-left">
-                                <img class="img-responsive" src="imagens/atividades/oficina.png" width="263" height="301" alt="">
-                                <span class="post-format post-format-gallery"><i class="fa fa-puzzle-piece"></i></span>
-                            </div>
-                            <div class="media-body">
-                                <header class="entry-header">
-                                    <div class="entry-date">Julho 2018</div>
-                                    <h2 class="entry-title"><a href="atividades/oficina_seguidor_linha.html" target="_blank">Oficina de Seguidor de Linha</a></h2>
-                                </header>
-
-                                <div class="entry-content">
-                                    <P>Um espaço para aprender e construir os seus própios robôs gratuitamente.</P>
-                                    <a class="btn btn-primary" href="atividades/oficina_seguidor_linha.html" target="_blank">Saiba Mais</a>
-                                </div>
-
-                                <!--<footer class="entry-meta">
-                                    <span class="entry-author"><i class="fa fa-pencil"></i> <a href="#">Campbell</a></span>
-                                    <span class="entry-category"><i class="fa fa-folder-o"></i> <a href="#">Tutorial</a></span>
-                                    <span class="entry-comments"><i class="fa fa-comments-o"></i> <a href="#">15</a></span>
-                                </footer>-->
-                            </div>
-                        </article>
-                    </div>
-
-					<!-- MINICURSO MATLAB -->
-                    <div class="blog-post blog-media wow fadeInRight" data-wow-duration="300ms" data-wow-delay="200ms">
-                        <article class="media clearfix">
-                            <div class="entry-thumbnail pull-left">
-                                <img class="img-responsive" src="imagens/atividades/matlab2020.jpg" width="263" height="301" alt="">
-                                <span class="post-format post-format-audio"><i class="fa fa-book"></i></span>
-                            </div>
-                            <div class="media-body">
-                                <header class="entry-header">
-                                    <div class="entry-date">Abril 2015</div>
-                                    <h2 class="entry-title"><a href="atividades/matlab.html" target="_blank">Minicurso de Matlab</a></h2>
-                                </header>
-
-                                <div class="entry-content">
-                                    <P>MATLAB é um software interativo de alta performace com diversas aplicações e que atende vários níveis de usuários.</P>
-                                    <a class="btn btn-primary" href="atividades/matlab.html" target="_blank">Saiba Mais</a>
-                                </div>
-
-                                <!--<footer class="entry-meta">
-                                    <span class="entry-author"><i class="fa fa-pencil"></i> <a href="#">Ruth</a></span>
-                                    <span class="entry-category"><i class="fa fa-folder-o"></i> <a href="#">Tutorial</a></span>
-                                    <span class="entry-comments"><i class="fa fa-comments-o"></i> <a href="#">15</a></span>
-                                </footer>-->
-                            </div>
-                        </article>
-                    </div>
-
-                     <!-- MINICURSO PYTHON  -->
-          					<div class="blog-post blog-media wow fadeInRight" data-wow-duration="400ms" data-wow-delay="500ms">
-                                <article class="media clearfix">
-                                    <div class="entry-thumbnail pull-left">
-                                        <img class="img-responsive" src="imagens/atividades/python2020.jpg" width="263" height="301"  alt="">
-                                        <span class="post-format post-format-audio"><i class="fa fa-book"></i></span>
-                                    </div>
-                                    <div class="media-body">
-                                        <header class="entry-header">
-                                            <div class="entry-date">Novembro 2019</div>
-                                            <h2 class="entry-title"><a href="atividades/python.html" target="_blank">Minicurso de Python</a></h2>
-                                        </header>
-                                        <div class="entry-content">
-                                            <P>Minicurso de introdução à programação em linguagem Python.</P>
-                                            <a class="btn btn-primary" href="atividades/python.html" target="_blank">Saiba Mais</a>
-                                        </div>
-                                        <!--<footer class="entry-meta">
-                                            <span class="entry-author"><i class="fa fa-pencil"></i> <a href="#">Ruth</a></span>
-                                            <span class="entry-category"><i class="fa fa-folder-o"></i> <a href="#">Tutorial</a></span>
-                                            <span class="entry-comments"><i class="fa fa-comments-o"></i> <a href="#">15</a></span>
-                                        </footer>-->
-                                    </div>
-                                </article>
-                            </div>
-
-					<!-- MINICURSO LATEX -->
-					<div class="blog-post blog-media wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <article class="media clearfix">
-                            <div class="entry-thumbnail pull-left">
-                                <img class="img-responsive" src="imagens/atividades/latex.png" width="263" height="301" alt="">
-                                <span class="post-format post-format-audio"><i class="fa fa-book"></i></span>
-                            </div>
-                            <div class="media-body">
-                                <header class="entry-header">
-                                    <div class="entry-date">Outubro 2017</div>
-                                    <h2 class="entry-title"><a href="atividades/latex.html" target="_blank">Minicurso LaTeX</a></h2>
-                                </header>
-
-                                <div class="entry-content">
-                                    <P>LaTeX é um conjunto de macros para o software de diagramação de textos TeX.</P>
-                                    <a class="btn btn-primary" href="atividades/latex.html" target="_blank">Saiba Mais</a>
-                                </div>
-
-                                <!--<footer class="entry-meta">
-                                    <span class="entry-author"><i class="fa fa-pencil"></i> <a href="#">Ruth</a></span>
-                                    <span class="entry-category"><i class="fa fa-folder-o"></i> <a href="#">Tutorial</a></span>
-                                    <span class="entry-comments"><i class="fa fa-comments-o"></i> <a href="#">15</a></span>
-                                </footer>-->
-                            </div>
-                        </article>
-                    </div>
-
-					<!-- KIT DE ROBÓTICA EDUCACIONAL -->
-					<div class="blog-post blog-media wow fadeInRight" data-wow-duration="600ms" data-wow-delay="400ms">
-                        <article class="media clearfix">
-                            <div class="entry-thumbnail pull-left">
-                                <img class="img-responsive" src="imagens/atividades/escolab.jpg" width="263" height="301"  alt="">
-                                <span class="post-format post-format-audio"><i class="fa fa-book"></i></span>
-                            </div>
-                            <div class="media-body">
-                                <header class="entry-header">
-                                    <div class="entry-date">Março 2019</div>
-                                    <h2 class="entry-title"><a href="atividades/escolab.html" target="_blank">EsColab</a></h2>
-                                </header>
-                                <div class="entry-content">
-                                    <P>Projeto de extensão voltado ao ensino de robótica para estudantes do ensino médio de escolas públicas.</P>
-                                    <a class="btn btn-primary" href="atividades/escolab.html" target="_blank">Saiba Mais</a>
-                                </div>
-                                <!--<footer class="entry-meta">
-                                    <span class="entry-author"><i class="fa fa-pencil"></i> <a href="#">Ruth</a></span>
-                                    <span class="entry-category"><i class="fa fa-folder-o"></i> <a href="#">Tutorial</a></span>
-                                    <span class="entry-comments"><i class="fa fa-comments-o"></i> <a href="#">15</a></span>
-                                </footer>-->
-                            </div>
-                        </article>
-                    </div>
-
-
-
-                   
-
-					<!-- PROJETOS DE PESQUISA -->
-					<!-- <div class="blog-post blog-media wow fadeInRight" data-wow-duration="300ms" data-wow-delay="200ms">
-                        <article class="media clearfix">
-                            <div class="entry-thumbnail pull-left">
-                                <img class="img-responsive" src="imagens/atividades/latex.png" width="263" height="301"  alt="">
-                                <span class="post-format post-format-audio"><i class="fa fa-book"></i></span>
-                            </div>
-                            <div class="media-body">
-                                <header class="entry-header">
-                                    <div class="entry-date">02 Abril 2015</div>
-                                    <h2 class="entry-title"><a href="atividades/latex.html" target="_blank">Projetos de Pesquisa</a></h2>
-                                </header>
-                                <div class="entry-content">
-                                    <P>Vários projetos de pesquisa são realizados pelo grupo.</P>
-                                    <a class="btn btn-primary" href="atividades/latex.html" target="_blank">Saiba Mais</a>
-                                </div>
-                                <!--<footer class="entry-meta">
-                                    <span class="entry-author"><i class="fa fa-pencil"></i> <a href="#">Ruth</a></span>
-                                    <span class="entry-category"><i class="fa fa-folder-o"></i> <a href="#">Tutorial</a></span>
-                                    <span class="entry-comments"><i class="fa fa-comments-o"></i> <a href="#">15</a></span>
-                                </footer>
-                            </div>
-                        </article>
-                    </div>-->
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-		<section id="about">
-        <div class="container">
-
-            <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">O Grupo</h2>
-                <!-- <p class="text-center wow fadeInDown"> Insira um Texto</p> -->
-            </div>
-
-            <div class="row">
-                <div class="col-sm-6 wow fadeInLeft">
-                    <h3 class="column-title">Vídeo Institucional</h3>
-                    <!-- 16:9 aspect ratio -->
-
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/LdsVc0iK20E" frameborder="0" allow="autoplay" allowfullscreen></iframe>
-						<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/DSK1d7e4CBg" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
-                    </div>
-                </div>
-
-                <div class="col-sm-6 wow fadeInRight">
-                    <h3 class="column-title">PET Engenharia Elétrica UFMG</h3>
-					<p> Destinado a grupos de alunos que demonstrem potencial, interesse e habilidades destacadas no curso de Engenhria Elétrica,
-					o nosso PET é integrado por grupos tutoriais de aprendizagem que busca propiciar aos alunos, sob
-					a orientação de um professor tutor, condições para a realização de atividades extracurriculares que complementem a sua
-					formação acadêmica. </p>
-
-					<h3 class="column-title">Como Participar?</h3>
-					<p>Para tornar-se membro do PET Engenharia Elétrica UFMG como bolsista, o estudante deve ser aprovado em um processo seletivo realizado
-					conforme edital publicado. É possível também a participação de estudantes no programa como voluntários, sendo necessária uma aprovação do grupo atual.</p>
-
-                    <a class="btn btn-primary" href="#procSeletivo">Saiba Mais</a>
-
-                </div>
-            </div>
-        </div>
-    </section><!--/#about-->
-
-	<section id="testimonial">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-sm-offset-2">
-
-                    <div id="carousel-testimonial" class="carousel slide text-center" data-ride="carousel">
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <p><img class="img-circle img-thumbnail" src="imagens/membros2020/foto_luciana.HEIC" width="150" height="150" alt=""></p>
-                                <h4>Luciana Salles</h4>
-                                <small>Tutora</small>
-                                <p>Departamento de Engenharia Elétrica - DEE - UFMG</p>
-                            </div>
-
-
-                  <div class="item">
-                                <p><img class="img-circle img-thumbnail" src="imagens/membros2020/foto_alvaro.HEIC" width="150" height="150"  alt=""></p>
-                                <h4>Alvaro Araújo</h4>
-                                <small>Comunicação</small>
-                                <p><br></p>
-                            </div>
-
-          <div class="item">
-                            <p><img class="img-circle img-thumbnail" src="imagens/membros2020/foto_amanda.png" width="150" height="150"  alt=""></p>
-                            <h4>Amanda Andreatta</h4>
-                            <small>Gerente Gestão</small>
-                            <p><br></p>
-          </div>
-
-
-          <div class="item">
-                            <p><img class="img-circle img-thumbnail" src="imagens/membros2020/foto_arthur.png" width="150" height="150"  alt=""></p>
-                            <h4>Arthur Nunes</h4>
-                            <small>Gerente Comunicação</small>
-                            <p><br></p>
-          </div>
-
-			    <div class="item">
-                                <p><img class="img-circle img-thumbnail" src="imagens/membros2020/foto_diego.png" width="150" height="150"  alt=""></p>
-                                <h4>Diego Maradona</h4>
-                                <small>Gestão</small>
-                                <p><br></p>
-          </div>
-
-          <div class="item">
-                          <p><img class="img-circle img-thumbnail" src="imagens/membros2020/foto_gustavo.HEIC" width="150" height="150"  alt=""></p>
-                          <h4>Gustavo Alves</h4>
-                          <small>Gestão</small>
-                          <p><br></p>
-            </div>
-
-			    <div class="item">
-                                <p><img class="img-circle img-thumbnail" src="imagens/membros2020/foto_iago.png" width="150" height="150"  alt=""></p>
-                                <h4>Iago Conceição</h4>
-                                <small>Comunicação</small>
-                                <p><br></p>
-          </div>
-
-
-			    <div class="item">
-                                <p><img class="img-circle img-thumbnail" src="imagens/membros2020/foto_isabela.png" width="150" height="150" alt=""></p>
-                                <h4>Isabela Braga</h4>
-                                <small>Técnico</small>
-                                <p><br></p>
-                            </div>
-
-			    <div class="item">
-                                <p><img class="img-circle img-thumbnail" src="imagens/membros2020/foto_israel.png" width="150" height="150" alt=""></p>
-                                <h4>Israel Amaral</h4>
-                                <small>Financeiro</small>
-                                <p><br></p>
-                            </div>
-
-			    <div class="item">
-                                <p><img class="img-circle img-thumbnail" src="imagens/membros2020/foto_italo.HEIC" width="150" height="150" alt=""></p>
-                                <h4>Italo Dias</h4>
-                                <small>Gestão</small>
-                                <p><br></p>
-                            </div>
-
-			    <div class="item">
-                                <p><img class="img-circle img-thumbnail" src="imagens/membros2020/foto_jose.HEIC" width="150" height="150" alt=""></p>
-                                <h4>José Cruz</h4>
-                                <small>Comunicação</small>
-                                <p><br></p>
-                            </div>
-
-
-			   <div class="item">
-                                <p><img class="img-circle img-thumbnail" src="imagens/membros2020/foto_lorran.png" width="150" height="150" alt=""></p>
-                                <h4>Lorran Venetillo</h4>
-                                <small>Técnico</small>
-                                <p><br></p>
-                            </div>
-
-
-                <div class="item">
-                                <p><img class="img-circle img-thumbnail" src="imagens/membros2020/foto_sarah.png" width="150" height="150"  alt=""></p>
-                                <h4>Sarah Oliveira</h4>
-                                <small>Gerente Financeiro</small>
-                                <p><br></p>
-                </div>
-
-
-                <div class="item">
-                                <p><img class="img-circle img-thumbnail" src="imagens/membros2020/foto_thais.png" width="150" height="150"  alt=""></p>
-                                <h4>Thais Morato</h4>
-                                <small>Comunicação</small>
-                                <p><br></p>
-                </div>
-
-                <div class="item">
-                    <p><img class="img-circle img-thumbnail" src="imagens/membros2020/foto_tiago.HEIC" width="150" height="150"  alt=""></p>
-                    <h4>Tiago Menezes</h4>
-                    <small>Financeiro</small>
-                    <p><br></p>
-                </div>
-
-                <div class="item">
-                    <p><img class="img-circle img-thumbnail" src="imagens/membros2020/foto_vinicius.HEIC" width="150" height="150"  alt=""></p>
-                    <h4>Vinícius Fetter</h4>
-                    <small>Comunicação</small>
-                    <p><br></p>
-                </div>
-
-			    <div class="item">
-                                <p><img class="img-circle img-thumbnail" src="imagens/membros2020/foto_willian.png" width="150" height="150"  alt=""></p>
-                                <h4>William Braga</h4>
-                                <small>Gerente Técnico</small>
-                                <p><br></p>
-                            </div>
-                        </div>
-                    </div>
-
-                        <!-- Controls -->
-                        <div class="btns">
-                            <a class="btn btn-primary btn-sm" href="#carousel-testimonial" role="button" data-slide="prev">
-                                <span class="fa fa-angle-left" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="btn btn-primary btn-sm" href="#carousel-testimonial" role="button" data-slide="next">
-                                <span class="fa fa-angle-right" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!--/#testimonial-->
-
-	<!--<section id="portfolio"></section> -->
-
-<!--	<section id="procSeletivo">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Processo Seletivo</h2>
-            </div>
+		
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		
+		<!-- icones fontawesome -->
+		<link href="./ref/css/font_awesome/css/all.css" rel="stylesheet">
+		
+		<!-- stylesheet do site -->
+		<link href="./ref/css/style.css" rel="stylesheet">
+
+		<link rel="shortcut icon" href="./ref/img/logos/simbolo_petee_600x600.png">
+
+		<!-- define o idioma -->
+		<meta property="og:locale" content="pt_BR">
+		<!-- define o link do site -->
+		<meta property="og:url" content="http://www.petee.cpdee.ufmg.br/">
+		<!-- define o título -->
+		<meta property="og:title" content="Programa de Educação Tutorial da Engenharia Elétrica - UFMG">
+		<meta property="og:site_name" content="PETEE UFMG">
+		<!-- define uma breve descrição do conteúdo -->
+		<meta property="og:description" content="Ensino, Pesquisa e Extensão">
+		<!-- define o local, o nome e o formato da imagem -->
+		<meta property="og:image" content="./ref/img/logos/simbolo_petee_600x600.png">
+		<meta property="og:image:type" content="image/png"/>
+		<!-- define a largura da imagem -->
+		<meta property="og:image:width" content="200"/>
+		<!-- define a altura da imagem -->
+		<meta property="og:image:height" content="200"/>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+	</head>
+	
+	<body data-spy="scroll" data-target=".navbar" data-offset="96">
+		<!-- navbar -->
+		<header>
+			<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+			  <!-- Brand -->
+			  <a class="navbar-brand" href="#">
+				<img src="./ref/img/logos/logo_petee_branca.png" style="height: 45px">
+			  </a>
+
+			  <!-- Toggler/collapsibe Button -->
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<i class="fas fa-bars icone-navbar"></i>
+			  </button>
+
+			  <!-- Navbar links -->
+			  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+				    <li class="nav-item">
+						<a class="nav-link" href="#pet">Sobre Nós</a>
+				    </li>
+				    <li class="nav-item">
+						<a class="nav-link" href="#minicursos-oficinas">Minicursos e Oficinas</a>
+				    </li>
+				    <li class="nav-item">
+						<a class="nav-link" href="#cora">CoRA</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#manual-eletrica">Manual EE</a>
+				    </li>
+				    <li class="nav-item">
+						<a class="nav-link" href="#maisprojetos">Mais Projetos</a>
+				    </li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contato">Contato</a>
+				    </li>
+				    <li class="nav-item">
+				  		<a class="nav-link" href="./downloads">Downloads</a>
+				    </li>
+				</ul>
+			  </div>
+			</nav>
+		</header>
+		<!-- banner -->
+		<div id="banner" class="container-fluid text-center" style="padding-top: 96px">
+			<!-- Carrossel do banner -->
+			<div id="carouselBanner" class="carousel slide" data-ride="carousel" data-interval="10000">
+				<ol class="carousel-indicators carousel-indicators-myblue">
+				    <li data-target="#carouselBanner" data-slide-to="0" class="active"></li>
+				    <li data-target="#carouselBanner" data-slide-to="1"></li>
+					<li data-target="#carouselBanner" data-slide-to="2"></li>
+					<li data-target="#carouselBanner" data-slide-to="3"></li>
+					<li data-target="#carouselBanner" data-slide-to="4"></li>
+				</ol>
+				<div class="carousel-inner">
+					<!-- Logo PETEE -->
+					<div class="carousel-item active">
+						<div class="row align-items-center justify-content-center carousel-banner">
+							<div class="col-md-12 col-lg-5">
+								<img class="d-block w-100 img-fluid" src="./ref/img/logos/simbolo_petee_600x600.png" alt="logo-petee">
+							</div>
+							<div class="col-md-12 col-lg-7">
+								<h1 class="display-4">PETEE UFMG</h1>
+								<p>Programa de Educação Tutorial da Engenharia Elétrica</p>
+								<p>Universidade Federal de Minas Gerais</p>
+								<h5><i class="fas fa-chalkboard-teacher pet-icone"></i> Ensino <i class="fas fa-search pet-icone"></i> Pesquisa	<i class="fas fa-users pet-icone"></i> Extensão</h5>
+							</div>				
+						</div>
+					</div>
+					<!-- CoRA -->
+					<div class="carousel-item">
+						<div class="row align-items-center justify-content-center carousel-banner">
+							<div class="col-md-12 col-lg-5" style="padding: 10px;">
+								<img class="img-fluid img-thumbnail" src="./ref/img/cora/slider1.JPG">
+							</div>
+							<div class="col-md-12 col-lg-7">
+								<a href="http://cora.cpdee.ufmg.br/" target="_blank"><img class="img-fluid" src="./ref/img/logos/logo_cora_400x125.png"></a></a>
+								<br>
+								<i class="fas fa-robot pet-icone"></i>
+								<p>Competição de Robôs Autônomos</p>
+								<p>Universidade Federal de Minas Gerais</p>
+								<h5>Monte sua equipe, construa seu robô e enfrente os desafios da <a href="http://cora.cpdee.ufmg.br/" target="_blank">CoRA</a>.</h5> 
+							</div>
+						</div>
+					</div>
+					<!-- Seguidores de Linha -->
+					<div class="carousel-item">
+						<div class="row align-items-center justify-content-center carousel-banner">
+							<div class="com-md-12 col-lg-5"  style="padding: 10px;">
+								<div class="iframe-container">
+									<iframe class="iframe-fluid" src="https://www.youtube.com/embed/e21hZgaQIg0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								</div>
+								<br>
+								<a class="btn btn-myblue" href="https://youtu.be/e21hZgaQIg0" target="_blank">Veja no YouTube</a>
+							</div>
+							<div class="col-md-12 col-lg-7">
+								<h1 class="display-4">Robôs Seguidores de Linha</h1>
+								<i class="fas fa-robot pet-icone"></i>
+								<h5>São robôs autônomos com diversas aplicações industriais, hospitalares, educacionais e no cotidiano</h5> 
+								<h5>Eles são temas de várias atividades do PETEE, como a <a href="http://cora.cpdee.ufmg.br/" target="_blank">CoRA</a> e as <a href="atividades/seguidor.html">Oficinas de Seguidor</a></h5>
+							</div>
+						</div>
+					</div>
+					<!-- Minicursos e Oficinas -->
+				    <div class="carousel-item">
+						<div class="row align-items-center justify-content-center carousel-banner">
+							<div class="col-md-12 col-lg-5" style="padding: 10px;">
+								<img class="img-fluid img-thumbnail" src="./ref/img/minicursos_oficinas/seguidor/seguidor_promo.JPG">
+								<!-- <img class="img-fluid img-thumbnail" src="./ref/img/minicursos_oficinas/seguidor/seguidor_promo2.jpeg"> -->
+							</div>
+							<div class="col-md-12 col-lg-7">
+								<h1 class="display-4">Minicursos e Oficinas</h1>
+								<i class="fas fa-chart-line pet-icone"></i>
+								<h5>Aprimore seus conhecimentos e enriqueça seu currículo participando dos minicursos e das oficinas</h5> 
+								<h5>Também disponibilizamos materiais gratuitos e cursos online, <a href="#minicursos-oficinas">disponíveis abaixo</a>.
+							</div>
+						</div>
+					</div>
+					<!-- Processo Seletivo -->
+					<div class="carousel-item">
+						<div class="row align-items-center justify-content-center carousel-banner">
+							<div class="col-md-12 col-lg-5" style="padding: 10px;">
+								<img class="img-fluid img-thumbnail" src="./ref/img/outros/festival_matematica_promo.jpeg" alt="processo-seletivo-promo">
+							</div>
+							<div class="col-md-12 col-lg-7">
+								<h1 class="display-4">Torne-se um petiano</h1>
+								<i class="fas fa-bolt pet-icone"></i>
+								<h5>Fique por dentro das nossas redes sociais para a abertura do <a href="./processo_seletivo">processo seletivo</a>.</h5> 
+							</div>
+						</div>
+				    </div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselBanner" role="button" data-slide="prev">
+				    <span class="fas fa-chevron-left carousel-control-prev-icon carousel-control-prev-myblue" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselBanner" role="button" data-slide="next">
+				    <span class="fas fa-chevron-right carousel-control-next-icon carousel-control-next-myblue" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				</a>
+			</div>	
 		</div>
-	</section>
+		<!-- o que e pet -->
+		<div id="pet" class="container-fluid" style="padding-top: 96px">
+			<!-- titulo sessao -->
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<h1>O QUE É PET?</h1>
+				</div>
+			</div>
+			<!-- linha abaixo do titulo -->
+			<div class="row justify-content-center align-items-center">
+				<hr class="linha">
+				<i class="fas fa-circle linha-circulo"></i>
+				<i class="fas fa-chevron-circle-down linha-icone"></i>
+			</div>
+			<!-- descricao sessao -->
+			<div class="row justify-content-center descricao">
+				<div class="col-9">
+					<p>O Programa de Educação Tutorial (PET) é desenvolvido por grupos de estudantes, com tutoria de um docente, organizados a partir de formações em nível de graduação nas Instituições de Ensino Superior do país orientados pelo princípio da indissociabilidade entre ensino, pesquisa e extensão e da educação tutorial.</p>
+				</div>
+			</div>
+			<!-- ensino pesquisa extensao -->
+			<div class="card-deck">
+				<!-- ensino -->
+				<div class="card pilar">
+					<div class="card-body">
+						<i class="fas fa-chalkboard-teacher pet-icone"></i>
+						<h5 class="card-title">Ensino</h5>
+						<p class="card-text">As atividades extra-curriculares que compõem o Programa têm como objetivo garantir a formação global do aluno, procurando atender plenamente as necessidades do próprio curso de graduação e/ou ampliar e aprofundar os objetivos e os conteúdos programáticos que integram sua grade curricular.</p>
+					</div>
+				</div>
+				<!-- pesquisa -->
+				<div class="card pilar">
+					<div class="card-body">
+						<i class="fas fa-search pet-icone"></i>
+						<h5 class="card-title">Pesquisa</h5>
+						<p class="card-text">As atividades de pesquisa desenvolvidas pelos petianos têm como objetivo garantir a formação não só teórica, mas também prática do aluno, de modo a oferecer a oportunidade de aprender novos conteúdos e já se familiarizar com o ambiente de pesquisa científica.</p>
+					</div>
+				</div>
+				<!-- extensao -->
+				<div class="card pilar">
+					<div class="card-body">
+						<i class="fas fa-users pet-icone"></i>
+						<h5 class="card-title">Extensão</h5>
+						<p class="card-text">As atividades de extensão desenvolvidas objetivam que o petiano vivencie o processo de ensino-aprendizagem além dos limites da sala de aula, com a possibilidade de articular a universidade às diversas organizações da sociedade, em uma enriquecedora troca de conhecimentos e experiências.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- nossa proposta -->
+		<div id="proposta" class="container-fluid" style="padding-top: 96px">
+			<!-- titulo sessao -->
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<h1>NOSSA PROPOSTA</h1>
+				</div>
+			</div>
+			<!-- linha abaixo do titulo -->
+			<div class="row justify-content-center align-items-center">
+				<hr class="linha">
+				<i class="fas fa-circle linha-circulo"></i>
+				<i class="fas fa-chevron-circle-down linha-icone"></i>
+			</div>
+			<!-- descricao sessao -->
+			<div class="row justify-content-center descricao">
+				<div class="col-9">
+					<p>O Grupo PET Engenharia Elétrica da Universidade Federal de Minas Gerais (PETEE UFMG) pretende melhorar o ensino de graduação por meio de uma variedade de atividades.</p>
+				</div>
+			</div>
+			<!-- propostas -->
+			<div class="row">
+				<div class="col-lg-4 col-md-6 proposta">
+					<i class="fas fa-lightbulb icone-proposta border rounded-circle" style="padding-top: 12px; padding-bottom: 12px; padding-left: 16px; padding-right: 16px"></i>
+					<p class="proposta-texto">Fazer dos petianos agentes disseminadores de novas ideias e práticas no campo de atuação da engenharia junto à comunidade estudantil.</p>
+				</div>
+				<div class="col-lg-4 col-md-6 proposta">
+					<i class="fas fa-university icone-proposta border rounded-circle" style="padding-top: 12px; padding-bottom: 12px; padding-left: 12px; padding-right: 12px"></i>
+					<p class="proposta-texto">Realizar atividades extra-classe que permitam a interação dos petianos com o corpo docente e discente da instituição.</p>
+				</div>
+				<div class="col-lg-4 col-md-6 proposta">
+					<i class="fas fa-search icone-proposta border rounded-circle" style="padding-top: 12px; padding-bottom: 12px; padding-left: 12px; padding-right: 12px"></i>
+					<p class="proposta-texto">Dar ao petiano espaço para participação em projetos de pesquisa, seja dentro do PETEE UFMG ou externamente, com a ajuda de um professor orientador.</p>
+				</div>
+				<div class="col-lg-4 col-md-6 proposta">
+					<i class="fas fa-chart-line icone-proposta border rounded-circle" style="padding-top: 12px; padding-bottom: 12px; padding-left: 12px; padding-right: 12px"></i>
+					<p class="proposta-texto">Realizar atividades que promovam o contado dos aluno com temas atuais e relevantes, de forma a promover ambientes de aprendizado.</p>
+				</div>
+				<div class="col-lg-4 col-md-6 proposta">
+					<i class="fas fa-cubes icone-proposta border rounded-circle" style="padding-top: 12px; padding-bottom: 12px; padding-left: 12px; padding-right: 12px"></i>
+					<p class="proposta-texto">Estruturar o programa em áreas multidisciplinares do conhecimento.</p>
+				</div>
+				<div class="col-lg-4 col-md-6 proposta">
+					<i class="fas fa-robot icone-proposta border rounded-circle" style="padding-top: 12px; padding-bottom: 12px; padding-left: 10px; padding-right: 10px"></i>
+					<p class="proposta-texto">Incentivar a aplicação de conhecimentos teóricos adquiridos em sala de aula pelos alunos por meio de atividades como a CoRA e oficinas.</p>
+				</div>
+			</div>
+		</div>
+		<!-- o grupo -->
+		<div id="grupo" class="container-fluid" style="padding-top: 96px">
+			<!-- titulo sessao -->
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<h1>O GRUPO</h1>
+				</div>
+			</div>
+			<!-- linha abaixo do titulo -->
+			<div class="row justify-content-center align-items-center">
+				<hr class="linha">
+				<i class="fas fa-circle linha-circulo"></i>
+				<i class="fas fa-chevron-circle-down linha-icone"></i>
+			</div>
+			<!-- descricao sessao -->
+			<div class="row justify-content-center descricao">
+				<div class="col-9">
+					<p>Destinado a alunos que demonstram potencial, interesse e habilidades destacadas no curso de Engenharia Elétrica da UFMG, o grupo PETEE busca proporcionar aos seus membros, sob a orientação de um professor tutor, condições para a realização de atividades extracurriculares que complementem a sua formação acadêmica. <a href="https://www.youtube.com/watch?time_continue=1&v=LdsVc0iK20E&feature=emb_logo" target="_blank">Clique aqui</a> para assistir a um vídeo institucional sobre o PETEE.</p>
+				</div>
+			</div>
+			<!-- conteudo -->
+			<div class="row">
+				<!-- equipe 2019 -->
+				<div class="col-lg-6 col-sm-12 foto-equipe">
+					<!-- subtitulo -->
+					<div class="titulo">
+						<h5>EQUIPE 2019</h5>
+					</div>
+					<!-- linha subtitulo -->
+					<div>
+						<hr class="linha-subtitulo">
+					</div>
+					<div class="img-zoom rounded">
+						<img src="./ref/img/membros/equipe2019.jpg" alt="Equipe CoRA 2019" class="img-fluid">
+					</div>
+				</div>
+				<!-- nossa equipe -->
+				<div class="col-lg-3 col-sm-5 grupo-carousel">
+					<div class="">
+						<!-- subtitulo -->
+						<div class="titulo">
+							<h5>NOSSA EQUIPE</h5>
+						</div>
+						<!-- linha subtitulo -->
+						<div>
+							<hr class="linha-subtitulo">
+						</div>
+						<!-- carrossel membros -->
+						<div id="carousel-membros" class="carousel slide" data-ride="carousel">
+						  <div class="carousel-inner">
+							<!-- alvaro -->
+							<div class="carousel-item active">
+								<img src="./ref/img/membros/foto_alvaro.heic" class="rounded" alt="Álvaro Araújo">
+								<div class="carousel-caption rounded-pill">
+									<h5>Álvaro Araújo</h5>
+									<p>Setor Comunicação</p>
+								</div>
+							</div>
+							<!-- amanda -->
+							<div class="carousel-item">
+								<img src="./ref/img/membros/foto_amanda.png" class="rounded" alt="Amanda Andreatta">
+								<div class="carousel-caption rounded-pill">
+									<h5>Amanda Andreatta</h5>
+									<p>Diretora da Gestão</p>
+								</div>
+							</div>
+							<!-- arthur -->
+							<div class="carousel-item">
+								<img src="./ref/img/membros/foto_arthur.png" class="rounded" alt="Arthur Nunes">
+								<div class="carousel-caption rounded-pill">
+									<h5>Arthur Nunes</h5>
+									<p>Diretor da Comunicação</p>
+								</div>
+							</div>
+							<!-- gustavo -->
+							<div class="carousel-item">
+								<img src="./ref/img/membros/foto_gustavo.heic" class="rounded" alt="Gustavo Alves">
+								<div class="carousel-caption rounded-pill">
+									<h5>Gustavo Alves</h5>
+									<p>Setor Gestão</p>
+								</div>
+							</div>
+							<!-- iago -->
+							<div class="carousel-item">
+								<img src="./ref/img/membros/foto_iago.png" class="rounded" alt="Iago Conceição">
+								<div class="carousel-caption rounded-pill">
+									<h5>Iago Conceição</h5>
+									<p>Setor Comunicação</p>
+								</div>
+							</div>
+							<!-- isabela -->
+							<div class="carousel-item">
+								<img src="./ref/img/membros/foto_isabela.png" class="rounded" alt="Isabela Braga">
+								<div class="carousel-caption rounded-pill">
+									<h5>Isabela Braga</h5>
+									<p>Setor Técnico</p>
+								</div>
+							</div>
+							<!-- italo -->
+							<div class="carousel-item">
+								<img src="./ref/img/membros/foto_italo.heic" class="rounded" alt="Italo Dias">
+								<div class="carousel-caption rounded-pill">
+									<h5>Italo Dias</h5>
+									<p>Setor Gestão</p>
+								</div>
+							</div>
+							<!-- jose -->
+							<div class="carousel-item">
+								<img src="./ref/img/membros/foto_jose.heic" class="rounded" alt="José Vitor Cruz">
+								<div class="carousel-caption rounded-pill">
+									<h5>José Vitor Cruz</h5>
+									<p>Setor Comunicação</p>
+								</div>
+							</div>
+							<!-- lorran -->
+							<div class="carousel-item">
+								<img src="./ref/img/membros/foto_lorran.png" class="rounded" alt="Lorran Venetillo">
+								<div class="carousel-caption rounded-pill">
+									<h5>Lorran Venetillo</h5>
+									<p>Setor Técnico</p>
+								</div>
+							</div>
+							<!-- sarah -->
+							<div class="carousel-item">
+								<img src="./ref/img/membros/foto_sarah.png" class="rounded" alt="Sarah Oliveira">
+								<div class="carousel-caption rounded-pill">
+									<h5>Sarah Oliveira</h5>
+									<p>Diretora do Financeiro</p>
+								</div>
+							</div>
+							<!-- thais -->
+							<div class="carousel-item">
+								<img src="./ref/img/membros/foto_thais.png" class="rounded" alt="Thais Morato">
+								<div class="carousel-caption rounded-pill">
+									<h5>Thais Morato</h5>
+									<p>Setor Comunicação</p>
+								</div>
+							</div>
+							<!-- tiago -->
+							<div class="carousel-item">
+								<img src="./ref/img/membros/foto_tiago.heic" class="rounded" alt="Tiago Bonfim">
+								<div class="carousel-caption rounded-pill">
+									<h5>Tiago Bonfim</h5>
+									<p>Setor Financeiro</p>
+								</div>
+							</div>
+							<!-- vinicius -->
+							<div class="carousel-item">
+								<img src="./ref/img/membros/foto_vinicius.heic" class="rounded" alt="Vinícius Fetter">
+								<div class="carousel-caption rounded-pill">
+									<h5>Vinícius Fetter</h5>
+									<p>Setor Comunicação</p>
+								</div>
+							</div>
+							<!-- willian -->
+							<div class="carousel-item">
+								<img src="./ref/img/membros/foto_willian.png" class="rounded" alt="Willian Braga">
+								<div class="carousel-caption rounded-pill">
+									<h5>Willian Braga</h5>
+									<p>Diretor do Técnico</p>
+								</div>
+							</div>
+							<!-- luciana -->
+							<div class="carousel-item">
+								<img src="./ref/img/membros/foto_luciana.heic" class="rounded" alt="Luciana Salles">
+								<div class="carousel-caption rounded-pill">
+									<h5>Luciana Salles</h5>
+									<p>Professora Tutora</p>
+								</div>
+							</div>
+						  </div>
+						  <a class="carousel-control-prev" href="#carousel-membros" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carousel-membros" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>
+					</div>
+				</div>
+				<!-- quer fazer parte? -->
+				<div class="col-lg-3 col-sm-7 fazer-parte">
+					<!-- subtitulo -->
+					<div class="titulo">
+						<h5>QUER FAZER PARTE?</h5>
+					</div>
+					<!-- linha subtitulo -->
+					<div>
+						<hr class="linha-subtitulo">
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<p>Fique atento aos processos seletivos do PETEE, que são sempre divulgados no <a href="https://www.instagram.com/petee.ufmg/" target="_blank">Instagram</a> do grupo. Podem ser abertas vagas para bolsistas e voluntários, sendo que os voluntários têm preferência na ordem de alocação de bolsas conforme surgirem novas vagas.</p>
+							<a href="./processo_seletivo" class="btn btn-block" style="text-align: center">SAIBA MAIS</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- minicursos e oficinas -->
+		<div id="minicursos-oficinas" class="container-fluid" style="padding-top: 96px">
+			<!-- titulo sessao -->
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<h1>MINICURSOS E OFICINAS</h1>
+				</div>
+			</div>
+			<!-- linha abaixo do titulo -->
+			<div class="row justify-content-center align-items-center">
+				<hr class="linha">
+				<i class="fas fa-circle linha-circulo"></i>
+				<i class="fas fa-chevron-circle-down linha-icone"></i>
+			</div>
+			<!-- sem descricao: espacamento -->
+			<br style="height: 20px">
+			<!-- cards atividades -->
+			<div class="row">
+				<!-- oficinas -->
+				<div class="col-lg-6 col-md-4 col-sm-6">
+					<div class="card atividade">
+						<div class="row no-gutters">
+							<div class="col-lg-4 col-md-12">
+								<img class="img-fluid" src="./ref/img/minicursos_oficinas/seguidor/seguidor_548x800.jpg" alt="Oficina de Seguidor de Linha">
+							</div>
+							<div class="col-lg-8 col-md-12">
+								<div class="card-body">
+									<h5 class="card-title">Oficinas de Seguidor de Linha</h5>
+									<p class="card-text">Crie seu próprio robô autônomo do zero na Oficina de Seguidor de Linha 1.0 e melhore-o ainda mais utilizando as técnicas de controle da Oficina 2.0.</p>
+									<a href="minicursos_oficinas#oficina" class="btn btn-block">SAIBA MAIS</a>
+								</div>
+							</div>
+						</div>
+						<i class="fab fa-youtube curso-online" data-toggle="tooltip" data-placement="right" title="Este curso está também disponível online"></i>
+					</div>
+				</div>
+				<!-- matlab -->
+				<div class="col-lg-6 col-md-4 col-sm-6">
+					<div class="card atividade">
+						<div class="row no-gutters">
+							<div class="col-lg-4 col-md-12">
+								<img class="img-fluid" src="./ref/img/minicursos_oficinas/matlab/matlab_548x800.jpg" alt="Minicurso de MATLAB">
+							</div>
+							<div class="col-lg-8 col-md-12">
+								<div class="card-body">
+									<h5 class="card-title">Minicurso de MATLAB</h5>
+									<p class="card-text">Aprenda a utilizar o MATLAB, software versátil e muito requisitado em diversas áreas no mercado de trabalho devido à sua enorme gama de aplicações.</p>
+									<a href="minicursos_oficinas#matlab" class="btn btn-block">SAIBA MAIS</a>
+								</div>
+							</div>
+						</div>
+						<i class="fab fa-youtube curso-online" data-toggle="tooltip" data-placement="right" title="Este curso está também disponível online"></i>
+					</div>
+				</div>
+				<!-- web -->
+				<div class="col-lg-6 col-md-4 col-sm-6">
+					<div class="card atividade">
+						<div class="row no-gutters">
+							<div class="col-lg-4 col-md-12">
+								<img class="img-fluid" src="./ref/img/minicursos_oficinas/web/web_548x800.jpg" alt="Minicurso de Web Design">
+							</div>
+							<div class="col-lg-8 col-md-12">
+								<div class="card-body">
+									<h5 class="card-title">Minicurso de Web Design</h5>
+									<p class="card-text">Construa seus próprios sites utilizando HTML, CSS e JavaScript, além de aprender sobre outras ferramentas muito úteis na área de Web Design, como Bootstrap e Git.</p>
+									<a href="minicursos_oficinas#web" class="btn btn-block">SAIBA MAIS</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- python -->
+				<div class="col-lg-6 col-md-4 col-sm-6">
+					<div class="card atividade">
+						<div class="row no-gutters">
+							<div class="col-lg-4 col-md-12">
+								<img class="img-fluid" src="./ref/img/minicursos_oficinas/python/python_548x800.jpg" alt="Minicurso de Python">
+							</div>
+							<div class="col-lg-8 col-md-12">
+								<div class="card-body">
+									<h5 class="card-title">Minicurso de Python</h5>
+									<p class="card-text">Amplie seu currículo aprendendo a linguagem de programação Python, que possui diversas aplicações e muita relevância no mercado de trabalho.</p>
+									<a href="minicursos_oficinas#python" class="btn btn-block">SAIBA MAIS</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- latex -->
+				<div class="col-lg-6 col-md-4 col-sm-6">
+					<div class="card atividade">
+						<div class="row no-gutters">
+							<div class="col-lg-4 col-md-12">
+								<img class="img-fluid" src="./ref/img/minicursos_oficinas/latex/latex_548x800.jpg" alt="Minicurso de LaTeX">
+							</div>
+							<div class="col-lg-8 col-md-12">
+								<div class="card-body">
+									<h5 class="card-title">Minicurso de LaTeX</h5>
+									<p class="card-text">Aprenda a usar a ferramenta LaTeX para escrever artigos, monografias e documentos em geral com diagramação padronizada e muita praticidade.</p>
+									<a href="minicursos_oficinas#latex" class="btn btn-block">SAIBA MAIS</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- cora -->
+		<div id="cora" class="container-fluid" style="padding-top: 96px">
+			<!-- titulo sessao -->
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<h1>CORA</h1>
+				</div>
+			</div>
+			<!-- linha abaixo do titulo -->
+			<div class="row justify-content-center align-items-center">
+				<hr class="linha">
+				<i class="fas fa-circle linha-circulo"></i>
+				<i class="fas fa-chevron-circle-down linha-icone"></i>
+			</div>
+			<!-- descricao sessao -->
+			<div class="row justify-content-center descricao">
+				<div class="col-9">
+					<p>A Competição de Robôs Autônomos (CoRA) foi idealizada pelos integrantes do Programa de Educação Tutorial da Engenharia Elétrica (PETEE UFMG) e da Equipe Autobotz UFMG e teve sua primeira edição em 2014.</p>
+				</div>
+			</div>
+			<!-- conteudo -->
+			<div class="row">
+				<div class="col-lg-6 col-sm-12">
+					<!-- logo cora -->
+					<div class="col-12 img-cora">
+						<div class="img-zoom">
+							<img class="img-fluid" src="./ref/img/cora/cora_logo.png" alt="Competição de Robôs Autônomos">
+						</div>
+					</div>
+					<!-- desafio -->
+					<div class="col-12 text-cora">
+						<div class="text-cora-center">
+							<h5>Desafio</h5>
+							<p style="margin-bottom: 0px">Projetar robôs capazes de identificar e seguir uma linha branca em uma pista preta, e que consigam superar dificuldades e obstáculos no menor tempo possível, buscando as primeiras colocações.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-sm-12">
+					<!-- objetivo -->
+					<div class="col-12 text-cora">
+						<div class="text-cora-center">
+							<h5>Objetivo</h5>
+							<p style="margin-bottom: 0px">A competição foi criada com o objetivo principal de incentivar os alunos de graduação e do ensino médio e técnico a aplicar seus conhecimentos adquiridos em sala de aula na construção de seus próprios <a href="https://youtu.be/e21hZgaQIg0" target="_blank">robôs autônomos seguidores de linha</a>.<p>
+						</div>
+					</div>
+					<!-- carrossel de fotos cora -->
+					<div class="col-12 cora-carousel">
+						<div id="carousel-cora" class="carousel slide" data-ride="carousel">
+						  <ol class="carousel-indicators">
+							<li data-target="#carousel-cora" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-cora" data-slide-to="1"></li>
+							<li data-target="#carousel-cora" data-slide-to="2"></li>
+							<li data-target="#carousel-cora" data-slide-to="3"></li>
+							<li data-target="#carousel-cora" data-slide-to="4"></li>
+						  </ol>
+						  <div class="carousel-inner">
+							<div class="carousel-item active img-cora">
+								<div class="img-zoom">
+									<img class="d-block w-100" src="./ref/img/cora/slider1.jpg">
+								</div>
+							</div>
+							<div class="carousel-item img-cora">
+								<div class="img-zoom">
+									<img class="d-block w-100" src="./ref/img/cora/slider2.jpg">
+								</div>
+							</div>
+							<div class="carousel-item img-cora">
+								<div class="img-zoom">
+									<img class="d-block w-100" src="./ref/img/cora/slider3.jpg">
+								</div>
+							</div>
+							<div class="carousel-item img-cora">
+								<div class="img-zoom">
+									<img class="d-block w-100" src="./ref/img/cora/slider4.jpg">
+								</div>
+							</div>
+							<div class="carousel-item img-cora">
+								<div class="img-zoom">
+									<img class="d-block w-100" src="./ref/img/cora/slider5.jpg">
+								</div>
+							</div>
+						  </div>
+						  <a class="carousel-control-prev" href="#carousel-cora" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carousel-cora" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center align-items-center" style="margin-top: 20px">
+				<div class="col-4">
+					<a href="http://cora.cpdee.ufmg.br/" target="_blank" class="btn btn-block" style="text-align: center">SAIBA MAIS</a>
+				</div>
+			</div>
+		</div>
+		<!-- manual EE -->
+		<div id="manual-eletrica" class="container-fluid" style="padding-top: 96px;">
+			<!-- titulo sessao -->
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<h1>MANUAL DA ENGENHARIA ELÉTRICA</h1>
+				</div>
+			</div>
+			<!-- linha abaixo do titulo -->
+			<div class="row justify-content-center align-items-center">
+				<hr class="linha">
+				<i class="fas fa-circle linha-circulo"></i>
+				<i class="fas fa-chevron-circle-down linha-icone"></i>
+			</div>
+			<!-- sem descricao: espacamento -->
+			<br style="height: 20px">
+			<div class="row">
+				<!--Card Manual-->
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="card maisprojetos atividade">
+						<div class="row no-gutters">
+							<div class="col-lg-4 col-md-12">
+								<img class="img-fluid" src="./ref/img/manual/logo_manual.png" alt="EsColab">
+							</div>
+							<div class="col-lg-8 col-md-12">
+								<div class="card-body">
+									<h5 class="card-title">Manual da Engenharia Elétrica</h5>
+									<p class="card-text">Desenvolvida pelo PETEE UFMG, a primeira versão do manual de engenharia elétrica surge em 2017 com a proposta ditática de tornar o acesso à informação sobre o curso de engenharia elétrica na UFMG mais acessível. O manual possui uma mapa iterativo onde é possível construir o proópio plano de estudos.</p>
+									<a href="./manual" class="btn btn-block">SAIBA MAIS</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- mais projetos -->
+		<div id="maisprojetos" class="container-fluid" style="padding-top: 96px">
+			<!-- titulo sessao -->
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<h1>MAIS PROJETOS</h1>
+				</div>
+			</div>
+			<!-- linha abaixo do titulo -->
+			<div class="row justify-content-center align-items-center">
+				<hr class="linha">
+				<i class="fas fa-circle linha-circulo"></i>
+				<i class="fas fa-chevron-circle-down linha-icone"></i>
+			</div>
+			<!-- sem descricao: espacamento -->
+			<br style="height: 20px">
+			<div class="row">
+				<!--Card Escolab-->
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<div class="card maisprojetos atividade">
+						<div class="row no-gutters">
+							<div class="col-lg-4 col-md-12">
+								<img class="img-fluid" src="./ref/img/mais_projetos/escolab_icone.png" alt="EsColab">
+							</div>
+							<div class="col-lg-8 col-md-12">
+								<div class="card-body">
+									<h5 class="card-title">EsColab</h5>
+									<p class="card-text">Conheça o projeto de extensão voltado ao ensino de robótica para estudantes do ensino médio de escolas públicas.</p>
+									<a href="./escolab" class="btn btn-block">SAIBA MAIS</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--Card Protótipos-->
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<div class="card maisprojetos atividade">
+						<div class="row no-gutters">
+							<div class="col-lg-4 col-md-12">
+								<img class="img-fluid" src="./ref/img/mais_projetos/prototipo_icone.png" alt="Protótipos">
+							</div>
+							<div class="col-lg-8 col-md-12">
+								<div class="card-body"">
+									<h5 class="card-title">Protótipos</h5>
+									<p class="card-text"> Acesse aqui os protótipos, experimentos e softwares desenvolvidos e aprimorados pelo grupo PETEE UFMG.</p>
+									<a href="./prototipos" class="btn btn-block">SAIBA MAIS</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- contato -->
+		<div id="contato" class="container-fluid" style="padding-top: 96px;">
+			<!-- titulo sessao -->
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<h1>CONTATO</h1>
+				</div>
+			</div>
+			<!-- linha abaixo do titulo -->
+			<div class="row justify-content-center align-items-center">
+				<hr class="linha">
+				<i class="fas fa-circle linha-circulo"></i>
+				<i class="fas fa-chevron-circle-down linha-icone"></i>
+			</div>
+			<!-- descricao sessao -->
+			<div class="row justify-content-center descricao">
+				<div class="col-9">
+					<p>Fale conosco pelo e-mail ou Instagram e veja nossos conteúdos em vídeos pelo YouTube!<br>Estamos sempre abertos para visitas na <a target="_blank" href="https://www.google.com/maps/place/Escola+de+Engenharia+da+UFMG+-+Av.+Pres.+Ant%C3%B4nio+Carlos,+6627+-+Pampulha,+Belo+Horizonte+-+MG,+31270-901,+Brasil/@-19.870029,-43.9632,16z/data=!4m2!3m1!1s0xa6908ba0d42d5b:0x43a5f491fad68b3d?hl=pt-BR&gl=US">UFMG - Campus Pampulha, Escola de Engenharia, Bloco 3, Sala 1050<i class="fas fa-map-marker-alt pet-icone" style="padding-left: 5px; font-size: 16px;"></i></a></p>
+					
+				</div>
+			</div>
+			<div class="row justify-content-center align-items-center no-gutters">
+				<!-- email -->
+				<div class="col-lg-2 col-md-4 col-sm-6 contato">
+					<a href="mailto:petee.ufmg@gmail.com">
+						<div>
+							<i class="fas fa-envelope icone-contato border rounded-circle" style="padding-top: 12px; padding-bottom: 12px; padding-left: 12px; padding-right: 12px"></i>
+							<p class="contatos-texto">petee.ufmg@gmail.com</p>
+						</div>
+					</a>
+				</div>
+				<!-- instagram -->
+				<div class="col-lg-2 col-md-4 col-sm-6 contato">
+					<a href="https://www.instagram.com/petee.ufmg/?hl=pt-br" target="_blank">
+						<div>
+							<i class="fab fa-instagram icone-contato border rounded-circle" style="font-weight: 600; padding-top: 12px; padding-bottom: 12px; padding-left: 14px; padding-right: 14px"></i>
+							<p class="contatos-texto contato-link">@petee.ufmg</p>
+						</div>
+					</a>
+				</div>
+				<!-- facebook -->
+				<div class="col-lg-2 col-md-4 col-sm-6 contato">
+					<a href="https://www.facebook.com/peteeUFMG" target="_blank">
+						<div>
+							<i class="fab fa-facebook-f icone-contato border rounded-circle" style="padding-top: 12px; padding-bottom: 12px; padding-left: 16px; padding-right: 16px"></i>
+							<p class="contatos-texto">/peteeUFMG</p>
+						</div>
+					</a>
+				</div>
+				<!-- youtube -->
+				<div class="col-lg-2 col-md-4 col-sm-6 contato">
+					<a href="https://www.youtube.com/channel/UCwyWA8kHfFoJq6nnlEeC3xw" target="_blank">
+						<div>
+							<i class="fab fa-youtube icone-contato border rounded-circle" style="padding-top: 12px; padding-bottom: 12px; padding-left: 10px; padding-right: 10px"></i>
+							<p class="contatos-texto">PETEE UFMG</p>
+						</div>
+					</a>
+				</div>
+				<!-- linkedin -->
+				<div class="col-lg-2 col-md-4 col-sm-6 contato">
+					<a href="https://www.linkedin.com/in/petee-ufmg-95439b192/" target="_blank">
+						<div>
+							<i class="fab fa-linkedin-in icone-contato border rounded-circle" style="padding-top: 12px; padding-bottom: 12px; padding-left: 14px; padding-right: 14px"></i>
+							<p class="contatos-texto">PETEE UFMG</p>
+						</div>
+					</a>
+				</div>
+				<!-- telefone -->
+				<div class="col-lg-2 col-md-4 col-sm-6 contato">
+					<a href="tel:31-34091013">
+						<div>
+							<i class="fas fa-phone-alt icone-contato border rounded-circle" style="padding-top: 12px; padding-bottom: 12px; padding-left: 12px; padding-right: 12px"></i>
+							<p class="contatos-texto">(31) 3409-1013</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<!-- fale conosco -->
+			<!-- subtitulo -->
+			<div class="titulo" style="margin-top: 80px">
+				<h5>FALE CONOSCO</h5>
+			</div>
+			<!-- linha subtitulo -->
+			<div>
+				<hr class="linha-subtitulo">
+			</div>
+			<div class="row justify-content-center form-group">
+				<div class="col-12">
+					<form id="contact-form" name="contact-form" action="mailto:petee.ufmg@gmail.com" method="get" enctype="text/plain">
+						<div class="row">
+							<div class="col">
+								<p for="name" class="">NOME:</p>
+								<input type="text" id="name" name="name" class="fale-conosco-area bg-light" placeholder="Insira seu nome aqui">
+							</div>
+							<div class="col">
+								<p for="email" class="">E-MAIL:</p>
+								<input type="email" id="email" name="email" class="fale-conosco-area bg-light" placeholder="Insira seu e-mail aqui">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<p for="subject" class="">ASSUNTO:</p>
+								<input type="text" id="subject" name="subject" class="fale-conosco-area bg-light" placeholder="Preencha o assunto do e-mail">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<p for="message">MENSAGEM:</p>
+								<input type="text" id="message" name="message" class="fale-conosco-area bg-light" placeholder="Preencha o corpo do e-mail">
+							</div>
+						</div><br>
+						<div class="status text-left"></div>
+						<input class="btn btn-myblue" type="reset" onclick="clearForm()" value="LIMPAR">
+						<button class="btn btn-myblue" onclick="validateForm()">ENVIAR</button>
+					</form>
+					
+				</div>
+				
+			</div>
+		</div>
+		<!-- rodape -->
+		<footer>
 
-    <section id="cta2">
-        <div class="container">
+			<div id="rodape" class="myfooter container-fluid text-center bg-dark" style="margin-top: 50px">	
+				<div class="row">
+					<div class="col text-center">
+						<p><a class="text-light contato-link" href="mailto:petee.ufmg@gmail.com">petee.ufmg@gmail.com</a></p>
+						<p><a class="text-light contato-link" href="tel:31-34091013">(31) 3409-1013</a></p>
+					</div>
+					<div class="col text-center">
+						<p class="text-light">COPYRIGHT © 2020 PETEE - UFMG</p>
+						<p class="text-light" style="font-size: 13px">Arthur Nunes, Thais Morato, Tiago Bonfim</p>
+					</div>
+					<div class="col text-centers">
+						<p><a class="text-light contato-link" target="_blank" href="https://www.google.com/maps/place/Escola+de+Engenharia+da+UFMG+-+Av.+Pres.+Ant%C3%B4nio+Carlos,+6627+-+Pampulha,+Belo+Horizonte+-+MG,+31270-901,+Brasil/@-19.870029,-43.9632,16z/data=!4m2!3m1!1s0xa6908ba0d42d5b:0x43a5f491fad68b3d?hl=pt-BR&gl=US">Av. Presidente Antônio Carlos, Nº 6627, Pampulha, Belo Horizonte - MG</a></p>
+						<p class="text-light"><a class="text-light contato-link" target="_blank" href="https://ufmg.br/">UFMG</a>, <a class="text-light contato-link" target="_blank" href="https://www.eng.ufmg.br/portal/">Escola de Engenharia</a>, Bloco 3, Sala 1050</p>
+					</div>
+				</div>
+				<div class="row justify-content-center align-items-center">
+					<!-- email -->
+					<div class="col-2 text-center">
+						<a class="contato-link" href="mailto:petee.ufmg@gmail.com"><i class="fas fa-envelope icone-rodape rounded-circle"></i></a>
+					</div>
+					<!-- instagram -->
+					<div class="col-2 text-center">
+						<a class="contato-link" href="https://www.instagram.com/petee.ufmg/?hl=pt-br" target="_blank"><i class="fab fa-instagram icone-rodape rounded-circle"></i></a>
+					</div>
+					<!-- facebook -->
+					<div class="col-2 text-center">
+						<a class="contato-link" href="https://www.facebook.com/peteeUFMG" target="_blank"><i class="fab fa-facebook icone-rodape rounded-circle"></i></a>
+					</div>
+					<!-- Youtube -->
+					<div class="col-2 text-center">
+						<a class="contato-link" href="https://www.youtube.com/channel/UCwyWA8kHfFoJq6nnlEeC3xw" target="_blank"><i class="fab fa-youtube icone-rodape rounded-circle"></i></a>
+					</div>
+					<!-- linkedin -->
+					<div class="col-2 text-center">
+						<a class="contato-link" href="https://www.linkedin.com/in/petee-ufmg-95439b192/" target="_blank"><i class="fab fa-linkedin icone-rodape rounded-circle"></i></a>
+					</div>
+					<!-- telefone -->
+					<div class="col-2 text-center">
+						<a class="contato-link" href="tel:31-34091013"><i class="fas fa-phone-square-alt icone-rodape rounded-circle"></i></a>
+					</div>
+				</div>
+			</div> 
 
-            <div class="text-center">
-                <h2 class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms"> DESEJA SER UM MEMBRO DO <span>PETEE UFMG</span>?</h2>
-                <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">Se você é um estudante de Engenharia Elétrica na UFMG e deseja fazer parte do PETEE, participe do nosso processo seletivo.</p>
-                <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms"><a class="btn btn-primary btn-lg" href="atividades/processo_seletivo.html">Inscreva-se</a></p>
-                <img class="img-responsive wow fadeIn" src="imagens/share/back_ps.png" alt="" data-wow-duration="300ms" data-wow-delay="300ms">
-            </div>
-        </div>
-    </section>
--->
-    <section id="get-in-touch">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Entre em Contato</h2>
-                <!-- <p class="text-center wow fadeInDown"> insira um texto </p> -->
-            </div>
-        </div>
-    </section><!--/#get-in-touch-->
-
-
-    <section id="contact">
-        <div id="google-map" style="height:650px" data-latitude="-19.869668" data-longitude="-43.963219"></div>
-        <div class="container-wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4 col-sm-offset-8">
-                        <div class="contact-form">
-                            <h3>Informações Para Contato</h3>
-
-                            <address>
-                              <strong>PET Engenharia Elétrica UFMG</strong><br>
-							  Av. Presidente Antônio Carlos, Nº 6627 - Pampulha - Belo Horizonte - MG <br>
-							  Escola de Engenharia - Bloco 3 - Sala 1050 <br>
-							  CEP: 31270-901 <br>
-                              <abbr title="Telefone">Telefone:</abbr> (31) 3409-1013 <br>
-							  <abbr title="Email">Email:</abbr> petee.ufmg@gmail.com
-                            </address>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!--/#bottom-->
-
-    <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-					<!-- © 2015 PET - Engenharia Elétrica UFMG. Todos os direitos reservados. -->
-                    &copy; 2019 PETEE UFMG. Designed by <a target="_blank" href="http://shapebootstrap.net/"
-					title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>
-                </div>
-                <div class="col-sm-6">
-                    <ul class="social-icons">
-                        <li><a href="https://www.facebook.com/peteeUFMG?ref=ts&fref=ts"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://www.flickr.com/photos/119733974@N04/"><i class="fa fa-flickr"></i></a></li>
-                        <li><a href="https://www.youtube.com/channel/UCwyWA8kHfFoJq6nnlEeC3xw"><i class="fa fa-youtube"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer><!--/#footer-->
-
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/mousescroll.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/jquery.inview.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
+			<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+			<script src="./ref/js/main.js"></script>
+			<script src="./ref/js/validateForm.js"></script>
+		</footer>
+	</body>
 </html>
+
+
+
+
+<!-- MODELO: SESSAO
+Abaixo encontra-se um modelo da sessao "nossa proposta" com descricao.
+Lembre de alterar o comentário que inicia a sessao, a id e o titulo
+para o nome de sessao desejado.
+
+		<!- - nossa proposta - ->
+		<div id="proposta" class="container-fluid" style="padding-top: 96px">
+			<!- - titulo sessao - ->
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<h1>NOSSA PROPOSTA</h1>
+				</div>
+			</div>
+			<!- - linha abaixo do titulo - ->
+			<div class="row justify-content-center align-items-center">
+				<hr class="linha">
+				<i class="fas fa-circle linha-circulo"></i>
+				<i class="fas fa-chevron-circle-down linha-icone"></i>
+			</div>
+			<!- - descricao sessao - ->
+			<div class="row justify-content-center descricao">
+				<div class="col-9">
+					<p>Escreva aqui a descrição da sessão</p>
+				</div>
+			</div>
+			<!- - CONTEUDO DA SESSAO: CONTINUAR DAQUI - ->
+			<div>
+			
+			</div>
+		</div>
+
+ -->
+<!-- MODELO: CARD ATIVIDADE VERTICAL
+Abaixo encontra-se um modelo do card "cora".
+Lembre de alterar o comentário que inicia a atividade, o titulo,
+o texto e a imagem para a atividade desejada.
+
+<!- - cora - ->
+<div class="col-lg-12 col-md-6 col-sm-6">
+	<div class="card atividade">
+		<img class="card-img-top" src="./ref/img/atividades/cora.jpg" alt="Competição de Robôs Autônomos">
+		<div class="card-body">
+			<h5 class="card-title">Competição de Robôs Autônomos</h5>
+			<p class="card-text">Idealizada pelos integrantes do grupo PET Engenharia Elétrica UFMG em 2013, a competição de robôs autônomos (CoRA) teve sua primeira edição realizada em agosto de 2014. O objetivo da competição é incentivar os alunos de graduação e do ensino médio e técnico a aplicar seus conhecimentos adquiridos em sala de aula na construção de robôs autônomos.</p>
+			<a href="#" class="btn btn-block">SAIBA MAIS</a>
+		</div>
+	</div>
+</div>
+
+-->
+<!-- MODELO: CARD ATIVIDADE HORIZONTAL
+Abaixo encontra-se um modelo do card "oficina".
+Lembre de alterar o comentário que inicia a atividade, o titulo,
+o texto e a imagem para a atividade desejada.
+
+<!- - oficina - ->
+<div class="col-lg-12 col-md-4 col-sm-4">
+	<div class="card atividade">
+		<div class="row no-gutters">
+			<div class="col-lg-4 col-md-12">
+				<img class="img-fluid" src="./ref/img/atividades/oficina1.jpg" alt="Competição de Robôs Autônomos">
+			</div>
+			<div class="col-lg-8 col-md-12">
+				<div class="card-body">
+					<h5 class="card-title">Oficina de Seguidor de Linha</h5>
+					<p class="card-text">Um espaço para aprender e construir os seus própios robôs gratuitamente.</p>
+					<a href="#" class="btn btn-block">SAIBA MAIS</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+-->
