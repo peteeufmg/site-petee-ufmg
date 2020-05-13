@@ -439,6 +439,17 @@
 	FIM BANNER ANTIGO*/
 
 /* banner */
+	
+	.banner-desktop {display: block;}
+	.banner-mobile {display: none;}
+	
+	@media screen and (max-width: 600px) {
+
+	.banner-desktop {display: none;}
+	.banner-mobile {display: block;}
+
+	}
+	
 	#banner{
 		padding: 0px;
 		margin-left: -9%;
@@ -447,25 +458,36 @@
 		background-color: #0D47A1;
 	}
 	
-	#banner .imagem{
+	.banner-desktop .imagem{
 		margin-top: 30px;
 		margin-bottom: 50px;
 		width: 100%;
 		height: 330px;
 	}
 	
+	.banner-mobile .imagem{
+		margin-top: 30px;
+		margin-bottom: 50px;
+		width: 100%;
+		height: 250px;
+	}
+	
 	#banner img{
-		vertical-align: middle;
 		height: 100%;
 		max-width: 80%;
 		object-fit: cover;
 
 	}
 	
-	#banner .texto{
+	.banner-desktop .texto{
 		margin-top: 30px;
 		margin-bottom: 50px;
 		height: 330px;
+		display: table;
+	}
+	
+	.banner-mobile .texto{
+		height: 480px;
 		display: table;
 	}
 	
@@ -525,7 +547,6 @@
 		background-color: rgb(255,255,255, 1);
 		color: #0C2C84;
 	}
-	
 	
 /* Nav Lateral */
 
