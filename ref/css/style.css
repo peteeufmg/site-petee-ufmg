@@ -297,9 +297,14 @@
 	}
 
 /*sessao cora*/
+	.cora-carousel{
+		padding: 0px;
+	}
 	.img-cora{
-		margin-top: 10px;
-		margin-bottom: 10px;
+		padding-top: 16px;
+		padding-bottom: 16px;
+		padding-right: 0px;
+		padding-left: 0px;
 	}
 	
 	.img-cora .img-zoom{
@@ -314,6 +319,15 @@
 		transition: transform 0.2s ease-out;
 	}
 	
+	@media screen and (max-width: 500px) {
+		.img-cora img{
+			width: 100%;
+			height: auto;
+			object-fit: contain;
+			transition: transform 0.2s ease-out;
+		}
+	}
+	
 	.img-cora img:hover{
 		transform: scale(1.03);
 	}
@@ -321,11 +335,14 @@
 	.text-cora{
 		min-height: 145px;
 		display: table;
+		padding: 0px;
 	}
 	
 	.text-cora-center{
-		padding-left: 16px;
-		padding-right: 16px;
+		padding-top: 16px;
+		padding-bottom: 16px;
+		padding-right: 8px;
+		padding-left: 8px;
 		display: table-cell;
 		vertical-align: middle;
 		text-align: justify;
