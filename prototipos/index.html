@@ -96,6 +96,7 @@
         <!-- nav lateral -->
         <nav id="mySidenav" class="sidenav bg-light navbar-dark" style="width: 25vmax;" >
             <div class="nav flex-column nav-pills nav-dark" role="tablist" aria-orientation="vertical">
+				<h6>Protótipos</h6>
 				<!-- braco -->
 				<a class="nav-link-myblue active" id="nav-braco-tab" data-toggle="tab" href="#nav-braco" role="tab" aria-controls="nav-braco" aria-selected="true" onclick="document.querySelector('#sidenavToggler').click()">Braço Robótico</a>
 				<!-- desviador -->
@@ -106,8 +107,17 @@
 				<a class="nav-link-myblue" id="nav-drawdio-tab" data-toggle="tab" href="#nav-drawdio" role="tab" aria-controls="nav-drawdio" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Drawdio</a>
 				<!-- seguidor de luz -->
 				<a class="nav-link-myblue" id="nav-luz-tab" data-toggle="tab" href="#nav-luz" role="tab" aria-controls="nav-luz" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Seguidor de Luz</a>
-				<!-- sincronizador -->
-                <a class="nav-link-myblue" id="nav-agenda-tab" data-toggle="tab" href="#nav-agenda" role="tab" aria-controls="nav-agenda" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Sincronizador Google Agenda</a>
+				<!-- som -->
+				<a class="nav-link-myblue" id="nav-som-tab" data-toggle="tab" href="#nav-som" role="tab" aria-controls="nav-som" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Movido a Som</a>
+				<!-- voz -->
+				<a class="nav-link-myblue" id="nav-voz-tab" data-toggle="tab" href="#nav-voz" role="tab" aria-controls="nav-voz" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Comandado por Voz</a>
+				<h6>Outros</h6>
+				<!-- videoaulas -->
+				<a class="nav-link-myblue" id="nav-videoaulas-tab" data-toggle="tab" href="#nav-videoaulas" role="tab" aria-controls="nav-videoaulas" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Videoaulas</a>
+				<!-- agenda -->
+				<a class="nav-link-myblue" id="nav-agenda-tab" data-toggle="tab" href="#nav-agenda" role="tab" aria-controls="nav-agenda" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Sincronizador Google Agenda</a>
+				<!-- mcu -->
+				<a class="nav-link-myblue" id="nav-mcu-tab" data-toggle="tab" href="#nav-mcu" role="tab" aria-controls="nav-mcu" aria-selected="false" onclick="document.querySelector('#sidenavToggler').click()">Substituindo Arduino por MCU</a>
             </div>
 		</nav>
 		<!-- Toggler da Nav lateral -->
@@ -118,7 +128,7 @@
 			<!-- titulo -->
 			<div class="row justify-content-center">
 				<div class="col-12">
-					<h1>Protótipos</h1>
+					<h1>Protótipos e Mais</h1>
 				</div>
 			</div>
 			<!-- linha abaixo do titulo -->
@@ -136,7 +146,7 @@
                 <img class="img-fluid " src="../ref/img/mais_projetos/prototipo_peq.png" alt="EsColab">
             </div>
             <div class="col-lg-8 col-md-6 col-sd-12">
-                <p>O Grupo PETEE UFMG possui como uma das atividades a elaboração, o aprimoramento e a implementação de protótipos, experimentos e softwares. Nesta sessão você encontra a documentação e o resumo destas atividades desenvolvidas. </p>
+                <p>O Grupo PETEE UFMG possui como uma das atividades a elaboração, o aprimoramento e a implementação de novos protótipos e experimentos. Nesta sessão você encontra a documentação e o resumo destas atividades desenvolvidas.</p>
             </div>
         </div>
         <!--Conteudo selecionado pelo nav lateral-->
@@ -241,18 +251,89 @@
                         </div>
                     </div>
                 </div>
-                <!--Sincronizador Google Agenda-->
+                <!--Movido a Som-->
+                <div class="tab-pane fade" id="nav-som" role="tabpanel" aria-labelledby="nav-som-tab">
+                    <div class="card atividade">
+                        <div class="row no-gutters">
+                            <div class="col-lg-3 col-md-3 col-sd-3 prototipo">
+                                <img class="img-fluid" src="../ref/img/mais_projetos/prototipos/desviador.png" alt="Movido a Som">
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sd-9">
+                                <div class="card-body" >
+                                    <h5 class="card-title">Robô Movido a Som</h5>
+									<p class="card-text" style="min-height: 150px;">O projeto consiste em um carrinho que se move quando se é produzido um som próximo ao microfone do circuito. O protótipo foi integrado ao conjunto de projetos do PETEE-UFMG a partir de parceria com o OptmaLab (UFMG), que o forneceu em prol da troca de conhecimentos. O Carrinho Movido a som é um trabalho de eletrônica, montado sobre uma estrutura de caixa de papelão, e tem como principais componentes um microfone e transistores.</p>
+                                    <a href="../ref/doc/relatorios/Relatorio_Movido_a_Som.pdf" target="_blank" class="btn btn-block">SAIBA MAIS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+				<!--Comandado por Voz-->
+                <div class="tab-pane fade" id="nav-voz" role="tabpanel" aria-labelledby="nav-voz-tab">
+                    <div class="card atividade">
+                        <div class="row no-gutters">
+                            <div class="col-lg-3 col-md-3 col-sd-3 prototipo">
+                                <img class="img-fluid" src="../ref/img/mais_projetos/prototipos/desviador.png" alt="Movido a Som">
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sd-9">
+                                <div class="card-body" >
+                                    <h5 class="card-title">Robô Comandado por Voz</h5>
+									<p class="card-text" style="min-height: 150px;">O projeto consiste em um carrinho que atende aos comandos de voz imperativos, para determinar seu comportamento. O protótipo foi integrado ao conjunto de projetos do PETEE-UFMG a partir de parceria com o OptmaLab (UFMG), que o forneceu em prol da troca de conhecimentos. O Carrinho Controlado por Voz é um trabalho de robótica, montado sobre um chassi, e tem como principais componentes um microcontrolador Arduino para processamento e um sensor bluetooth para garantir a comunicação com um aplicativo de celular.</p>
+                                    <a href="../ref/doc/relatorios/Relatorio_Comandado_por_Voz.pdf" target="_blank" class="btn btn-block">SAIBA MAIS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+
+				<!-- OUTROS -->
+
+				<!--Videoaulas-->
+                <div class="tab-pane fade" id="nav-videoaulas" role="tabpanel" aria-labelledby="nav-videoaulas-tab">
+                    <div class="card atividade">
+                        <div class="row no-gutters">
+                            <div class="col-lg-3 col-md-3 col-sd-3 prototipo">
+                                <img class="img-fluid" src="../ref/img/mais_projetos/prototipos/videoaula.png" alt="Braco">
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sd-9">
+                                <div class="card-body" >
+                                    <h5 class="card-title">Videoaulas</h5>
+                                    <p class="card-text" style="min-height: 150px;">Com o objetivo de continuar promovendo e levando nossos conhecimentos para a comunidade, mesmo durante o isolamento social, adaptamos nossos cursos para versões virtuais. Você pode ter acesso aos cursos online e materiais <a href="../minicursos_oficinas/">aqui</a>.</p>
+                                    <a href="../ref/doc/relatorios/Relatorio_BracoRobotico.pdf" target="_blank" class="btn btn-block">SAIBA MAIS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+				<!--Sincronizador Google Agenda-->
                 <div class="tab-pane fade" id="nav-agenda" role="tabpanel" aria-labelledby="nav-agenda-tab">
                     <div class="card atividade">
                         <div class="row no-gutters">
                             <div class="col-lg-3 col-md-3 col-sd-3 prototipo">
-                                <img class="img-fluid" src="../ref/img/mais_projetos/prototipos/agenda.png" alt="Controle">
+                                <img class="img-fluid" src="../ref/img/mais_projetos/prototipos/agenda.png" alt="Agenda">
                             </div>
                             <div class="col-lg-9 col-md-9 col-sd-9">
                                 <div class="card-body" >
                                     <h5 class="card-title">Sincronizador Google Agenda</h5>
-                                    <p class="card-text" style="min-height: 150px;">Durante as reuniões do grupo, em um momento em que se estava sendo discutido o cronograma de atividades, viu-se a necessidade de uma plataforma para se ter uma visualização mais fácil, prática e rápida das datas das atividades do PETEE do que olhar as planilhas do grupo no Drive. Como solução, foi proposto a ferramenta do Google Agenda.O código criado tem o intuito de facilitar e automatizar o processo de criação de eventos no Google Agenda através de um arquivo de planilha do Google.</p>
+									<p class="card-text" style="min-height: 150px;">Durante as reuniões do grupo, em um momento em que se estava sendo discutido o cronograma de atividades, viu-se a necessidade de uma plataforma para se ter uma visualização mais fácil, prática e rápida das datas das atividades do PETEE do que olhar as planilhas do grupo no Drive. Como solução, foi proposto a ferramenta do Google Agenda.O código criado tem o intuito de facilitar e automatizar o processo de criação de eventos no Google Agenda através de um arquivo de planilha do Google.</p>
                                     <a href="../ref/doc/relatorios/Relatorio_SincronizacaoGoogleAgenda.pdf" target="_blank" class="btn btn-block">SAIBA MAIS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+				<!--ArduinoMCU-->
+                <div class="tab-pane fade" id="nav-mcu" role="tabpanel" aria-labelledby="nav-mcu-tab">
+                    <div class="card atividade">
+                        <div class="row no-gutters">
+                            <div class="col-lg-3 col-md-3 col-sd-3 prototipo">
+                                <img class="img-fluid" src="../ref/img/mais_projetos/prototipos/mcu.png" alt="Agenda">
+                            </div>
+                            <div class="col-lg-9 col-md-9 col-sd-9">
+                                <div class="card-body" >
+                                    <h5 class="card-title">Substituindo Arduino por MCU</h5>
+									<p class="card-text" style="min-height: 150px;">Como engenheiros e bons projetistas, devemos ser capazes de substituir a placa por um circuito eletrônico menor, mais compacto, mais barato e com menor gasto energético. Substituir o Arduino por uma placa de circuito impresso com um MCU é o primeiro passo para isso.</p>
+                                    <a href="../ref/doc/relatorios/Relatorio_ArduinoPorMCU.pdf" target="_blank" class="btn btn-block">SAIBA MAIS</a>
                                 </div>
                             </div>
                         </div>
