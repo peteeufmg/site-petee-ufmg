@@ -1376,11 +1376,12 @@
 					</div>
 				</div>
 			</div> 
-			<div class="cookie-banner" style="display: none">
+			<div class="cookie-banner" style="display: none;">
 				<p>
     				Ao utilizar nosso website, você concorda com a nossa 
-    				<a href="https://google.com">Política de Cookies</a>
+    				<a href="https://petee.cpdee.ufmg.br/politica_de_provacidade/index.html">Política de Cookies</a>
   				</p>
+  				<button class="close">x</button>
 			</div>
 
 			<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -1388,14 +1389,11 @@
 			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 			<script src="./ref/js/main.js"></script>
 			<script type="text/javascript">
-				if (localStorage.getItem(‘cookieSeen’) != ‘shown’) {
-					$(‘.cookie-banner’).delay(2000).fadeIn();
-					localStorage.setItem(‘cookieSeen’,’shown’)
-				};
-				$(‘.close’).click(function() {
-					$(‘.cookie-banner’).fadeOut();
-				})
-			</script>
+				if (localStorage.getItem("cookieSeen") != "sim"){
+					$(".cookie-banner").css("display","flex");
+					window.setTimeout(cookietimer, 5000);</script>
+				}
+			
 		</footer>
 	</body>
 </html>
