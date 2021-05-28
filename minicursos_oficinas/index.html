@@ -109,6 +109,8 @@
 				<a class="nav-link-myblue" id="latex" data-toggle="tab" href="#tab-latex" role="tab" aria-controls="tab-latex" aria-selected="false" onclick="location.hash = 'latex'; document.querySelector('#sidenavToggler').click()">Minicurso de LaTeX</a>
 				<!-- excel -->
 				<a class="nav-link-myblue" id="excel" data-toggle="tab" href="#tab-excel" role="tab" aria-controls="tab-excel" aria-selected="false" onclick="location.hash = 'excel'; document.querySelector('#sidenavToggler').click()">Minicurso de Excel</a>
+				<!-- LTSpice -->
+				<a class="nav-link-myblue" id="ltspice" data-toggle="tab" href="#tab-ltspice" role="tab" aria-controls="tab-ltspice" aria-selected="false" onclick="location.hash='ltspice';document.querySelector('#sidenavToggler').click()">Minicurso de LT Spice</a>
 				<!-- ros -->
 				<a class="nav-link-myblue" id="ros" data-toggle="tab" href="#tab-ros" role="tab" aria-controls="tab-ros" aria-selected="false" onclick="location.hash = 'ros'; document.querySelector('#sidenavToggler').click()">Apostila de ROS</a>
 				<!-- prod videos -->
@@ -896,6 +898,143 @@
 							<a href="../ref/doc/minicursos_oficinas/excel/Apostila_Excel.pdf" class="btn btn-myblue" target="_blank">Baixar Apostila</a>
 						</div>
 					</div>		
+				</div>
+			</div>
+			<!-- LT Spice -->
+			<div class="container-fluid tab-pane fade" id="tab-ltspice" role="tabpanel" aria-labelledby="ltspice">
+				<!-- titulo -->
+				<div class="row justify-content-center">
+					<div class="col-12">
+						<h1>MINICURSO DE LT Spice</h1>
+					</div>
+				</div>
+				<!-- linha abaixo do titulo -->
+				<div class="row justify-content-center align-items-center">
+					<hr class="linha">
+					<i class="fas fa-circle linha-circulo"></i>
+					<i class="fas fa-chevron-circle-down linha-icone"></i>
+				</div>
+				<!-- descricao -->
+				<div class="row justify-content-center descricao">
+					<div class="col-md-12 col-lg-12 text-justify">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					</div>
+				</div>
+				<!-- conteudo -->
+				<div class="row justify-content-center align-items-center text-justify">
+					<div class="col-md-6 col-lg-3" style="padding: 0 30px;">
+						<img class="img-fluid img-thumbnail rounded-pill" src="../ref/img/minicursos_oficinas/ltspice/logo ltspice.png">
+					</div>
+					<div class="col-md-6 col-lg-9">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nulla nihil porro architecto eveniet vitae autem quas delectus impedit, est dignissimos corporis omnis laborum, temporibus minima quae voluptatum voluptates</p>
+						<p>O que você verá neste curso:</p>
+						<div class="row">
+							<div class="col">
+								<p class="checkbox-text"><i class="fas fa-check-square checkbox-icon rounded-circle"></i> Lorem ipsum dolor</p>
+								<p class="checkbox-text"><i class="fas fa-check-square checkbox-icon rounded-circle"></i> Lorem ipsum dolor</p>
+								<p class="checkbox-text"><i class="fas fa-check-square checkbox-icon rounded-circle"></i> Lorem ipsum dolor</p>
+							</div>
+							<div class="col">
+								<p class="checkbox-text"><i class="fas fa-check-square checkbox-icon rounded-circle"></i> Lorem ipsum dolor</p>
+								<p class="checkbox-text"><i class="fas fa-check-square checkbox-icon rounded-circle"></i> Lorem ipsum dolor</p>
+								<p class="checkbox-text"><i class="fas fa-check-square checkbox-icon rounded-circle"></i> Lorem ipsum dolor</p>
+							</div>
+						</div>
+						<p>Não é necessário conhecimento prévio em LT Spice para participar, no entanto, é necessário ter o programa instalado. Você pode fazer o download <a href="https://ltspice-iv.en.lo4d.com/windows" target="_blank">neste link</a></p>
+						<br>
+					</div>
+				</div>
+				
+				<!-- cards com materiais -->
+				<div class="card-deck" style="margin-top: 50px">
+					<!-- Videoaulas -->
+					<div class="card pilar">
+						<div class="iframe-container">
+							<iframe class="iframe-fluid rounded-top" src="https://www.youtube.com/embed/videoseries?list=PL73kW0L8uzCJg-6sPga5JLWgtbcoBrn9q" frameborder="20" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="card-body">
+							<i class="fab fa-youtube pet-icone"></i>
+							<h5 class="card-title">Videoaulas</h5>
+							<p class="card-text">Com os objetivos de aumentar a versatilidade e de atingir maiores públicos, nós promovemos também o minicurso na modalidade online, por meio da playlist no youtube acima.</p>
+						</div>
+						<div class="card-footer text-center">
+							<a href="https://youtube.com/playlist?list=PL73kW0L8uzCJg-6sPga5JLWgtbcoBrn9q" class="btn btn-myblue" target="_blank">Abrir no YouTube</a>
+						</div>
+					</div>
+					<!-- Pasta.zip -->
+					<div class="card pilar">
+						<img class="img-fluid rounded-top" src="../ref/img/minicursos_oficinas/latex/pasta.jpg">
+						<div class="card-body">
+							<i class="fas fa-folder-open pet-icone"></i>
+							<h5 class="card-title">Pasta</h5>
+							<p class="card-text">Para fazer os exercícios propostos no slide, é necessário baixar o arquivo .zip clicando o botão abaixo. Esse arquivo deverá ser usado no <a href="https://pt.overleaf.com/" target="_blank">Overleaf</a> na criação de um novo projeto.</p>
+						</div>
+						<div class="card-footer text-center">
+							<a href="../ref/doc/minicursos_oficinas/latex/Pasta_LaTeX.zip" class="btn btn-myblue" target="_blank">Baixar Pasta</a>
+						</div>
+					</div>		
+					<!-- Apostila -->
+					<div class="card pilar">
+						<div id="carrosselApostilaLatex" class="carousel slide" data-ride="carousel" data-interval="3000">
+							<div class="carousel-inner rounded-top">
+								<div class="carousel-item active">
+									<img class="d-block w-100" src="../ref/img/minicursos_oficinas/latex/apostila_slider/apostila_0.jpg" alt="slide0">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="../ref/img/minicursos_oficinas/latex/apostila_slider/apostila_1.jpg" alt="slide1">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="../ref/img/minicursos_oficinas/latex/apostila_slider/apostila_2.jpg" alt="slide2">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="../ref/img/minicursos_oficinas/latex/apostila_slider/apostila_3.jpg" alt="slide3">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="../ref/img/minicursos_oficinas/latex/apostila_slider/apostila_4.jpg" alt="slide4">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="../ref/img/minicursos_oficinas/latex/apostila_slider/apostila_5.jpg" alt="slide5">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="../ref/img/minicursos_oficinas/latex/apostila_slider/apostila_6.jpg" alt="slide6">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="../ref/img/minicursos_oficinas/latex/apostila_slider/apostila_7.jpg" alt="slide7">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="../ref/img/minicursos_oficinas/latex/apostila_slider/apostila_8.jpg" alt="slide8">
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carrosselApostilaLatex" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carrosselApostilaLatex" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>	
+						<div class="card-body">
+							<i class="fas fa-book pet-icone"></i>
+							<h5 class="card-title">Apostila</h5>
+							<p class="card-text">Para os estudantes que desejarem um estudo mais aplicado, desenvolvemos uma apostila para referência nos estudos. Nela, o conteúdo é descrito em mais detalhes.</p>
+						</div>
+						<div class="card-footer text-center">
+							<a href="../ref/doc/minicursos_oficinas/latex/Apostila_LaTeX.pdf" class="btn btn-myblue" target="_blank">Baixar Apostila</a>
+						</div>
+					</div>
+					<!-- Slide -->
+					<div class="card pilar">
+						<img class="img-fluid rounded-top" src="../ref/img/minicursos_oficinas/latex/slide.jpg">
+						<div class="card-body">
+							<i class="fas fa-chalkboard-teacher pet-icone"></i>
+							<h5 class="card-title">Slide</h5>
+							<p class="card-text">O slide usado durante o curso também está disponível para download. Nele estão alguns exercícios sugeridos para se fazer usando o arquivo .zip.</p>
+						</div>
+						<div class="card-footer text-center">
+							<a href="../ref/doc/minicursos_oficinas/latex/Slide_LaTeX.pdf" class="btn btn-myblue" target="_blank">Baixar Slide</a>
+						</div>
+					</div>
 				</div>
 			</div>
 			<!-- ros -->
