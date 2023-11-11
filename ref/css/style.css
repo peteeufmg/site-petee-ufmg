@@ -95,6 +95,15 @@
 		font-size: 24px;
 	}
 
+	.dropdown-menu{
+		background-color: #343A40;
+	}
+
+	.dropdown-item{
+		color: lightgray;
+		font-size: 15px;
+	}
+
 /* linha abaixo do titulo */
 	.linha{
 		width: 180px;
@@ -818,3 +827,9 @@ footer{
 		cursor: pointer;
 	}
 /*FIM MANUAL HOME NOVO*/
+
+/*Página Trilha do Conhecimento*/
+
+.edicoes-antigas{
+	background-color: #F8F8F8;
+}
