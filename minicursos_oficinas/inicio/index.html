@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<!-- definicoes principais -->
+	<meta charset="UTF-8">
+	<title>PETEE UFMG</title>
+	<!-- define o idioma do documento -->
+	<meta http-equiv="content-language" content="pt-br" />
+	<!-- define que o tipo padrão de linguagem para estilização do documento é css -->
+	<meta http-equiv="content-style-type" content="text/css" />
+	<!-- define que o tipo padrão da linguagem de script do documento é javascript -->
+	<meta http-equiv="content-script-type" content="text/javascript" />
+	<!-- define a compatibilidade entre browsers -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!-- define o autor da página -->
+	<meta name="author" content="PETEE UFMG" />
+
+	<!-- link do google para as fontes que serão utilizadas -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css' />
+	<!-- 'Roboto Condensed' - Texto -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css' />
+	<!-- 'Roboto Slab' - Títulos -->
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<!-- icones fontawesome -->
+	<link href="../../ref/css/font_awesome/css/all.css" rel="stylesheet">
+
+	<!-- stylesheet do site -->
+	<link href="../../ref/css/style.css" rel="stylesheet">
+
+	<link rel="shortcut icon" href="../../ref/img/logos/simbolo_petee_600x600.png">
+
+	<!-- define o idioma -->
+	<meta property="og:locale" content="pt_BR">
+	<!-- define o link do site -->
+	<meta property="og:url" content="http://www.petee.cpdee.ufmg.br/minicursos_oficinas/inicio">
+	<!-- define o título -->
+	<meta property="og:title" content="Programa de Educação Tutorial da Engenharia Elétrica - UFMG">
+	<meta property="og:site_name" content="PETEE UFMG">
+	<!-- define uma breve descrição do conteúdo -->
+	<meta property="og:description" content="Minicursos e Oficinas">
+	<!-- define o local, o nome e o formato da imagem -->
+	<meta property="og:image" content="../../ref/img/logos/simbolo_petee_600x600.png">
+	<meta property="og:image:type" content="image/png" />
+	<!-- define a largura da imagem -->
+	<meta property="og:image:width" content="200" />
+	<!-- define a altura da imagem -->
+	<meta property="og:image:height" content="200" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+
+	<!-- Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8Z4XBMLY8N"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-8Z4XBMLY8N');
+	</script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="96">
+	<!-- navbar -->
+	<header>
+		<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+			<!-- Brand -->
+			<a class="navbar-brand" href="../../index.html">
+				<img src="../../ref/img/logos/logo_petee_branca.png" style="height: 45px">
+			</a>
+
+			<!-- Toggler/collapsibe Button -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<i class="fas fa-bars icone-navbar"></i>
+			</button>
+
+			<!-- Navbar links -->
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown">
+						<a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sobre nós</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../../index.html#pet">O que é o PET?</a>
+							<a class="dropdown-item" href="../../index.html#grupo">Nosso grupo</a>
+							<a class="dropdown-item" href="../../index.html#contato">Contato</a>
+						</div>
+					</li>
+	
+					<li class="nav-item dropdown">
+						<a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ensino</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="index.html">Minicursos e Oficinas</a>
+							<a class="dropdown-item" href="../../petresumos/index.html">PET Resumos</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pesquisa</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../../trabalhos-cientificos/index.html">Artigos</a>
+							<a class="dropdown-item" href="../../prototipos/index.html">Biblioteca de Protótipos</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Extensão</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../../cora/index.html">CoRA</a>
+							<a class="dropdown-item" href="../../Trilha do conhecimento/index.html">Trilha do Conhecimento</a>
+							<a class="dropdown-item" href="../../PETescola/index.html">PET na Escola</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Outras atividades</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../../manual/index.html">Manual da Engenharia Elétrica</a>
+							<a class="dropdown-item" href="../../certificados/index.html">Certificados da Eng. Elétrica</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<!-- minicursos e oficinas -->
+	<div id="minicursos-oficinas" class="container-fluid" style="padding-top: 96px">
+		<!-- titulo sessao -->
+		<div class="row justify-content-center">
+			<div class="col-12">
+				<h1>MINICURSOS E OFICINAS</h1>
+			</div>
+		</div>
+		<!-- linha abaixo do titulo -->
+		<div class="row justify-content-center align-items-center">
+			<hr class="linha">
+			<i class="fas fa-circle linha-circulo"></i>
+			<i class="fas fa-chevron-circle-down linha-icone"></i>
+		</div>
+		<!-- sem descricao: espacamento -->
+		<br style="height: 20px">
+		<!-- cards atividades -->
+		<div class="row">
+			<!-- oficinas -->
+			<div class="col-lg-6 col-md-4 col-sm-6">
+				<div class="card atividade">
+					<div class="row no-gutters">
+						<div class="col-lg-4 col-md-12">
+							<img class="img-fluid" src="../../ref/img/minicursos_oficinas/seguidor/seguidor_548x800.jpg"
+								alt="Oficina de Seguidor de Linha">
+						</div>
+						<div class="col-lg-8 col-md-12">
+							<div class="card-body">
+								<h5 class="card-title">Oficinas de Seguidor de Linha</h5>
+								<p class="card-text">Crie seu próprio robô autônomo do zero na Oficina de Seguidor de
+									Linha 1.0 e melhore-o ainda mais utilizando as técnicas de controle da Oficina 2.0.
+								</p>
+								<a href="../index.html#oficina" class="btn btn-block">SAIBA MAIS</a>
+							</div>
+						</div>
+					</div>
+					<i class="fab fa-youtube curso-online" data-toggle="tooltip" data-placement="right"
+						title="Este curso está também disponível online"></i>
+				</div>
+			</div>
+			<!-- matlab -->
+			<div class="col-lg-6 col-md-4 col-sm-6">
+				<div class="card atividade">
+					<div class="row no-gutters">
+						<div class="col-lg-4 col-md-12">
+							<img class="img-fluid" src="../../ref/img/minicursos_oficinas/matlab/matlab_548x800.jpg"
+								alt="Minicurso de MATLAB">
+						</div>
+						<div class="col-lg-8 col-md-12">
+							<div class="card-body">
+								<h5 class="card-title">Minicurso de MATLAB</h5>
+								<p class="card-text">Aprenda a utilizar o MATLAB, software versátil e muito requisitado
+									em diversas áreas no mercado de trabalho devido à sua enorme gama de aplicações.</p>
+								<a href="../index.html#matlab" class="btn btn-block">SAIBA MAIS</a>
+							</div>
+						</div>
+					</div>
+					<i class="fab fa-youtube curso-online" data-toggle="tooltip" data-placement="right"
+						title="Este curso está também disponível online"></i>
+				</div>
+			</div>
+			<!-- python -->
+			<div class="col-lg-6 col-md-4 col-sm-6">
+				<div class="card atividade">
+					<div class="row no-gutters">
+						<div class="col-lg-4 col-md-12">
+							<img class="img-fluid" src="../../ref/img/minicursos_oficinas/python/python_548x800.jpg"
+								alt="Minicurso de Python">
+						</div>
+						<div class="col-lg-8 col-md-12">
+							<div class="card-body">
+								<h5 class="card-title">Minicurso de Python</h5>
+								<p class="card-text">Amplie seu currículo aprendendo a linguagem de programação Python,
+									que possui diversas aplicações e muita relevância no mercado de trabalho.</p>
+								<a href="../index.html#python" class="btn btn-block">SAIBA MAIS</a>
+							</div>
+						</div>
+					</div>
+					<i class="fab fa-youtube curso-online" data-toggle="tooltip" data-placement="right"
+						title="Este curso está também disponível online"></i>
+				</div>
+			</div>
+			<!-- latex -->
+			<div class="col-lg-6 col-md-4 col-sm-6">
+				<div class="card atividade">
+					<div class="row no-gutters">
+						<div class="col-lg-4 col-md-12">
+							<img class="img-fluid" src="../../ref/img/minicursos_oficinas/latex/latex_548x800.jpg"
+								alt="Minicurso de LaTeX">
+						</div>
+						<div class="col-lg-8 col-md-12">
+							<div class="card-body">
+								<h5 class="card-title">Minicurso de LaTeX</h5>
+								<p class="card-text">Aprenda a usar a ferramenta LaTeX para escrever artigos,
+									monografias e documentos em geral com diagramação padronizada e muita praticidade.
+								</p>
+								<a href="../index.html#latex" class="btn btn-block">SAIBA MAIS</a>
+							</div>
+						</div>
+					</div>
+					<i class="fab fa-youtube curso-online" data-toggle="tooltip" data-placement="right"
+						title="Este curso está também disponível online"></i>
+				</div>
+			</div>
+			<!-- ltspice -->
+			<div class="col-lg-6 col-md-4 col-sm-6">
+				<div class="card atividade">
+					<div class="row no-gutters">
+						<div class="col-lg-4 col-md-12">
+							<img class="img-fluid" src="../../ref/img/minicursos_oficinas/ltspice/ltspice_548x800.jpg"
+								alt="Minicurso de LTspice">
+						</div>
+						<div class="col-lg-8 col-md-12">
+							<div class="card-body">
+								<h5 class="card-title">Minicurso de LTspice</h5>
+								<p class="card-text">Conheça e aprenda a utilizar o software LTspice para esquematização
+									e simulação de circuitos eletrônicos.</p>
+								<a href="../index.html#ltspice" class="btn btn-block">SAIBA MAIS</a>
+							</div>
+						</div>
+					</div>
+					<i class="fab fa-youtube curso-online" data-toggle="tooltip" data-placement="right"
+						title="Este curso está também disponível online"></i>
+				</div>
+			</div>
+			<!-- web -->
+			<div class="col-lg-6 col-md-4 col-sm-6">
+				<div class="card atividade">
+					<div class="row no-gutters">
+						<div class="col-lg-4 col-md-12">
+							<img class="img-fluid" src="../../ref/img/minicursos_oficinas/web/web_548x800.jpg"
+								alt="Minicurso de Web Design">
+						</div>
+						<div class="col-lg-8 col-md-12">
+							<div class="card-body">
+								<h5 class="card-title">Minicurso de Web Design</h5>
+								<p class="card-text">Construa seus próprios sites utilizando HTML, CSS e JavaScript,
+									além de aprender sobre outras ferramentas muito úteis na área de Web Design, como
+									Bootstrap e Git.</p>
+								<a href="../index.html#web" class="btn btn-block">SAIBA MAIS</a>
+							</div>
+						</div>
+					</div>
+					<i class="fab fa-youtube curso-online" data-toggle="tooltip" data-placement="right"
+						title="Este curso está também disponível online"></i>
+				</div>
+			</div>
+			<!-- excel -->
+			<div class="col-lg-6 col-md-4 col-sm-6">
+				<div class="card atividade">
+					<div class="row no-gutters">
+						<div class="col-lg-4 col-md-12">
+							<img class="img-fluid" src="../../ref/img/minicursos_oficinas/excel/excel_548x800.jpg"
+								alt="Minicurso de LaTeX">
+						</div>
+						<div class="col-lg-8 col-md-12">
+							<div class="card-body">
+								<h5 class="card-title">Minicurso de Excel</h5>
+								<p class="card-text">Use as planilhas do excel para seu controle financeiro, para
+									planejamentos, análise de projetos, gráficos dinâmicos, dentre outros.</p>
+								<a href="../index.html#excel" class="btn btn-block">SAIBA MAIS</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ros -->
+			<div class="col-lg-6 col-md-4 col-sm-6">
+				<div class="card atividade">
+					<div class="row no-gutters">
+						<div class="col-lg-4 col-md-12">
+							<img class="img-fluid" src="../../ref/img/minicursos_oficinas/ros/ros_548x800.jpg"
+								alt="Minicurso de LaTeX">
+						</div>
+						<div class="col-lg-8 col-md-12">
+							<div class="card-body">
+								<h5 class="card-title">Apostila de ROS</h5>
+								<p class="card-text">Conheça e utilize a ferramenta estado da arte no desenvolvimento e
+									nas simulações em robótica: Robot Operating System.</p>
+								<a href="../index.html#ros" class="btn btn-block">SAIBA MAIS</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- video -->
+			<div class="col-lg-6 col-md-4 col-sm-6">
+				<div class="card atividade">
+					<div class="row no-gutters">
+						<div class="col-lg-4 col-md-12">
+							<img class="img-fluid" src="../../ref/img/minicursos_oficinas/video/video_548x800.jpg"
+								alt="Prod Videos">
+						</div>
+						<div class="col-lg-8 col-md-12">
+							<div class="card-body">
+								<h5 class="card-title">Material de Produção de Vídeos</h5>
+								<p class="card-text">Aprenda a editar vídeos, veja sobre as plataformas de
+									videoconferências e de transmissões ao vivo.</p>
+								<a href="../index.html#video" class="btn btn-block">SAIBA MAIS</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 3dprint -->
+			<div class="col-lg-6 col-md-4 col-sm-6">
+				<div class="card atividade">
+					<div class="row no-gutters">
+						<div class="col-lg-4 col-md-12">
+							<img class="img-fluid" src="../../ref/img/minicursos_oficinas/3dprint/3dprint.jpg"
+								alt="3dprint">
+						</div>
+						<div class="col-lg-8 col-md-12">
+							<div class="card-body">
+								<h5 class="card-title">Impressora 3D </h5>
+								<p class="card-text">Aprenda a utilizar uma impressora 3D</p>
+								<a href="../index.html#3dprint" class="btn btn-block">SAIBA MAIS</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- autocad -->
+			<div class="col-lg-6 col-md-4 col-sm-6">
+				<div class="card atividade">
+					<div class="row no-gutters">
+						<div class="col-lg-4 col-md-12">
+							<img class="img-fluid" src="../../ref/img/minicursos_oficinas/autocad/autocad.jpeg"
+								alt="autocad">
+						</div>
+						<div class="col-lg-8 col-md-12">
+							<div class="card-body">
+								<h5 class="card-title">Apostila de AutoCAD </h5>
+								<p class="card-text">Conheça e aprenda a utilizar o software AutoCAD, uma das principais
+									ferramentas de desenho técnico utilizadas atualmente</p>
+								<a href="../index.html#autocad" class="btn btn-block">SAIBA MAIS</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Manual da Calculadora -->
+			<div class="col-lg-6 col-md-4 col-sm-6">
+				<div class="card atividade">
+					<div class="row no-gutters">
+						<div class="col-lg-4 col-md-12">
+							<img class="img-fluid" src="../../ref/img/minicursos_oficinas/manualCalc/manual2.png"
+								alt="manualCalc">
+						</div>
+						<div class="col-lg-8 col-md-12">
+							<div class="card-body">
+								<h5 class="card-title">Manual da Calculadora Científica </h5>
+								<p class="card-text">Aprenda a utilizar a calculadora científica e suas funções.</p>
+								<a href="../index.html#manualCalc" class="btn btn-block">SAIBA MAIS</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Blender -->
+			<div class="col-lg-6 col-md-4 col-sm-6">
+				<div class="card atividade">
+					<div class="row no-gutters">
+						<div class="col-lg-4 col-md-12">
+							<img class="img-fluid" src="../../ref/img/minicursos_oficinas/blender/logo.png"
+								alt="blender">
+						</div>
+						<div class="col-lg-8 col-md-12">
+							<div class="card-body">
+								<h5 class="card-title">Blender</h5>
+								<p class="card-text">Aprenda a utilizar o Blender, um software de modelagem 3D.</p>
+								<a href="../index.html#blender" class="btn btn-block">SAIBA MAIS</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- C++ -->
+						<div class="col-lg-6 col-md-4 col-sm-6">
+							<div class="card atividade">
+								<div class="row no-gutters">
+									<div class="col-lg-4 col-md-12">
+										<img class="img-fluid" src="../../ref/img/minicursos_oficinas/c++/c.png"
+											alt="c">
+									</div>
+									<div class="col-lg-8 col-md-12">
+										<div class="card-body">
+											<h5 class="card-title">Apostila de C++</h5>
+											<p class="card-text">Aprenda os princípios de programação em C++</p>
+											<a href="../index.html#c" class="btn btn-block">SAIBA MAIS</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				<!-- Git -->
+				<div class="col-lg-6 col-md-4 col-sm-6">
+					<div class="card atividade">
+						<div class="row no-gutters">
+							<div class="col-lg-4 col-md-12">
+								<img class="img-fluid" src="../../ref/img/minicursos_oficinas/git/Git-Icon.png"
+											alt="c">
+							</div>
+							<div class="col-lg-8 col-md-12">
+								<div class="card-body">
+									<h5 class="card-title">Apostila de Git</h5>
+									<p class="card-text">Conheça e aprenda a utilizar o Git, um dos sistemas de versionamento mais utilizados no mercado.</p>
+									<a href="../index.html#git" class="btn btn-block">SAIBA MAIS</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	</div>
+
+	<!-- rodape -->
+	<footer>
+
+		<div id="rodape" class="myfooter container-fluid text-center bg-dark" style="margin-top: 50px">
+			<div class="row">
+				<div class="col text-center">
+					<p><a class="text-light contato-link" href="mailto:petee.ufmg@gmail.com">petee.ufmg@gmail.com</a>
+					</p>
+					<p><a class="text-light contato-link" href="tel:31-34091013">(31) 3409-1013</a></p>
+				</div>
+				<div class="col text-center">
+					<p class="text-light">COPYRIGHT © 2020 PETEE - UFMG</p>
+					<p class="text-light" style="font-size: 13px">Arthur Nunes, Thais Morato, Tiago Bonfim</p>
+				</div>
+				<div class="col text-centers">
+					<p><a class="text-light contato-link" target="_blank"
+							href="https://www.google.com/maps/place/Escola+de+Engenharia+da+UFMG+-+Av.+Pres.+Ant%C3%B4nio+Carlos,+6627+-+Pampulha,+Belo+Horizonte+-+MG,+31270-901,+Brasil/@-19.870029,-43.9632,16z/data=!4m2!3m1!1s0xa6908ba0d42d5b:0x43a5f491fad68b3d?hl=pt-BR&gl=US">Av.
+							Presidente Antônio Carlos, Nº 6627, Pampulha, Belo Horizonte - MG</a></p>
+					<p class="text-light"><a class="text-light contato-link" target="_blank"
+							href="https://ufmg.br/">UFMG</a>, <a class="text-light contato-link" target="_blank"
+							href="https://www.eng.ufmg.br/portal/">Escola de Engenharia</a>, Bloco 3, Sala 1050</p>
+				</div>
+			</div>
+			<div class="row justify-content-center align-items-center">
+				<!-- email -->
+				<div class="col-2 text-center">
+					<a class="contato-link" href="mailto:petee.ufmg@gmail.com"><i
+							class="fas fa-envelope icone-rodape rounded-circle"></i></a>
+				</div>
+				<!-- instagram -->
+				<div class="col-2 text-center">
+					<a class="contato-link" href="https://www.instagram.com/petee.ufmg/?hl=pt-br" target="_blank"><i
+							class="fab fa-instagram icone-rodape rounded-circle"></i></a>
+				</div>
+				<!-- facebook -->
+				<div class="col-2 text-center">
+					<a class="contato-link" href="https://www.facebook.com/peteeUFMG" target="_blank"><i
+							class="fab fa-facebook icone-rodape rounded-circle"></i></a>
+				</div>
+				<!-- Youtube -->
+				<div class="col-2 text-center">
+					<a class="contato-link" href="https://www.youtube.com/PETEEUFMG" target="_blank"><i
+							class="fab fa-youtube icone-rodape rounded-circle"></i></a>
+				</div>
+				<!-- linkedin -->
+				<div class="col-2 text-center">
+					<a class="contato-link" href="https://www.linkedin.com/in/petee-ufmg-95439b192/" target="_blank"><i
+							class="fab fa-linkedin icone-rodape rounded-circle"></i></a>
+				</div>
+				<!-- telefone -->
+				<div class="col-2 text-center">
+					<a class="contato-link" href="tel:31-34091013"><i
+							class="fas fa-phone-square-alt icone-rodape rounded-circle"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="cookie-banner" style="display: none;">
+			<p>
+				Ao utilizar nosso website, você concorda com a nossa
+				<a href="http://www.petee.cpdee.ufmg.br/politica_de_privacidade/index.html">Política de Cookies</a>
+			</p>
+			<button class="close">x</button>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"></script>
+		<script src="./ref/js/main.js"></script>
+		<script type="text/javascript">
+			if (localStorage.getItem("cookieSeen") != "sim") {
+				$(".cookie-banner").css("display", "flex");
+				window.setTimeout(cookietimer, 5000);
+			}
+
+		</script>
+
+
+	</footer>
+</body>
+
+</html>
