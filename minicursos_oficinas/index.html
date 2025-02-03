@@ -183,7 +183,7 @@
 			<!-- impressora 3d -->
 			<a class="nav-link-myblue" id="3dprint" data-toggle="tab" href="#tab-3dprint" role="tab"
 				aria-controls="tab-3dprint" aria-selected="false"
-				onclick="location.hash = '3dprint'; document.querySelector('#sidenavToggler').click()">Apostila da
+				onclick="location.hash = 'tab-3dprint'; document.querySelector('#sidenavToggler').click()">Apostila da
 				Impressora 3D</a>
 			<!-- autocad -->
 			<a class="nav-link-myblue" id="autocad" data-toggle="tab" href="#tab-autocad" role="tab"
@@ -207,6 +207,10 @@
 			<a class="nav-link-myblue" id="git" data-toggle="tab" href="#tab-git" role="tab"
 				aria-controls="tab-git" aria-selected="false"
 				onclick="location.hash = 'git'; document.querySelector('#sidenavToggler').click()">Apostila de Git</a>
+			<!-- IoT  -->
+			<a class="nav-link-myblue" id="iot" data-toggle="tab" href="#tab-iot" role="tab"
+				aria-controls="tab-iot" aria-selected="false"
+				onclick="location.hash = 'iot'; document.querySelector('#sidenavToggler').click()">Apostila de IoT</a>
 		</div>
 	</nav>
 	<!-- Toggler da Nav lateral -->
@@ -1822,94 +1826,76 @@
 				</div>
 			</div>
 		</div>
-		<!-- impressora 3d -->
+		<!-- Impressora 3D -->
 		<div class="container-fluid tab-pane fade" id="tab-3dprint" role="tabpanel" aria-labelledby="3dprint">
-			<!-- titulo -->
+			<!-- Título -->
 			<div class="row justify-content-center">
 				<div class="col-12">
 					<h1>Apostila de Impressora 3D</h1>
 				</div>
 			</div>
-			<!-- linha abaixo do titulo -->
+			
+			<!-- Linha abaixo do título -->
 			<div class="row justify-content-center align-items-center">
 				<hr class="linha">
 				<i class="fas fa-circle linha-circulo"></i>
 				<i class="fas fa-chevron-circle-down linha-icone"></i>
 			</div>
-			<!-- descricao -->
+			
+			<!-- Descrição -->
 			<div class="row justify-content-center descricao">
-				<div class="col-md-12 col-lg-12 text-justify">
-					<p>As impressoras 3D têm como objetivo principal a prototipação de objetos e podem ser usadas para
-						imprimir uma variedade de objetos</p>
-					<p>Ela também é importante para o meio ambiente, uma vez que evita ao máximo desperdiçar os
-						materiais utilizados, já que vários objetos podem ser produzidos utilizando apenas a quantidade
-						de material necessária</p>
+				<div class="col-md-12 text-justify">
+					<p>As impressoras 3D revolucionaram a prototipagem ao permitir a criação de objetos personalizados com precisão e eficiência. Elas são amplamente utilizadas em diversas áreas, como engenharia, design e medicina, possibilitando a produção de peças sob medida.</p>
+					<p>Além de sua versatilidade, essas impressoras contribuem para a sustentabilidade, pois minimizam o desperdício de material ao utilizar apenas a quantidade necessária para cada impressão.</p>
 				</div>
 			</div>
-			<!-- conteudo -->
+			
+			<!-- Conteúdo -->
 			<div class="row justify-content-center align-items-center text-justify">
 				<div class="col-md-6 col-lg-3" style="padding: 0 30px;">
 					<img class="img-fluid img-thumbnail rounded-pill"
-						src="../ref/img/minicursos_oficinas/3dprint/3dprint.jpg">
+						src="../ref/img/minicursos_oficinas/3dprint/3dprint.jpg" alt="Impressora 3D">
 				</div>
 				<div class="col-md-6 col-lg-9">
-					<p>Ao percebermos a necessidade de material virtual sobre isso, o grupo PETEE preparou materiais
-						para auxiliar você a utilizar uma impressora 3D. O objetivo destes materiais é auxiliar o
-						usuário a produzir suas próprias peças 3D</p>
-					<p>O que você verá neste material:</p>
-					<div class="row">
-						<div class="col">
-							<p class="checkbox-text"><i class="fas fa-check-square checkbox-icon rounded-circle"></i>
-								Utilizar o Software </p>
-							<p class="checkbox-text"><i class="fas fa-check-square checkbox-icon rounded-circle"></i>
-								Utilizar o Hardware</p>
-
-						</div>
-					</div>
+					<p>Para ajudar você a utilizar uma impressora 3D, o grupo PETEE preparou materiais educativos para guiar desde o uso do software até a montagem do hardware.</p>
+					<p><strong>O que você aprenderá com este material:</strong></p>
+					<ul>
+						<li><i class="fas fa-check-square checkbox-icon"></i> Utilizar o Software de Fatiamento</li>
+						<li><i class="fas fa-check-square checkbox-icon"></i> Configurar e operar a Impressora 3D</li>
+					</ul>
 				</div>
 			</div>
-			<!-- cards com materiais -->
+			
+			<!-- Cards com materiais -->
 			<div class="card-deck" style="margin-top: 50px">
-				<!-- Conferencia -->
+				<!-- Manual do Software -->
 				<div class="card pilar">
-
-					<img class="img-fluid rounded-top" src="../ref/img/minicursos_oficinas/3dprint/3dprint.jpg">
-
+					<img class="img-fluid rounded-top" src="../ref/img/minicursos_oficinas/3dprint/software.jpg" alt="Software 3D">
 					<div class="card-body">
 						<i class="fas fa-book pet-icone"></i>
 						<h5 class="card-title">Manual do Software</h5>
-						<p class="card-text">O Manual do Software da Impressora 3D é um guia completo de utilização do
-							programa de slicer Cura 3D. É um aplicativo de código aberto, sendo o desenvolvimento
-							hospedado no GitHub, voltado para o processo de fatiamento das peças 3D, ou seja, gerar a
-							preparação da sua peça para a impressora 3D. Softwares como o Cura são de extrema
-							importância para se obter uma impressão final de qualidade, pois oferecem ao projetista uma
-							gama de ajustes e configurações interessantes.</p>
+						<p class="card-text">Este guia ensina a utilizar o software de fatiamento Cura 3D, um programa essencial para preparar arquivos para impressão 3D.</p>
 					</div>
 					<div class="card-footer text-center">
-						<a href="../ref/doc/minicursos_oficinas/3dprint/Projeto_calouro_1__manual_do_software_.pdf"
-							class="btn btn-myblue" target="_blank">Baixar Manual</a>
+						<a href="../ref/doc/minicursos_oficinas/3dprint/manual_software.pdf" class="btn btn-myblue" target="_blank">Baixar Manual</a>
 					</div>
 				</div>
-				<!-- Slide -->
+				
+				<!-- Manual da Impressora -->
 				<div class="card pilar">
-					<img class="img-fluid rounded-top" src="../ref/img/minicursos_oficinas/3dprint/3dprint.jpg">
+					<img class="img-fluid rounded-top" src="../ref/img/minicursos_oficinas/3dprint/hardware.jpg" alt="Impressora 3D">
 					<div class="card-body">
 						<i class="fas fa-book pet-icone"></i>
 						<h5 class="card-title">Manual da Impressora</h5>
-						<p class="card-text">O Manual da Impressora 3D é um guia com objetivo de apresentar tudo sobre a
-							Impressora 3D CR-10S, fabricada pela Creality 3D. Também é aplicável para as Impressoras
-							CR-10 S4, CR-10 S5, CR-10.
-							O manual abordará temas desde sua montagem, instalação, manutenções, manuseio de suas partes
-							principais, cuidados elétricos, testes de funcionamento, limpeza, entre outras utilidades.
-						</p>
+						<p class="card-text">Um guia completo sobre a montagem, operação e manutenção da Impressora 3D CR-10S, aplicável também a outros modelos da linha CR-10.</p>
 					</div>
 					<div class="card-footer text-center">
-						<a href="../ref/doc/minicursos_oficinas/3dprint/Projeto_calouro_1__manual_da_impressora_.pdf"
-							class="btn btn-myblue" target="_blank">Baixar Manual</a>
+						<a href="../ref/doc/minicursos_oficinas/3dprint/manual_impressora.pdf" class="btn btn-myblue" target="_blank">Baixar Manual</a>
 					</div>
 				</div>
 			</div>
 		</div>
+
 		<!-- autocad -->
 		<div class="container-fluid tab-pane fade" id="tab-autocad" role="tabpanel" aria-labelledby="autocad">
 			<!-- titulo -->
@@ -2048,7 +2034,8 @@
 				<!-- Conferencia -->
 				<div class="card pilar">
 
-					<img class="img-fluid rounded-top" src="../ref/img/minicursos_oficinas/manualCalc/capa.jpg">
+					<img class="img-fluid rounded-top" style="height:85%"
+					src="../ref/img/minicursos_oficinas/manualCalc/capa.jpg">
 
 					<div class="card-body">
 						<i class="fas fa-book pet-icone"></i>
@@ -2072,7 +2059,6 @@
 									<div class="card-footer text-center">
 										<a href="../ref/doc/minicursos_oficinas/3dprint/Projeto_calouro_1__manual_da_impressora_.pdf" class="btn btn-myblue" target="_blank">Baixar Manual</a>
 									</div>-->
-				<br>
 			</div>
 		</div>
 		<!-- Blender -->
@@ -2273,6 +2259,76 @@
 							</div>
 							<div class="card-footer text-center">
 								<a href="../ref/doc/minicursos_oficinas/git/Apostila_git.pdf" class="btn btn-myblue"
+									target="_blank">Baixar Apostila</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- IoT -->
+				<div class="container-fluid tab-pane fade" id="tab-iot" role="tabpanel" aria-labelledby="iot">
+					<!-- titulo -->
+					<div class="row justify-content-center">
+						<div class="col-12">
+							<h1>Apostila de IoT</h1>
+						</div>
+					</div>
+					<!-- linha abaixo do titulo -->
+					<div class="row justify-content-center align-items-center">
+						<hr class="linha">
+						<i class="fas fa-circle linha-circulo"></i>
+						<i class="fas fa-chevron-circle-down linha-icone"></i>
+					</div>
+					<!-- descricao -->
+					<div class="row justify-content-center descricao">
+						<div class="col-md-12 col-lg-12 text-justify">
+							<p>A Internet das Coisas (IoT) refere-se à interconexão de dispositivos inteligentes que coletam, processam e trocam dados em tempo real. Essa tecnologia permite a automação e o controle remoto de sistemas em diversas áreas, como casas inteligentes, indústria 4.0, saúde e transporte, tornando o dia a dia mais eficiente e conectado.</p>
+						</div>
+					</div>
+					<!-- conteudo -->
+					<div class="row justify-content-center align-items-center text-justify">
+						<div class="col-md-6 col-lg-3" style="padding: 30px;">
+							<img class="img-fluid img-thumbnail rounded-pill"
+								src="../ref/img/minicursos_oficinas/iot/Capa.webp">
+						</div>
+						<div class="col-md-6 col-lg-9">
+							<p>Tópicos abordados neste curso:</p>
+							<div class="row">
+								<div class="col">
+									<p class="checkbox-text"><i class="fas fa-check-square checkbox-icon rounded-circle"></i>
+										Fundamentos da Internet das Coisas</p>
+									<p class="checkbox-text"><i class="fas fa-check-square checkbox-icon rounded-circle"></i>
+										Medidas de segurança para projetos IoT</p>
+									<p class="checkbox-text"><i class="fas fa-check-square checkbox-icon rounded-circle"></i>
+										Introdução a placas e microcontroladores (Arduino, ESP32, Raspberry Pi)</p>
+									<p class="checkbox-text"><i class="fas fa-check-square checkbox-icon rounded-circle"></i>
+										Sensores e atuadores utilizados em IoT</p>
+									<p class="checkbox-text"><i class="fas fa-check-square checkbox-icon rounded-circle"></i>
+										Programação para dispositivos IoT (Arduino IDE, C++)</p>
+									<p class="checkbox-text"><i class="fas fa-check-square checkbox-icon rounded-circle"></i>
+										Protocolos de comunicação e segurança em IoT (MQTT, HTTP, TLS/SSL)</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- cards com materiais -->
+					<div class="card-deck"
+						style="margin-top: 50px; max-width:600px; max-height: 700px; margin-right:auto; margin-left:auto; margin-bottom:500px ">
+						<!-- Apostila -->
+						<div class="card pilar">
+							<img class="img-fluid rounded-top" style="height:85%"
+								src="../ref/img/minicursos_oficinas/iot/ApostilaCapa.webp">
+							<div class="card-body">
+								<i class="fas fa-book pet-icone"></i>
+								<h5 class="card-title">Apostila</h5>
+								<p class="card-text">Aos que gostam de se desafiar, este curso inclui um projeto 
+									prático chamado "Plantinha Inteligente", no qual se aprende a monitorar a 
+									umidade do solo utilizando sensores e microcontroladores, enviando dados 
+									para a nuvem e permitindo automação remota.</p>
+							</div>
+							<div class="card-footer text-center">
+								<a href="../ref/doc/minicursos_oficinas/IOT/Oficina_de_Internet_das_Coisas__IoT_.pdf" class="btn btn-myblue"
 									target="_blank">Baixar Apostila</a>
 							</div>
 						</div>
