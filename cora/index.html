@@ -60,6 +60,18 @@
 
 			gtag('config', 'G-8Z4XBMLY8N');
 		</script>
+
+		<title>Vídeo com Bordas Arredondadas</title>
+		<style>
+			.iframe-desktop {
+				width: 100%;
+				max-width: 800px; /* Ajuste conforme necessário */
+				height: 300px; /* Ajuste conforme necessário */
+				border-radius: 15px; /* Define as bordas arredondadas */
+				overflow: hidden;
+				border: none;
+			}
+		</style>
 	</head>
 	<body>
 		<!-- navbar -->
@@ -141,13 +153,14 @@
 			<div id="cora" class="container-fluid">
                 <!-- descricao sessao -->
                 <div class="row justify-content-center descricao">
-                    <div class="col-lg-9 col-sm-12">
+					<div class="col-sd-12 col-md-12 col-lg-10 text-justify">
                         <p>A Competição de Robôs Autônomos (CoRA) foi idealizada pelos integrantes do Programa de Educação
                         Tutorial da Engenharia Elétrica (PETEE UFMG) e da Equipe Autobotz UFMG e teve sua primeira
 						edição em 2014. Durante os anos de 2020 e 2021 a CoRA foi adaptada para formato virtual, por razões
                         da pandemia de Covid-19. Teve seu retorno presencial em 2022, contando com a participação de
-                        equipes do ensino fundamental, médio e superior. Em 2023 aconteceu a 10ª Edição da Competição de
-                        Robôs Autônomos, contanto pela primeira vez com uma categoria mirim para alunos até o 8º ano.
+                        equipes do ensino fundamental, médio e superior. Em 2024 ocorreu a sua 11ª Edição, contando pela primeira vez com 
+						a categoria Sumô, além da tradicional categoria Seguidor de Linha.
+	
                         </p>
                     </div>
                 </div>
@@ -160,12 +173,15 @@
                         </div>
                         <!-- desafio -->
                         <div class="col-12 text-cora">
-                            <div class="text-cora-center">
-                                <h5>Desafio</h5>
-                                <p style="margin-bottom: 0px">Projetar robôs capazes de identificar e seguir uma linha branca em
-                                    uma pista preta, e que consigam superar dificuldades e obstáculos no menor tempo possível,
-                                    buscando as primeiras colocações.</p>
+							<div class="text-center">                                <h5>Desafio</h5>
                             </div>
+							<ul>
+								<li>identificar e seguir uma linha branca em
+									uma pista preta, superando obstáculos no menor tempo possível.</li>
+								<li style="list-style-type: none; text-align: left;">ou</li>
+								<li>empurrar outro robô para fora da pista</li>
+							</ul>
+							
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-12">
@@ -175,11 +191,12 @@
                                 <h5>Objetivo</h5>
                                 <p style="margin-bottom: 0px">A competição foi criada com o objetivo principal de incentivar os
                                     alunos de graduação e do ensino médio e técnico a aplicar seus conhecimentos adquiridos em
-                                    sala de aula na construção de seus próprios robôs autônomos seguidores de linha</a>.</p>
+                                    sala de aula na construção de seus próprios robôs autônomos. </a>.</p>
                             </div>
                         </div>
                         <!-- carrossel de fotos cora -->
                         <div class="col-12 cora-carousel">
+							
                             <div id="carousel-cora" class="carousel slide" data-ride="carousel">
                                 <ol class="carousel-indicators">
                                     <li data-target="#carousel-cora" data-slide-to="0" class="active"></li>
@@ -198,32 +215,32 @@
                                     </div>
                                     <div class="carousel-item img-cora">
                                         <div class="img-zoom">
-                                            <img class="d-block w-100" src="../ref/img/cora/slide2.jpg">
+                                            <img class="d-block w-100" src="../ref/img/cora/Trofeus.webp">
                                         </div>
                                     </div>
                                     <div class="carousel-item img-cora">
                                         <div class="img-zoom">
-                                            <img class="d-block w-100" src="../ref/img/cora/slide3.jpg">
+                                            <img class="d-block w-100" src="../ref/img/cora/Robos.webp">
                                         </div>
                                     </div>
                                     <div class="carousel-item img-cora">
                                         <div class="img-zoom">
-                                            <img class="d-block w-100" src="../ref/img/cora/slide4.jpg">
+                                            <img class="d-block w-100" src="../ref/img/cora/Panorama.webp">
                                         </div>
                                     </div>
                                     <div class="carousel-item img-cora">
                                         <div class="img-zoom">
-                                            <img class="d-block w-100" src="../ref/img/cora/slide5.jpg">
+                                            <img class="d-block w-100" src="../ref/img/cora/PosicionandoRobo.webp">
                                         </div>
                                     </div>
                                     <div class="carousel-item img-cora">
                                         <div class="img-zoom">
-                                            <img class="d-block w-100" src="../ref/img/cora/slide6.jpg">
+                                            <img class="d-block w-100" src="../ref/img/cora/Comemorando.webp">
                                         </div>
                                     </div>
                                     <div class="carousel-item img-cora">
                                         <div class="img-zoom">
-                                            <img class="d-block w-100" src="../ref/img/cora/slide7.jpg">
+                                            <img class="d-block w-100" src="../ref/img/cora/TodoMundo.webp">
                                         </div>
                                     </div>
                                 </div>
@@ -239,22 +256,26 @@
                         </div>
                     </div>
                     <div class="row justify-content-center descricao">
-                        <div class="col-lg-9 col-sm-12">
+						<div class="col-sd-12 col-md-12 col-lg-10 text-justify">
 							<!-- ATUALIZAR TEXTO! -->
-                            <h5>Seja um patrocinador</h5>
-                            <p>Para desenvolver a CoRA, o PETEE-UFMG conta sempre com o apoio de seus parceiros e patrocinadores, que auxiliam no desenvolvimento do evento de diversas maneiras. Esse apoio é vital para que a CoRA possa acontecer.
-                                Todo patrocinador, terá direito a divulgação da marca nos eventos da CoRA, além dos outros benefícios especificados para cada cota de patrocínio, de acordo com o que for escolhido pelos apoiadores. 
-                                Todas essas informações podem ser encontradas na Carta de Patrocínio, disponível para ser enviada caso haja interesse. Entre em contato pelo nosso e-mail e participe de um dos maiores eventos da Escola de Engenharia da UFMG.
-                                Seja um patrocinador da CoRA e apoie a educação brasileira!
-                            </p>
+							<h5>Seja um patrocinador</h5>
+							<p>
+								Para desenvolver a CoRA, o PETEE-UFMG conta sempre com o apoio imprescindível de seus parceiros e patrocinadores.
+								Todo patrocinador terá direito à divulgação da marca nos eventos da CoRA, além dos outros benefícios especificados para cada cota de patrocínio.
+								Essas informações poderão ser encontradas na Carta de Patrocínio, disponível em breve. 
+								Entre em contato pelo nosso e-mail 
+								<a href="mailto:petee.ufmg@gmail.com">petee.ufmg@gmail.com</a> 
+								e participe de um dos maiores eventos da Escola de Engenharia da UFMG.
+								Seja um patrocinador da CoRA e apoie a educação brasileira!
+							</p>							
                         </div>
                     </div> 
                 </div>
                 <!-- botao saiba mais -->
                 <div class="row justify-content-center align-items-center" style="margin-top: 50px">
                     <div class="col text-center">
-                        <a href="http://cora.cpdee.ufmg.br/" target="_blank" class="btn " style="text-align: center">IR PARA O
-                            SITE</a>
+                        <a href="http://cora.cpdee.ufmg.br/" target="_blank" class="btn " style="text-align: center">Ir para o
+                            Site da CoRA</a>
                     </div>
                 </div>
             </div>
