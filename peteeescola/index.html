@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<!-- definicoes principais -->
+	<meta charset="UTF-8">
+	<title>PETEE UFMG</title>
+	<!-- define o idioma do documento -->
+	<meta http-equiv="content-language" content="pt-br" />
+	<!-- define que o tipo padrão de linguagem para estilização do documento é css -->
+	<meta http-equiv="content-style-type" content="text/css" />
+	<!-- define que o tipo padrão da linguagem de script do documento é javascript -->
+	<meta http-equiv="content-script-type" content="text/javascript" />
+	<!-- define a compatibilidade entre browsers -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!-- define o autor da página -->
+	<meta name="author" content="PETEE UFMG" />
+
+	<!-- link do google para as fontes que serão utilizadas -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css' />
+	<!-- 'Roboto Condensed' - Texto -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css' />
+	<!-- 'Roboto Slab' - Títulos -->
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<!-- icones fontawesome -->
+	<link href="../ref/css/font_awesome/css/all.css" rel="stylesheet">
+
+	<!-- stylesheet do site -->
+	<link href="../ref/css/style.css" rel="stylesheet">
+
+	<link rel="shortcut icon" href="../ref/img/logos/simbolo_petee_600x600.png">
+
+	<!-- define o idioma -->
+	<meta property="og:locale" content="pt_BR">
+	<!-- define o link do site -->
+	<meta property="og:url" content="http://www.petee.cpdee.ufmg.br/peteeescola">
+	<!-- define o título -->
+	<meta property="og:title" content="Programa de Educação Tutorial da Engenharia Elétrica - UFMG">
+	<meta property="og:site_name" content="PETEE UFMG">
+	<!-- define uma breve descrição do conteúdo -->
+	<meta property="og:description" content="Ensino, Pesquisa e Extensão">
+	<!-- define o local, o nome e o formato da imagem -->
+	<meta property="og:image" content="../ref/img/logos/simbolo_petee_600x600.png">
+	<meta property="og:image:type" content="image/png" />
+	<!-- define a largura da imagem -->
+	<meta property="og:image:width" content="200" />
+	<!-- define a altura da imagem -->
+	<meta property="og:image:height" content="200" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+
+	<style>
+		.carousel-inner img {
+			width: 100%;
+			height: 250px;
+			/* Ajuste conforme necessário */
+			object-fit: cover;
+			/* Garante que a imagem cubra toda a área sem distorcer */
+		}
+	</style>
+
+	<!-- Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8Z4XBMLY8N"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-8Z4XBMLY8N');
+	</script>
+
+</head>
+
+<body>
+	<!-- navbar -->
+	<header>
+		<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+			<!-- Brand -->
+			<a class="navbar-brand" href="../index.html">
+				<img src="../ref/img/logos/logo_petee_branca.png" style="height: 45px">
+			</a>
+
+			<!-- Toggler/collapsibe Button -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<i class="fas fa-bars icone-navbar"></i>
+			</button>
+
+			<!-- Navbar links -->
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown">
+						<a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">Sobre nós</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../index.html#pet">O que é o PET?</a>
+							<a class="dropdown-item" href="../index.html#grupo">Nosso grupo</a>
+							<a class="dropdown-item" href="../index.html#contato">Contato</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">Ensino</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../minicursos_oficinas/inicio/index.html">Minicursos e
+								Oficinas</a>
+							<a class="dropdown-item" href="../petapoioacademico/">PET Apoio Acadêmico</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">Pesquisa</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../trabalhos-cientificos/index.html">Artigos</a>
+							<a class="dropdown-item" href="../prototipos/index.html">Biblioteca de Protótipos</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">Extensão</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../cora/index.html">CoRA</a>
+							<a class="dropdown-item" href="../Trilha do conhecimento/index.html">Trilha do
+								Conhecimento</a>
+							<a class="dropdown-item" href="../peteeescola/inicio/index.html">PETEE na Escola</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">Outras atividades</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../manual/index.html">Manual da Engenharia Elétrica</a>
+							<a class="dropdown-item" href="../certificados/index.html">Certificados da Eng. Elétrica</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+
+	<!-- Nav lateral -->
+	<nav id="mySidenav" class="sidenav bg-light navbar-dark" style="width: 25vmax">
+		<div class="nav flex-column nav-pills nav-dark" role="tablist" aria-orientation="vertical">
+			<!-- edicao1 -->
+			<a class="nav-link-myblue" id="edicao1" data-toggle="tab" href="#tab-edicao1" role="tab"
+				aria-controls="tab-edicao1" aria-selected="false"
+				onclick="location.hash = 'edicao1'; document.querySelector('#sidenavToggler').click()">Ano 2024</a>
+		</div>
+	</nav>
+	<!-- Toggler da Nav lateral -->
+	<div id="sidenavToggler" onclick="toggleNav()" class="bg-light border-dark"
+		style="padding: 0.5%;  margin-left: 25vmax;"><i id="sidenavTogglerIcon" class="fas fa-chevron-left text-dark"
+			style="font-size: 30px;"></i></div>
+	<div id="blackmask" onclick="document.querySelector('#sidenavToggler').click()"></div>
+
+	<!-- Edicoes-->
+	<div id="conteudos" class="tab-content" id="nav-tabContent" style="padding-top: 96px">
+		<!-- edicao1 -->
+		<div class="container-fluid tab-pane fade" id="tab-edicao1" role="tabpanel" aria-labelledby="edicao1">
+			<!-- titulo -->
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<h1>Ano 2024</h1>
+				</div>
+			</div>
+			<!-- linha abaixo do titulo -->
+			<div class="row justify-content-center align-items-center">
+				<hr class="linha">
+				<i class="fas fa-circle linha-circulo"></i>
+				<i class="fas fa-chevron-circle-down linha-icone"></i>
+			</div>
+
+			<!--Descricao-->
+			<div class="row justify-content-center descricao">
+				<div class="col-sd-12 col-md-12 col-lg-10 text-justify">
+					<p>
+						Em 2024, o <strong>PETEE na Escola</strong> realizou seis atividades principais: Ação Jovem,
+						Oficina no
+						Coltec, Oficina no IFMG Ibirité, Palestra no CITEC, Palestra no Colégio Santa Maria e Curso
+						na Fundação Torino. As atividades destacaram-se pela integração de teoria e prática, com
+						demonstrações de protótipos robóticos, como o robô seguidor de linha, e a aplicação de
+						conceitos de engenharia, eletrônica e programação, utilizando uma abordagem prática e
+						interativa para engajar estudantes de diferentes idades e níveis de ensino.
+					</p>
+				</div>
+			</div>
+
+			<div class="row justify-content-center descricao">
+				<div class="col-sd-12 col-md-12 col-lg-10 text-justify">
+
+					<!-- Visitas -->
+					<div class="text-left">
+						<h3 class="card-title font-weight-bold"
+							style="font-weight: bold; text-align: left; font-size: 1.8rem; text-decoration: underline;">
+							Visitas</h3>
+					</div>
+					<!-- Ação Jovem -->
+					<div class="row align-items-center" style="margin-bottom: 70px;">
+						<!-- Texto da atividade -->
+						<div class="col-lg-9 col-md-12">
+							<h4 class="font-weight-bold"
+								style="font-weight: bold; text-align: left; font-size: 1.5rem; color: #0056b3;">
+								🔹 Ação Jovem</h4>
+							<p>
+								No dia 10 de maio de 2024, o PETEE participou do evento Ação Jovem, promovido pela
+								iniciativa Engenharia Solidária, direcionado a alunos do 1º ao 5º ano do ensino
+								fundamental. Em um ambiente acolhedor e dinâmico, foram apresentados protótipos
+								desenvolvidos na UFMG, como o carrinho seguidor de linha e o robô desviador de
+								obstáculos, utilizando estratégias interativas para engajar as crianças. O entusiasmo e
+								a curiosidade demonstrados pelas crianças evidenciaram o sucesso da atividade, que
+								proporcionou um primeiro contato significativo com a robótica e a Engenharia, ampliando
+								as perspectivas acadêmicas e profissionais de todos os envolvidos.
+							</p>
+						</div>
+
+						<!-- Carrossel de imagens -->
+						<div class="col-lg-3 col-md-12 text-center">
+							<div id="carousel-acao-jovem" class="carousel slide" data-ride="carousel">
+								<ol class="carousel-indicators">
+									<li data-target="#carousel-acao-jovem" data-slide-to="0" class="active"></li>
+									<li data-target="#carousel-acao-jovem" data-slide-to="1"></li>
+									<li data-target="#carousel-acao-jovem" data-slide-to="2"></li>
+									<li data-target="#carousel-acao-jovem" data-slide-to="3"></li>
+									<li data-target="#carousel-acao-jovem" data-slide-to="4"></li>
+								</ol>
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Ação Jovem/Acao_jovem_01_organizadores.webp">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Ação Jovem/Acao_jovem_02_criancas.webp">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Ação Jovem/Acao_jovem_03_sorrisos.webp">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Ação Jovem/Acao_jovem_04_demonstracao.webp">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Ação Jovem/Acao_jovem_05_desenho.webp">
+									</div>
+								</div>
+								<a class="carousel-control-prev" href="#carousel-acao-jovem" role="button"
+									data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#carousel-acao-jovem" role="button"
+									data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- Oficina Coltec -->
+					<div class="row align-items-center" style="margin-bottom: 70px;">
+						<!-- Texto da atividade -->
+						<div class="col-lg-9 col-md-12">
+							<h4 class="font-weight-bold"
+								style="font-weight: bold; text-align: left; font-size: 1.5rem; color: #008000;">🔹
+								Oficina
+								no Coltec</h4>
+							<p>
+								No dia 12 de junho de 2024, o PETEE realizou uma oficina de robô seguidor de linha no
+								Coltec (Colégio Técnico da UFMG), oferecendo aos estudantes do Ensino Médio uma
+								experiência prática e interativa no universo da robótica. A oficina também incluiu uma
+								parte avançada, onde os alunos exploraram ferramentas CAD para modelagem digital e
+								operaram equipamentos CNC, integrando conceitos de design e fabricação. O evento
+								incentivou a participação dos alunos na Competição de Robôs Autônomos do PETEE, onde
+								muitos desenvolveram projetos independentes.
+							</p>
+						</div>
+
+						<!-- Carrossel de imagens -->
+						<div class="col-lg-3 col-md-12 text-center">
+							<div id="carousel-oficina-coltec" class="carousel slide" data-ride="carousel">
+								<ol class="carousel-indicators">
+									<li data-target="#carousel-oficina-coltec" data-slide-to="0" class="active"></li>
+									<li data-target="#carousel-oficina-coltec" data-slide-to="1"></li>
+									<li data-target="#carousel-oficina-coltec" data-slide-to="2"></li>
+									<li data-target="#carousel-oficina-coltec" data-slide-to="3"></li>
+									<li data-target="#carousel-oficina-coltec" data-slide-to="4"></li>
+								</ol>
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Oficina no Coltec/Coltec_01_mesa.webp">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Oficina no Coltec/Coltec_02_programando.webp">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Oficina no Coltec/Coltec_03_apresentacao.webp">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Oficina no Coltec/Coltec_04_pista.webp">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Oficina no Coltec/Coltec_05_montagem.webp">
+									</div>
+								</div>
+								<a class="carousel-control-prev" href="#carousel-oficina-coltec" role="button"
+									data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#carousel-oficina-coltec" role="button"
+									data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- Oficina no IFMG Ibirité -->
+					<div class="row align-items-center" style="margin-bottom: 70px;">
+						<!-- Texto da atividade -->
+						<div class="col-lg-9 col-md-12">
+							<h4 class="font-weight-bold"
+								style="font-weight: bold; text-align: left; font-size: 1.5rem; color:  #D32F2F;">
+								🔹 Oficina no IFMG Ibirité</h4>
+							<p>
+								No dia 6 de setembro de 2024, o PETEE visitou o Instituto Federal de Minas Gerais (IFMG)
+								– Campus Ibirité e ministrou a tradicional oficina de robô seguidor de linha. A
+								atividade foi direcionada a alunos do ensino técnico e superior. Por isso, foi feita uma
+								revisão de conceitos básicos de elétrica e eletrônica para nivelar o conhecimento dos
+								participantes. Em seguida, foram explicados o funcionamento dos dispositivos utilizados
+								e o código-fonte gravado no microcontrolador do robô. Na parte prática, os alunos
+								aplicaram os conhecimentos adquiridos na montagem do robô, seguindo as orientações
+								fornecidas pelo PETEE sobre as conexões elétricas.
+							</p>
+						</div>
+
+						<!-- Carrossel de imagens -->
+						<div class="col-lg-3 col-md-12 text-center">
+							<div id="carousel-ifmg" class="carousel slide" data-ride="carousel">
+								<ol class="carousel-indicators">
+									<li data-target="#carousel-ifmg" data-slide-to="0" class="active"></li>
+									<li data-target="#carousel-ifmg" data-slide-to="1"></li>
+									<li data-target="#carousel-ifmg" data-slide-to="2"></li>
+									<li data-target="#carousel-ifmg" data-slide-to="3"></li>
+									<li data-target="#carousel-ifmg" data-slide-to="4"></li>
+								</ol>
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Oficina no IFMG Ibirité/IF_Ibirite_01_todos.webp">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Oficina no IFMG Ibirité/IF_Ibirite_02_aula.webp">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Oficina no IFMG Ibirité/IF_Ibirite_03_slide.webp">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Oficina no IFMG Ibirité/IF_Ibirite_04_lab.webp">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Oficina no IFMG Ibirité/IF_Ibirite_05_atencao.webp">
+									</div>
+								</div>
+								<a class="carousel-control-prev" href="#carousel-ifmg" role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#carousel-ifmg" role="button" data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- Palestra no CITEC -->
+					<div class="row align-items-center" style="margin-bottom: 70px;">
+						<!-- Texto da atividade -->
+						<div class="col-lg-9 col-md-12">
+							<h4 class="font-weight-bold"
+								style="font-weight: bold; text-align: left; font-size: 1.5rem; color: #d8be2d;">🔹
+								Palestra no CITEC
+							</h4>
+							<p>
+								No dia 7 de novembro de 2024, o PETEE participou como ministrante da 3ª Feira de Ciência
+								e Tecnologia da Escola Estadual Professor Guerino Casassanta. Durante o evento, o grupo
+								apresentou suas iniciativas em tecnologia, engenharia e robótica, utilizando recursos
+								visuais, como slides e imagens, além de realizar demonstrações práticas de protótipos
+								robóticos desenvolvidos com materiais recicláveis. A atividade despertou o interesse dos
+								estudantes por ciência e tecnologia, apresentando a produção acadêmica da UFMG de
+								maneira acessível e inspiradora.
+							</p>
+						</div>
+
+						<!-- Carrossel de imagens -->
+						<div class="col-lg-3 col-md-12 text-center">
+							<div id="carousel-palestra-CITEC" class="carousel slide" data-ride="carousel">
+								<ol class="carousel-indicators">
+									<li data-target="#carousel-palestra-CITEC" data-slide-to="0" class="active"></li>
+									<li data-target="#carousel-palestra-CITEC" data-slide-to="1"></li>
+									<li data-target="#carousel-palestra-CITEC" data-slide-to="2"></li>
+									<li data-target="#carousel-palestra-CITEC" data-slide-to="3"></li>
+									<li data-target="#carousel-palestra-CITEC" data-slide-to="4"></li>
+								</ol>
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Palestra no CITEC/CITEC_01_explicacao.webp">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Palestra no CITEC/CITEC_02_Apresentacao.webp">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Palestra no CITEC/CITEC_03_demonstracao.webp">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Palestra no CITEC/CITEC_04_Pista.webp">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Palestra no CITEC/CITEC_05_Palmas.webp">
+									</div>
+								</div>
+								<a class="carousel-control-prev" href="#carousel-palestra-CITEC" role="button"
+									data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#carousel-palestra-CITEC" role="button"
+									data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- Palestra no Colégio Santa Maria -->
+					<div class="row align-items-center" style="margin-bottom: 70px;">
+						<!-- Texto da atividade -->
+						<div class="col-lg-9 col-md-12">
+							<h4 class="font-weight-bold"
+								style="font-weight: bold; text-align: left; font-size: 1.5rem; color: #7B1FA2;">🔹
+								Palestra no Colégio Santa Maria
+							</h4>
+							<p>
+								No dia 24 de outubro de 2024, o PETEE participou como ministrante de um projeto anual de
+								Ecologia Integral promovido pelo Colégio Santa Maria Minas, Unidade Betim, direcionado a
+								crianças. O tema central foi a sustentabilidade aplicada à robótica. Por meio de uma
+								palestra lúdica, o grupo apresentou o PETEE e explorou a criação de brinquedos e
+								brincadeiras sustentáveis, utilizando materiais recicláveis. O evento seguiu um formato
+								de seminário interativo, adaptando-se ao público infantil com uma didática simples e
+								divertida.
+							</p>
+						</div>
+
+						<!-- Carrossel de imagens -->
+						<div class="col-lg-3 col-md-12 text-center">
+							<div id="carousel-palestra-santa-maria" class="carousel slide" data-ride="carousel">
+								<ol class="carousel-indicators">
+									<li data-target="#carousel-palestra-santa-maria" data-slide-to="0" class="active">
+									</li>
+									<li data-target="#carousel-palestra-santa-maria" data-slide-to="1"></li>
+									<li data-target="#carousel-palestra-santa-maria" data-slide-to="2"></li>
+									<li data-target="#carousel-palestra-santa-maria" data-slide-to="3"></li>
+									<li data-target="#carousel-palestra-santa-maria" data-slide-to="4"></li>
+								</ol>
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Palestra no Colégio Santa Maria/Santa_Maria_01_apresentacao.webp">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Palestra no Colégio Santa Maria/Santa_Maria_02_pista.webp">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Palestra no Colégio Santa Maria/Santa_Maria_03_turma.webp">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Palestra no Colégio Santa Maria/Santa_Maria_04_slide.webp">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Palestra no Colégio Santa Maria/Santa_Maria_05_pista2.webp">
+									</div>
+								</div>
+								<a class="carousel-control-prev" href="#carousel-palestra-santa-maria" role="button"
+									data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#carousel-palestra-santa-maria" role="button"
+									data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Parcerias -->
+					<div class="text-left" style="margin-bottom: 30px;">
+						<h3 class="card-title font-weight-bold"
+							style="font-weight: bold; text-align: left; font-size: 1.8rem; text-decoration: underline;">
+							Parcerias</h3>
+					</div>
+					<!-- Fundação Torino -->
+					<div class="row align-items-center" style="margin-bottom: 70px;">
+						<!-- Texto da atividade -->
+						<div class="col-lg-9 col-md-12">
+							<h4 class="font-weight-bold"
+								style="font-weight: bold; text-align: left; font-size: 1.5rem; color: #F57C00;">
+								🔹Curso na Fundação Torino</h4>
+							<p>
+								O programa de ensino para estudantes do ensino médio da Fundação Torino é baseado na
+								Aprendizagem Baseada em Projetos (ABP), com foco no desenvolvimento e construção de um
+								robô seguidor de linha para competição. O curso, com duração de 40 horas, orienta os
+								alunos a criar uma proposta conceitual, definir projetos de engenharia e implementar um
+								protótipo funcional, utilizando a cultura Maker (Do It Yourself - D.I.Y). Os alunos são
+								os principais responsáveis pela construção dos robôs, aplicando conceitos teóricos como
+								levantamento de requisitos, projeto eletroeletrônico e desenvolvimento de software. A
+								competição CoRA (Competição de Robôs Autônomos) é o foco do projeto, onde os robôs devem
+								seguir uma pista demarcada, superando obstáculos. O objetivo é integrar conhecimentos
+								teóricos e práticos, proporcionando uma experiência "mão na massa" em engenharia.
+							</p>
+						</div>
+
+						<!-- Carrossel de imagens -->
+						<div class="col-lg-3 col-md-12 text-center">
+							<div id="carousel-torino" class="carousel slide" data-ride="carousel">
+								<ol class="carousel-indicators">
+									<li data-target="#carousel-torino" data-slide-to="0" class="active"></li>
+									<li data-target="#carousel-torino" data-slide-to="1"></li>
+									<li data-target="#carousel-torino" data-slide-to="2"></li>
+									<li data-target="#carousel-torino" data-slide-to="3"></li>
+									<li data-target="#carousel-torino" data-slide-to="4"></li>
+								</ol>
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Fundação Torino/FTorino_01_equipe.webp">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Fundação Torino/FTorino_02_pasta.webp">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Fundação Torino/FTorino_03_moldes.webp">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Fundação Torino/FTorino_04_programacao.webp">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 rounded" style="border-radius: 25px;"
+											src="../ref/img/petee_na_escola/Fundação Torino/FTorino_05_montagem.webp">
+									</div>
+								</div>
+								<a class="carousel-control-prev" href="#carousel-torino" role="button"
+									data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#carousel-torino" role="button"
+									data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid row justify-content-center align-items-center text-center">
+				<div class="col-lg-8 col-md-6 col-sd-12 text-center">
+					<p>
+						Fique ligado nas nossas redes sociais ou entre em
+						<a href="mailto:petee.ufmg@gmail.com"
+							style="color: #0056b3; text-decoration: none; font-weight: bold;">
+							contato
+						</a>
+						para mais detalhes! 🚀
+					</p>
+					<p>
+						Junte-se a nós nessa jornada!
+						<a href="https://docs.google.com/forms/d/1cZlIsZMSj4Loi-TSRe_oPrk0dL-BKMd4TRM6DOG0lW4/viewform?edit_requested=true"
+							target="_blank" style="color: #0056b3; text-decoration: none; font-weight: bold;">
+							Agende
+						</a>
+						uma visita nossa na sua escola!
+					</p>
+				</div>
+			</div>
+
+
+			<!-- espaco -->
+			<div id="emptySpace" style="margin-top: 150px;"></div>
+			<!-- rodape -->
+			<footer>
+				<div id="rodape" class="myfooter container-fluid text-center bg-dark">
+					<div class="row">
+						<div class="col text-center">
+							<p><a class="text-light contato-link"
+									href="mailto:petee.ufmg@gmail.com">petee.ufmg@gmail.com</a>
+							</p>
+							<p><a class="text-light contato-link" href="tel:31-34091013">(31) 3409-1013</a></p>
+						</div>
+						<div class="col text-center">
+							<p class="text-light">COPYRIGHT © 2020 PETEE - UFMG</p>
+							<small class="text-light">Arthur Nunes, Thais Morato, Tiago Bonfim</small>
+						</div>
+						<div class="col text-centers">
+							<p><a class="text-light contato-link" target="_blank"
+									href="https://www.google.com/maps/place/Escola+de+Engenharia+da+UFMG+-+Av.+Pres.+Ant%C3%B4nio+Carlos,+6627+-+Pampulha,+Belo+Horizonte+-+MG,+31270-901,+Brasil/@-19.870029,-43.9632,16z/data=!4m2!3m1!1s0xa6908ba0d42d5b:0x43a5f491fad68b3d?hl=pt-BR&gl=US">Av.
+									Presidente Antônio Carlos, Nº 6627, Pampulha, Belo Horizonte - MG</a></p>
+							<p class="text-light"><a class="text-light contato-link" target="_blank"
+									href="https://ufmg.br/">UFMG</a>, <a class="text-light contato-link" target="_blank"
+									href="https://www.eng.ufmg.br/portal/">Escola de Engenharia</a>, Bloco 3, Sala 1050
+							</p>
+						</div>
+					</div>
+					<div class="row justify-content-center align-items-center">
+						<!-- email -->
+						<div class="col-2 text-center">
+							<a class="contato-link" href="mailto:petee.ufmg@gmail.com"><i
+									class="fas fa-envelope icone-rodape rounded-circle"></i></a>
+						</div>
+						<!-- instagra -->
+						<div class="col-2 text-center">
+							<a class="contato-link" href="https://www.instagram.com/petee.ufmg/?hl=pt-br"
+								target="_blank"><i class="fab fa-instagram icone-rodape rounded-circle"></i></a>
+						</div>
+						<!-- facebook -->
+						<div class="col-2 text-center">
+							<a class="contato-link" href="https://www.facebook.com/peteeUFMG" target="_blank"><i
+									class="fab fa-facebook icone-rodape rounded-circle"></i></a>
+						</div>
+						<!-- Youtube -->
+						<div class="col-2 text-center">
+							<a class="contato-link" href="https://www.youtube.com/PETEEUFMG" target="_blank"><i
+									class="fab fa-youtube icone-rodape rounded-circle"></i></a>
+						</div>
+						<!-- linkedin -->
+						<div class="col-2 text-center">
+							<a class="contato-link" href="https://www.linkedin.com/in/petee-ufmg-95439b192/"
+								target="_blank"><i class="fab fa-linkedin icone-rodape rounded-circle"></i></a>
+						</div>
+						<!-- telefone -->
+						<div class="col-2 text-center">
+							<a class="contato-link" href="tel:31-34091013"><i
+									class="fas fa-phone-square-alt icone-rodape rounded-circle"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+					integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+					crossorigin="anonymous">
+					</script>
+				<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+					integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+					crossorigin="anonymous">
+					</script>
+				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+					integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+					crossorigin="anonymous">
+					</script>
+				<script src="../ref/js/sidenav.js"></script>
+				<script src="../ref/js/tabLink.js"></script>
+				<script src="../ref/js/footer_pos.js"></script>
+			</footer>
+</body>
+
+</html>
+-->
