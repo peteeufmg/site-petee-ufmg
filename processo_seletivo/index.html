@@ -1,136 +1,171 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		<!-- definicoes principais -->
-		<meta charset="UTF-8">
-		<title>Processo Seletivo</title>
-		<!-- define o idioma do documento -->
-		<meta http-equiv="content-language" content="pt-br"/>
-		<!-- define que o tipo padrão de linguagem para estilização do documento é css -->
-		<meta http-equiv="content-style-type" content="text/css"/>
-		<!-- define que o tipo padrão da linguagem de script do documento é javascript -->
-		<meta http-equiv="content-script-type" content="text/javascript"/>
-		<!-- define a compatibilidade entre browsers -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-		<!-- define o autor da página -->
-		<meta name="author" content="PETEE UFMG"/>
-		
-		<!-- link do google para as fontes que serão utilizadas -->
-		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'/> <!-- 'Roboto Condensed' - Texto -->
-		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'/> <!-- 'Roboto Slab' - Títulos -->
-		
-		<!-- bootstrap -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		
-		<!-- icones fontawesome -->
-		<link href="../ref/css/font_awesome/css/all.css" rel="stylesheet">
-		
-		<!-- stylesheet do site -->
-		<link href="../ref/css/style.css" rel="stylesheet">
 
-		<link rel="shortcut icon" href="../ref/img/logos/simbolo_petee_600x600.png">
+<head>
+	<!-- definicoes principais -->
+	<meta charset="UTF-8">
+	<title>Processo Seletivo</title>
+	<!-- define o idioma do documento -->
+	<meta http-equiv="content-language" content="pt-br" />
+	<!-- define que o tipo padrão de linguagem para estilização do documento é css -->
+	<meta http-equiv="content-style-type" content="text/css" />
+	<!-- define que o tipo padrão da linguagem de script do documento é javascript -->
+	<meta http-equiv="content-script-type" content="text/javascript" />
+	<!-- define a compatibilidade entre browsers -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!-- define o autor da página -->
+	<meta name="author" content="PETEE UFMG" />
 
-		<!-- define o idioma -->
-		<meta property="og:locale" content="pt_BR">
-		<!-- define o link do site -->
-		<meta property="og:url" content="http://www.petee.cpdee.ufmg.br/processo_seletivo">
-		<!-- define o título -->
-		<meta property="og:title" content="Programa de Educação Tutorial da Engenharia Elétrica - UFMG">
-		<meta property="og:site_name" content="PETEE UFMG">
-		<!-- define uma breve descrição do conteúdo -->
-		<meta property="og:description" content="Processo Seletivo: Venha ser um de nós">
-		<!-- define o local, o nome e o formato da imagem -->
-		<meta property="og:image" content="../ref/img/logos/simbolo_petee_600x600.png">
-		<meta property="og:image:type" content="image/png"/>
-		<!-- define a largura da imagem -->
-		<meta property="og:image:width" content="200"/>
-		<!-- define a altura da imagem -->
-		<meta property="og:image:height" content="200"/>
+	<!-- link do google para as fontes que serão utilizadas -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css' />
+	<!-- 'Roboto Condensed' - Texto -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css' />
+	<!-- 'Roboto Slab' - Títulos -->
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-		<!-- Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-8Z4XBMLY8N"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+	<!-- icones fontawesome -->
+	<link href="../ref/css/font_awesome/css/all.css" rel="stylesheet">
 
-			gtag('config', 'G-8Z4XBMLY8N');
-		</script>
-	</head>
-	
-	<body>
-		<!-- navbar -->
-		<header>
-			<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
-				<!-- Brand -->
-				<a class="navbar-brand" href="../index.html">
-					<img src="../ref/img/logos/logo_petee_branca.png" style="height: 45px">
-				</a>
+	<!-- stylesheet do site -->
+	<link href="../ref/css/style.css" rel="stylesheet">
 
-				<!-- Toggler/collapsibe Button -->
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-					<i class="fas fa-bars icone-navbar"></i>
-				</button>
+	<link rel="shortcut icon" href="../ref/img/logos/simbolo_petee_600x600.png">
 
-				<!-- Navbar links -->
-				<div class="collapse navbar-collapse" id="collapsibleNavbar">
-					<ul class="navbar-nav">
-						<li class="nav-item dropdown">
-							<a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sobre nós</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="../index.html#pet">O que é o PET?</a>
-								<a class="dropdown-item" href="../index.html#grupo">Nosso grupo</a>
-								<a class="dropdown-item" href="../index.html#contato">Contato</a>
-							</div>
-						</li>
-		
-						<li class="nav-item dropdown">
-							<a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ensino</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="../minicursos_oficinas/inicio/index.html">Minicursos e Oficinas</a>
-								<a class="dropdown-item" href="../petapoioacademico/index.html">PET Apoio Acadêmico</a>
-							</div>
-						</li>
+	<!-- define o idioma -->
+	<meta property="og:locale" content="pt_BR">
+	<!-- define o link do site -->
+	<meta property="og:url" content="http://www.petee.cpdee.ufmg.br/processo_seletivo">
+	<!-- define o título -->
+	<meta property="og:title" content="Programa de Educação Tutorial da Engenharia Elétrica - UFMG">
+	<meta property="og:site_name" content="PETEE UFMG">
+	<!-- define uma breve descrição do conteúdo -->
+	<meta property="og:description" content="Processo Seletivo: Venha ser um de nós">
+	<!-- define o local, o nome e o formato da imagem -->
+	<meta property="og:image" content="../ref/img/logos/simbolo_petee_600x600.png">
+	<meta property="og:image:type" content="image/png" />
+	<!-- define a largura da imagem -->
+	<meta property="og:image:width" content="200" />
+	<!-- define a altura da imagem -->
+	<meta property="og:image:height" content="200" />
 
-						<li class="nav-item dropdown">
-							<a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pesquisa</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="../trabalhos-cientificos/index.html">Artigos</a>
-								<a class="dropdown-item" href="../prototipos/index.html">Biblioteca de Protótipos</a>
-							</div>
-						</li>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
 
-						<li class="nav-item dropdown">
-							<a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Extensão</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="../cora/index.html">CoRA</a>
-								<a class="dropdown-item" href="../Trilha do conhecimento/index.html">Trilha do Conhecimento</a>
-								<a class="dropdown-item" href="../peteeescola/inicio/index.html">PETEE na Escola</a>
-							</div>
-						</li>
+	<!-- Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-8Z4XBMLY8N"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-						<li class="nav-item dropdown">
-							<a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Outras atividades</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="../manual/index.html">Manual da Engenharia Elétrica</a>
-								<a class="dropdown-item" href="../certificados/index.html">Certificados da Eng. Elétrica</a>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</header>
-        <!-- Processo Seletivo -->
-		<div id="processoseletivo" class="container-fluid" style="padding-top: 96px">
-			<!-- titulo sessao -->
+		gtag('config', 'G-8Z4XBMLY8N');
+	</script>
+</head>
+
+<body>
+	<!-- navbar -->
+	<header>
+		<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+			<!-- Brand -->
+			<a class="navbar-brand" href="../index.html">
+				<img src="../ref/img/logos/logo_petee_branca.png" style="height: 45px">
+			</a>
+
+			<!-- Toggler/collapsibe Button -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<i class="fas fa-bars icone-navbar"></i>
+			</button>
+
+			<!-- Navbar links -->
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown">
+						<a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">Sobre nós</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../index.html#pet">O que é o PET?</a>
+							<a class="dropdown-item" href="../index.html#grupo">Nosso grupo</a>
+							<a class="dropdown-item" href="../index.html#contato">Contato</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">Ensino</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../minicursos_oficinas/inicio/index.html">Minicursos e
+								Oficinas</a>
+							<a class="dropdown-item" href="../petapoioacademico/index.html">PET Apoio Acadêmico</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">Pesquisa</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../trabalhos-cientificos/index.html">Artigos</a>
+							<a class="dropdown-item" href="../prototipos/index.html">Biblioteca de Protótipos</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">Extensão</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../cora/index.html">CoRA</a>
+							<a class="dropdown-item" href="../Trilha do conhecimento/index.html">Trilha do
+								Conhecimento</a>
+							<a class="dropdown-item" href="../peteeescola/inicio/index.html">PETEE na Escola</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link" id="navbarDropdown" role="button" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">Outras atividades</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="../manual/index.html">Manual da Engenharia Elétrica</a>
+							<a class="dropdown-item" href="../certificados/index.html">Certificados da Eng. Elétrica</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- Processo Seletivo -->
+	<div id="processoseletivo" class="container-fluid" style="padding-top: 96px">
+		<!-- titulo sessao -->
+		<div class="row justify-content-center">
+			<div class="col-12">
+				<h1>Processo Seletivo</h1>
+			</div>
+		</div>
+		<!-- linha abaixo do titulo -->
+		<div class="row justify-content-center align-items-center">
+			<hr class="linha">
+			<i class="fas fa-circle linha-circulo"></i>
+			<i class="fas fa-chevron-circle-down linha-icone"></i>
+		</div>
+		<!-- descricao sessao -->
+		<div class="row justify-content-center descricao">
+			<div class="col-9">
+				<p>Quer fazer parte do grupo PETEE? O Programa de Educação Tutorial da Engenharia Elétrica da UFMG está como o processo seletivo aberto, confira o Edital.</p> 
+				<!--<p>Venha fazer parte da nossa equipe! Nesta seção você encontra todas as informações necessárias para o processo seletivo de entrada do Grupo PET Engenharia Elétrica da Universidade Federal de Minas Gerais (PETEE UFMG).</p> -->
+				<!--<p>As inscrições para o processo seletivo estão encerradas no momento. Fique atento às nossas atualizações para não perder as próximas oportunidades!</p> -->
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<!--Card vertical etapas-->
+		<div class="col-lg-5 col-md-12 col-sd-12 cards-verticais">
+			<!-- titulo sub-sessao -->
 			<div class="row justify-content-center">
 				<div class="col-12">
-					<h1>Processo Seletivo</h1>
-                </div>
+					<h1>Etapas</h1>
+				</div>
 			</div>
 			<!-- linha abaixo do titulo -->
 			<div class="row justify-content-center align-items-center">
@@ -138,75 +173,58 @@
 				<i class="fas fa-circle linha-circulo"></i>
 				<i class="fas fa-chevron-circle-down linha-icone"></i>
 			</div>
-			<!-- descricao sessao -->
-			<div class="row justify-content-center descricao">
-				<div class="col-9">
-					<!--<p>Quer fazer parte do grupo PETEE? O Programa de Educação Tutorial da Engenharia Elétrica da UFMG está como o processo seletivo aberto, confira o Edital.</p> -->
-					<p>Venha fazer parte da nossa equipe! Nesta seção você encontra todas as informações necessárias para o processo seletivo de entrada do Grupo PET Engenharia Elétrica da Universidade Federal de Minas Gerais (PETEE UFMG).</p>
-					<p>As inscrições para o processo seletivo estão encerradas no momento. Fique atento às nossas atualizações para não perder as próximas oportunidades!</p>
-				</div>
-            </div>
-		</div>
-        <div class="row">
-			<!--Card vertical etapas-->
-            <div class="col-lg-5 col-md-12 col-sd-12 cards-verticais">
-				<!-- titulo sub-sessao -->
-				<div class="row justify-content-center">
-					<div class="col-12">
-						<h1>Etapas</h1>
-					</div>
-				</div>
-				<!-- linha abaixo do titulo -->
-				<div class="row justify-content-center align-items-center">
-					<hr class="linha">
-					<i class="fas fa-circle linha-circulo"></i>
-					<i class="fas fa-chevron-circle-down linha-icone"></i>
-				</div>
-				<!--Carrossel dos cards-->
-                <div class="card processo">
-                    <div id="carouseletapas" class="carousel slide" data-ride="carousel" data-interval="15000">
-                        <ol class="carousel-indicators">
-                        <li data-target="#carouseletapas" data-slide-to="0" class="active" style=" filter: invert(100%);"></li>
-                        <li data-target="#carouseletapas" data-slide-to="1" style=" filter: invert(100%);"></li>
+			<!--Carrossel dos cards-->
+			<div class="card processo">
+				<div id="carouseletapas" class="carousel slide" data-ride="carousel" data-interval="15000">
+					<ol class="carousel-indicators">
+						<li data-target="#carouseletapas" data-slide-to="0" class="active"
+							style=" filter: invert(100%);"></li>
+						<li data-target="#carouseletapas" data-slide-to="1" style=" filter: invert(100%);"></li>
 						<li data-target="#carouseletapas" data-slide-to="2" style=" filter: invert(100%);"></li>
 						<li data-target="#carouseletapas" data-slide-to="3" style=" filter: invert(100%);"></li>
 						<li data-target="#carouseletapas" data-slide-to="4" style=" filter: invert(100%);"></li>
 						<li data-target="#carouseletapas" data-slide-to="5" style=" filter: invert(100%);"></li>
-						
-                        </ol>
-                        <div class="carousel-inner ">
-                            <!-- Card Divulgação -->
-                            <div class="carousel-item active">
-                                <div class="card pilar ">
-                                    <div class="card-body">
-                                        <i class="fas fa-mobile-alt pet-icone"></i>
-                                        <h5 class="card-title">1&deg; Etapa: Divulgação </h5>
-                                        <p class="card-text" style="height: 200.5px; max-height: 200.5px;">Nessa etapa, divulgaremos por meio do site e das redes sociais do PETEE a abertura do processo seletivo e todas as suas etapas.</p>
-                                    </div>
-                                </div>
-							</div>
-                            <!-- Card Inscrição -->
-                            <div class="carousel-item">
-                                <div class="card pilar ">
-                                    <div class="card-body">
-                                        <i class="fas fa-pen-alt pet-icone"></i>
-                                        <h5 class="card-title">2&deg; Etapa: Inscrição </h5>
-                                        <p class="card-text" style="height: 200.5px; max-height: 200.5px;">Nessa etapa, o grupo disponibilizará um formulário de inscrição para o processo seletivo de forma que o aluno manifeste seu interesse na participação desse.</p>
-                                    </div>
-                                </div>
-							</div>
-							<!-- Card Dinâmica em Grupo -->  
-							<div class="carousel-item">
-								<div class="card pilar">
-									<div class="card-body ">
-										<i class="fas fa-users pet-icone"></i>
-										<h5 class="card-title">3&deg; Etapa: Dinâmicas em Grupo </h5>
-										<p class="card-text" style="height: 200.5px; max-height: 200.5px;">Nesta etapa, realizaremos uma dinâmica em grupo com os alunos inscritos na etapa anterior de forma a avaliar suas habilidades individuais e em equipe.</p>
-									</div>
+
+					</ol>
+					<div class="carousel-inner ">
+						<!-- Card Divulgação -->
+						<div class="carousel-item active">
+							<div class="card pilar ">
+								<div class="card-body">
+									<i class="fas fa-mobile-alt pet-icone"></i>
+									<h5 class="card-title">1&deg; Etapa: Divulgação </h5>
+									<p class="card-text" style="height: 200.5px; max-height: 200.5px;">Nessa etapa,
+										divulgaremos por meio do site e das redes sociais do PETEE a abertura do
+										processo seletivo e todas as suas etapas.</p>
 								</div>
 							</div>
-                            <!-- Card Pitch -->
-                            <!--div class="carousel-item">
+						</div>
+						<!-- Card Inscrição -->
+						<div class="carousel-item">
+							<div class="card pilar ">
+								<div class="card-body">
+									<i class="fas fa-pen-alt pet-icone"></i>
+									<h5 class="card-title">2&deg; Etapa: Inscrição </h5>
+									<p class="card-text" style="height: 200.5px; max-height: 200.5px;">Nessa etapa, o
+										grupo disponibilizará um formulário de inscrição para o processo seletivo de
+										forma que o aluno manifeste seu interesse na participação desse.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Card Dinâmica em Grupo -->
+						<div class="carousel-item">
+							<div class="card pilar">
+								<div class="card-body ">
+									<i class="fas fa-users pet-icone"></i>
+									<h5 class="card-title">3&deg; Etapa: Dinâmicas em Grupo </h5>
+									<p class="card-text" style="height: 200.5px; max-height: 200.5px;">Nesta etapa,
+										realizaremos uma dinâmica em grupo com os alunos inscritos na etapa anterior de
+										forma a avaliar suas habilidades individuais e em equipe.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Card Pitch -->
+						<!--div class="carousel-item">
                                 <div class="card pilar">
                                     <div class="card-body ">
                                         <i class="fas fa-bullseye pet-icone"></i>
@@ -215,8 +233,8 @@
                                     </div>
                                 </div>
                             </div>-->
-                            <!-- Card Avaliação de Currículo -->
-                            <!--div class="carousel-item">
+						<!-- Card Avaliação de Currículo -->
+						<!--div class="carousel-item">
                                 <div class="card pilar">
                                     <div class="card-body ">
                                         <i class="fas fa-file pet-icone"></i>
@@ -225,211 +243,240 @@
                                     </div>
                                 </div>
                             </div>-->
-							<!-- Card Entrevista -->  
-							<div class="carousel-item">
-								<div class="card pilar">
-									<div class="card-body ">
-										<i class="fab fa-black-tie pet-icone"></i>
-										<h5 class="card-title">4&deg; Etapa: Entrevista </h5>
-										<p class="card-text" style="height: 200.5px; max-height: 200.5px;">Nesta etapa, realizaremos uma entrevista individual com os candidatos de forma a conhecermos melhor seus objetivos, interesses e possíveis contribuições para o grupo.</p>
-									</div>
+						<!-- Card Entrevista -->
+						<div class="carousel-item">
+							<div class="card pilar">
+								<div class="card-body ">
+									<i class="fab fa-black-tie pet-icone"></i>
+									<h5 class="card-title">4&deg; Etapa: Entrevista </h5>
+									<p class="card-text" style="height: 200.5px; max-height: 200.5px;">Nesta etapa,
+										realizaremos uma entrevista individual com os candidatos de forma a conhecermos
+										melhor seus objetivos, interesses e possíveis contribuições para o grupo.</p>
 								</div>
 							</div>
-							<!-- Card Desafio-->
-							<div class="carousel-item">
-								<div class="card pilar">
-									<div class="card-body ">
-										<i class="fab fa-black-tie pet-icone"></i>
-										<h5 class="card-title">5&deg; Etapa: Desafio </h5>
-										<p class="card-text" style="height: 200.5px; max-height: 200.5px;">Nesta etapa, os candidatos receberão por e-mail um desafio relacionado ao setor de candidatura de forma a avaliar a dedicação e o comprometimento dele com o grupo, bem como a forma como ele desempenha suas atividades.</p>
-									</div>
-								</div>
-							</div>
-							<!-- Card Aprovados -->  
-							<div class="carousel-item">
-								<div class="card pilar">
-									<div class="card-body ">
-										<i class="fas fa-trophy pet-icone"></i>
-										<h5 class="card-title">6&deg; Etapa: Resultado Final </h5>
-										<p class="card-text" style="height: 200.5px; max-height: 200.5px;">Nesta etapa, divulgaremos por meio do site e das redes sociais do PETEE os aprovados no processo seletivo do grupo.</p>
-									</div>
-								</div>
-							</div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouseletapas" role="button" data-slide="prev">
-                        	<span class="carousel-control-prev-icon" aria-hidden="true" style=" filter: invert(100%);"></span>
-                        	<span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouseletapas" role="button" data-slide="next">
-                      		<span class="carousel-control-next-icon" aria-hidden="true" style=" filter: invert(100%);"></span>
-                       		<span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
-			</div>
-			<!-- Cards horizontais links-->
-			<div class="col-lg-7 col-md-12 col-sm-12 cards-horizontais">
-				<!--Edital-->
-				<div class="card processo">
-					<div class="row no-gutters">
-						<div class="col-lg-4 col-md-4">
-							<i class="fas fa-file-alt pet-icone-seletivo " style="margin-left: 15px;"></i>
 						</div>
-						<div class="col-lg-8 col-md-8">
-							<div class="card-body">
-								<h5 class="card-title">Edital</h5>
-								<p>Confira os prazos e informações importantes do processo seletivo.</p>
-								<p class="card-text">Edital para participação do grupo PETEE 2024/2:</p>
-								<a href="../ref/doc/processo_seletivo/Edital Processo Seletivo 24-2.pdf" target="_blank"class="btn btn-myblue btn-lg btn-block">Download</a>
-								<!-- Errata (caso necessário) -->
-								<!-- <a href="../ref/doc/processo_seletivo/Errata edital Processo Seletivo 2023_2.pdf" target="_blank"class="btn btn-myblue btn-lg btn-block">Errata</a> -->
+						<!-- Card Desafio-->
+						<div class="carousel-item">
+							<div class="card pilar">
+								<div class="card-body ">
+									<i class="fab fa-black-tie pet-icone"></i>
+									<h5 class="card-title">5&deg; Etapa: Desafio </h5>
+									<p class="card-text" style="height: 200.5px; max-height: 200.5px;">Nesta etapa, os
+										candidatos receberão por e-mail um desafio relacionado ao setor de candidatura
+										de forma a avaliar a dedicação e o comprometimento dele com o grupo, bem como a
+										forma como ele desempenha suas atividades.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Card Aprovados -->
+						<div class="carousel-item">
+							<div class="card pilar">
+								<div class="card-body ">
+									<i class="fas fa-trophy pet-icone"></i>
+									<h5 class="card-title">6&deg; Etapa: Resultado </h5>
+									<p class="card-text" style="height: 200.5px; max-height: 200.5px;">Nesta etapa,
+										divulgaremos por meio do site e das redes sociais do PETEE os aprovados no
+										processo seletivo do grupo.</p>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<!--Modelo de Declarações-->
-				<div class="card processo">
-					<div class="row no-gutters">
-						<div class="col-lg-4 col-md-4">
-							<i class="fas fa-archive pet-icone-seletivo"></i>
-						</div>
-						<div class="col-lg-8 col-md-8">
-							<div class="card-body">
-								<h5 class="card-title">Modelo de Declarações</h5>
-								<p class="card-text">Modelo de declarações e documentos necessários para a inscrição do processo seletivo:</p>
-								<a href="../ref/doc/processo_seletivo/Modelo declaracões Processo Seletivo 24_2.pdf" class="btn btn-myblue btn-lg btn-block">Download</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Inscreva-se -->
-		<div class="row justify-content-center align-items-center">
-			<div id="inscreva" class="container-fluid col-12">
-				<!--Modelo de Declarações-->
-				<div class="card">
-					<div class="row no-gutters">
-						<div class="col-md-2">
-							<img class="img-fluid" src="../ref/img/logos/simbolo_petee_600x600.png" alt="Simbolo Petee" style="max-height: 156px;max-width: 177.73px; margin-left: 10px;">
-						</div>
-						<div class="col-lg-10 col-md-10">
-							<div class="card-body">
-								<!-- Fórmulário para périodo de inscrições abertas -->
-								<!-- <h5 class="card-title">Formulário de Inscrição</h5>
-								<p class="card-text">Formulário de inscrições disponível entre 15/11 a 24/11.</p>
-								<p class="card-text">Acesse aqui o formulário de inscrição para o processo seletivo 2024/2:</p> 
-								<a href="https://forms.gle/fi4Baa12CLvX9W1UA" class="btn btn-myblue btn-lg btn-block " target="_blank">Inscreva-se</a> -->
-
-								<br>
-								
-								<h5 class="card-title">Resultado</h5>
-								<p class="card-text">Consulte agora o resultado final do processo seletivo 2024/2:</p>
-								<a href="../ref/doc/processo_seletivo/Resultado Final 24_2.pdf" class="btn btn-myblue btn-lg btn-block" target="_blank">Resultado Final</a>
-								
-							
-							</div>
-						</div>
-					</div> 
-				</div>
-			</div>
-		</div>
-        <!-- Depoimentos -->
-		<div id="depoimentos" class="container-fluid" style="padding-top: 65px">
-			<!-- titulo sessao -->
-			<div class="row justify-content-center">
-				<div class="col-12">
-					<h1>Depoimentos</h1>
-                </div>
-			</div>
-			<!-- linha abaixo do titulo -->
-			<div class="row justify-content-center align-items-center">
-				<hr class="linha">
-				<i class="fas fa-circle linha-circulo"></i>
-				<i class="fas fa-chevron-circle-down linha-icone"></i>
-			</div>
-		</div>
-		<!--Carrossel Depoimentos-->
-		<div class="row justify-content-center">
-			<div class="col-10">
-				<div id="carouseldepo" class="carousel slide " data-ride="carousel">
-					<div class="carousel-inner">
-						<!--primeiro depoimento-->
-						<div class="carousel-item active">
-							<img class="d-block w-100 processo" src="../ref/img/processo_seletivo/depoimento1.png" alt="Depoimento_1">
-						</div>
-						<!--segundo depoimento-->
-						<div class="carousel-item ">
-							<img class="d-block w-100 processo" src="../ref/img/processo_seletivo/depoimento2.png" alt="Depoimento_2" >
-						</div>
-						<!--terceiro depoimento-->
-						<div class="carousel-item ">
-							<img class="d-block w-100 processo" src="../ref/img/processo_seletivo/depoimento3.png" alt="Depoimento_3" >
-						</div>
-						<!--quarto depoimento-->
-						<div class="carousel-item ">
-							<img class="d-block w-100 processo" src="../ref/img/processo_seletivo/depoimento4.png" alt="Depoimento_4" >
-						</div>
-					</div>
-					<a class="carousel-control-prev" href="#carouseldepo" role="button" data-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<a class="carousel-control-prev" href="#carouseletapas" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"
+							style=" filter: invert(100%);"></span>
 						<span class="sr-only">Previous</span>
 					</a>
-					<a class="carousel-control-next" href="#carouseldepo" role="button" data-slide="next">
-						<span class="carousel-control-next-icon"  aria-hidden="true"></span>
+					<a class="carousel-control-next" href="#carouseletapas" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"
+							style=" filter: invert(100%);"></span>
 						<span class="sr-only">Next</span>
 					</a>
 				</div>
 			</div>
 		</div>
-		<div id="emptySpace" style="margin-top: 150px;"></div>
-		<!-- rodape -->
-        <footer>
-			
-			<div id="rodape" class="myfooter container-fluid text-center bg-dark">	
-				<div class="row">
-					<div class="col text-center">
-						<p><a class="text-light contato-link" href="mailto:petee.ufmg@gmail.com">petee.ufmg@gmail.com</a></p>
-						<p><a class="text-light contato-link" href="tel:31-34091013">(31) 3409-1013</a></p>
+		<!-- Cards horizontais links-->
+		<div class="col-lg-7 col-md-12 col-sm-12 cards-horizontais">
+			<!--Edital-->
+			<div class="card processo">
+				<div class="row no-gutters">
+					<div class="col-lg-4 col-md-4">
+						<i class="fas fa-file-alt pet-icone-seletivo " style="margin-left: 15px;"></i>
 					</div>
-					<div class="col text-center">
-						<p class="text-light">COPYRIGHT © 2020 PETEE - UFMG</p>
-						<small class="text-light">Arthur Nunes, Thais Morato, Tiago Bonfim</small>
-					</div>
-					<div class="col text-centers">
-						<p><a class="text-light contato-link" target="_blank" href="https://www.google.com/maps/place/Escola+de+Engenharia+da+UFMG+-+Av.+Pres.+Ant%C3%B4nio+Carlos,+6627+-+Pampulha,+Belo+Horizonte+-+MG,+31270-901,+Brasil/@-19.870029,-43.9632,16z/data=!4m2!3m1!1s0xa6908ba0d42d5b:0x43a5f491fad68b3d?hl=pt-BR&gl=US">Av. Presidente Antônio Carlos, Nº 6627, Pampulha, Belo Horizonte - MG</a></p>
-						<p class="text-light"><a class="text-light contato-link" target="_blank" href="https://ufmg.br/">UFMG</a>, <a class="text-light contato-link" target="_blank" href="https://www.eng.ufmg.br/portal/">Escola de Engenharia</a>, Bloco 3, Sala 1050</p>
-					</div>
-				</div>
-				<div class="row justify-content-center align-items-center">
-					<!-- email -->
-					<div class="col-2 text-center">
-						<a class="contato-link" href="mailto:petee.ufmg@gmail.com"><i class="fas fa-envelope icone-rodape rounded-circle"></i></a>
-					</div>
-					<!-- instagra -->
-					<div class="col-2 text-center">
-						<a class="contato-link" href="https://www.instagram.com/petee.ufmg/?hl=pt-br" target="_blank"><i class="fab fa-instagram icone-rodape rounded-circle"></i></a>
-					</div>
-					<!-- facebook -->
-					<div class="col-2 text-center">
-						<a class="contato-link" href="https://www.facebook.com/peteeUFMG" target="_blank"><i class="fab fa-facebook icone-rodape rounded-circle"></i></a>
-					</div>
-					<!-- Youtube -->
-					<div class="col-2 text-center">
-						<a class="contato-link" href="https://www.youtube.com/PETEEUFMG" target="_blank"><i class="fab fa-youtube icone-rodape rounded-circle"></i></a>
-					</div>
-					<!-- linkedin -->
-					<div class="col-2 text-center">
-						<a class="contato-link" href="https://www.linkedin.com/in/petee-ufmg-95439b192/" target="_blank"><i class="fab fa-linkedin icone-rodape rounded-circle"></i></a>
-					</div>
-					<!-- telefone -->
-					<div class="col-2 text-center">
-						<a class="contato-link" href="tel:31-34091013"><i class="fas fa-phone-square-alt icone-rodape rounded-circle"></i></a>
+					<div class="col-lg-8 col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">Edital</h5>
+							<p>Confira os prazos e informações importantes do processo seletivo.</p>
+							<p class="card-text">Edital para participação do grupo PETEE 2025/1:</p>
+							<a href="../ref/doc/processo_seletivo/Edital Processo Seletivo 25-1.pdf" target="_blank"
+								class="btn btn-myblue btn-lg btn-block">Download</a>
+							<!-- Errata (caso necessário) -->
+							<!-- <a href="../ref/doc/processo_seletivo/Errata edital Processo Seletivo 2023_2.pdf" target="_blank"class="btn btn-myblue btn-lg btn-block">Errata</a> -->
+						</div>
 					</div>
 				</div>
-			</div> 
-			<!-- Modal Informando sobre o Corona Virus-->
-			<!--<div id="myModal" class="modal fade">
+			</div>
+			<!--Modelo de Declarações-->
+			<div class="card processo">
+				<div class="row no-gutters">
+					<div class="col-lg-4 col-md-4">
+						<i class="fas fa-archive pet-icone-seletivo"></i>
+					</div>
+					<div class="col-lg-8 col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">Modelo de Declarações</h5>
+							<p class="card-text">Modelo de declarações e documentos necessários para a inscrição do
+								processo seletivo:</p>
+							<a href="../ref/doc/processo_seletivo/Modelo_declaracões_Processo_Seletivo_2025_1.pdf"
+								class="btn btn-myblue btn-lg btn-block">Download</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Inscreva-se -->
+	<div class="row justify-content-center align-items-center">
+		<div id="inscreva" class="container-fluid col-12">
+			<!--Modelo de Declarações-->
+			<div class="card">
+				<div class="row no-gutters">
+					<div class="col-md-2">
+						<img class="img-fluid" src="../ref/img/logos/simbolo_petee_600x600.png" alt="Simbolo Petee"
+							style="max-height: 156px;max-width: 177.73px; margin-left: 10px;">
+					</div>
+					<div class="col-lg-10 col-md-10">
+						<div class="card-body">
+							<!-- Fórmulário para périodo de inscrições abertas -->
+							<h5 class="card-title">Formulário de Inscrição</h5>
+								<p class="card-text">Formulário de inscrições disponível entre 10/03 a 28/03.</p>
+								<p class="card-text">Acesse aqui o formulário de inscrição para o processo seletivo 2025/1:</p> 
+								<a href="https://forms.gle/drMtSHbzhTniFZUH7" class="btn btn-myblue btn-lg btn-block " target="_blank">Inscreva-se</a> 
+
+							<br>
+
+							<!-- <h5 class="card-title">Resultado</h5>
+							<p class="card-text">Consulte agora o resultado do processo seletivo 2024/2:</p>
+							<a href="../ref/doc/processo_seletivo/Resultado Final 24_2.pdf"
+								class="btn btn-myblue btn-lg btn-block" target="_blank">Resultado </a> -->
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Depoimentos -->
+	<div id="depoimentos" class="container-fluid" style="padding-top: 65px">
+		<!-- titulo sessao -->
+		<div class="row justify-content-center">
+			<div class="col-12">
+				<h1>Depoimentos</h1>
+			</div>
+		</div>
+		<!-- linha abaixo do titulo -->
+		<div class="row justify-content-center align-items-center">
+			<hr class="linha">
+			<i class="fas fa-circle linha-circulo"></i>
+			<i class="fas fa-chevron-circle-down linha-icone"></i>
+		</div>
+	</div>
+	<!--Carrossel Depoimentos-->
+	<div class="row justify-content-center">
+		<div class="col-10">
+			<div id="carouseldepo" class="carousel slide " data-ride="carousel">
+				<div class="carousel-inner">
+					<!--primeiro depoimento-->
+					<div class="carousel-item active">
+						<img class="d-block w-100 processo" src="../ref/img/processo_seletivo/depoimento1.png"
+							alt="Depoimento_1">
+					</div>
+					<!--segundo depoimento-->
+					<div class="carousel-item ">
+						<img class="d-block w-100 processo" src="../ref/img/processo_seletivo/depoimento2.png"
+							alt="Depoimento_2">
+					</div>
+					<!--terceiro depoimento-->
+					<div class="carousel-item ">
+						<img class="d-block w-100 processo" src="../ref/img/processo_seletivo/depoimento3.png"
+							alt="Depoimento_3">
+					</div>
+					<!--quarto depoimento-->
+					<div class="carousel-item ">
+						<img class="d-block w-100 processo" src="../ref/img/processo_seletivo/depoimento4.png"
+							alt="Depoimento_4">
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouseldepo" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouseldepo" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div id="emptySpace" style="margin-top: 150px;"></div>
+	<!-- rodape -->
+	<footer>
+
+		<div id="rodape" class="myfooter container-fluid text-center bg-dark">
+			<div class="row">
+				<div class="col text-center">
+					<p><a class="text-light contato-link" href="mailto:petee.ufmg@gmail.com">petee.ufmg@gmail.com</a>
+					</p>
+					<p><a class="text-light contato-link" href="tel:31-34091013">(31) 3409-1013</a></p>
+				</div>
+				<div class="col text-center">
+					<p class="text-light">COPYRIGHT © 2020 PETEE - UFMG</p>
+					<small class="text-light">Arthur Nunes, Thais Morato, Tiago Bonfim</small>
+				</div>
+				<div class="col text-centers">
+					<p><a class="text-light contato-link" target="_blank"
+							href="https://www.google.com/maps/place/Escola+de+Engenharia+da+UFMG+-+Av.+Pres.+Ant%C3%B4nio+Carlos,+6627+-+Pampulha,+Belo+Horizonte+-+MG,+31270-901,+Brasil/@-19.870029,-43.9632,16z/data=!4m2!3m1!1s0xa6908ba0d42d5b:0x43a5f491fad68b3d?hl=pt-BR&gl=US">Av.
+							Presidente Antônio Carlos, Nº 6627, Pampulha, Belo Horizonte - MG</a></p>
+					<p class="text-light"><a class="text-light contato-link" target="_blank"
+							href="https://ufmg.br/">UFMG</a>, <a class="text-light contato-link" target="_blank"
+							href="https://www.eng.ufmg.br/portal/">Escola de Engenharia</a>, Bloco 3, Sala 1050</p>
+				</div>
+			</div>
+			<div class="row justify-content-center align-items-center">
+				<!-- email -->
+				<div class="col-2 text-center">
+					<a class="contato-link" href="mailto:petee.ufmg@gmail.com"><i
+							class="fas fa-envelope icone-rodape rounded-circle"></i></a>
+				</div>
+				<!-- instagra -->
+				<div class="col-2 text-center">
+					<a class="contato-link" href="https://www.instagram.com/petee.ufmg/?hl=pt-br" target="_blank"><i
+							class="fab fa-instagram icone-rodape rounded-circle"></i></a>
+				</div>
+				<!-- facebook -->
+				<div class="col-2 text-center">
+					<a class="contato-link" href="https://www.facebook.com/peteeUFMG" target="_blank"><i
+							class="fab fa-facebook icone-rodape rounded-circle"></i></a>
+				</div>
+				<!-- Youtube -->
+				<div class="col-2 text-center">
+					<a class="contato-link" href="https://www.youtube.com/PETEEUFMG" target="_blank"><i
+							class="fab fa-youtube icone-rodape rounded-circle"></i></a>
+				</div>
+				<!-- linkedin -->
+				<div class="col-2 text-center">
+					<a class="contato-link" href="https://www.linkedin.com/in/petee-ufmg-95439b192/" target="_blank"><i
+							class="fab fa-linkedin icone-rodape rounded-circle"></i></a>
+				</div>
+				<!-- telefone -->
+				<div class="col-2 text-center">
+					<a class="contato-link" href="tel:31-34091013"><i
+							class="fas fa-phone-square-alt icone-rodape rounded-circle"></i></a>
+				</div>
+			</div>
+		</div>
+		<!-- Modal Informando sobre o Corona Virus-->
+		<!--<div id="myModal" class="modal fade">
 				<div class="modal-dialog">
 					<div class="modal-content">
 					  	<div class="modal-header">
@@ -444,15 +491,22 @@
 					</div>
 				</div>
 			</div>-->
-			<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-			<!--Script Modal-->
-			<script>
-				$(document).ready(function(){
-					$("#myModal").modal('show');
-				});
-			</script>
-		</footer>
-	</body>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"></script>
+		<!--Script Modal-->
+		<script>
+			$(document).ready(function () {
+				$("#myModal").modal('show');
+			});
+		</script>
+	</footer>
+</body>
+
 </html>
